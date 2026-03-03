@@ -13,6 +13,7 @@ public class EnemyHealth : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
+        Debug.Log("Enemy Hurt");
         if (currentHealth <= 0)
             Die();
     }
@@ -20,5 +21,6 @@ public class EnemyHealth : MonoBehaviour
     private void Die()
     {
         Destroy(gameObject); // Or play death animation
+        Debug.Log("Enemy Dead");
     }
 }

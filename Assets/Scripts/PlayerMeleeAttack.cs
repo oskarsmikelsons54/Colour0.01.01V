@@ -27,6 +27,7 @@ public class PlayerMeleeAttack : MonoBehaviour
 
     private void Attack()
     {
+        Debug.Log("Attack");
         // Play attack animation here if you have an Animator
         // animator.SetTrigger("Attack");
 
