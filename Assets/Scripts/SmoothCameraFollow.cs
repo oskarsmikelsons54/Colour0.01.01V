@@ -9,12 +9,14 @@ public class SmoothCameraFollow : MonoBehaviour
 
     private Vector3 velocity = Vector3.zero;
 
-    private void FixedUpdate()
+    // Move camera in LateUpdate so it follows the final visual positions for the frame
+    private void LateUpdate()
     {
+        if (target == null) return;
+
         Vector3 targetPosition = target.position + offset;
         targetPosition.z = transform.position.z;
 
         transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, damping);
-
     }
 }

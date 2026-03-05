@@ -21,6 +21,19 @@ public class EnemyAI : MonoBehaviour
 
     private bool isGrounded;
 
+    // Cached intent to avoid modifying physics in Update
+    private bool shouldFollow = false;
+    private float followDirection = 0f; // -1, 0 or 1
+    private bool jumpRequested = false;
+
+    void Start()
+    {
+        if (rb != null)
+        {
+            rb.interpolation = RigidbodyInterpolation2D.Interpolate;
+        }
+    }
+
     void Update()
     {
         if (player == null) return;
@@ -29,23 +42,43 @@ public class EnemyAI : MonoBehaviour
 
         float distance = Vector2.Distance(transform.position, player.position);
 
-        // Only follow if player is close
+        // Only follow if player is close; cache intent
         if (distance <= followRange)
         {
-            FollowPlayer();
+            shouldFollow = true;
+            followDirection = Mathf.Sign(player.position.x - transform.position.x);
+
+            // Check for jump conditions and only request jump here
             CheckForJump();
+        }
+        else
+        {
+            shouldFollow = false;
+            followDirection = 0f;
         }
     }
 
-    // Move toward player
-    private void FollowPlayer()
+    private void FixedUpdate()
     {
-        float direction = player.position.x - transform.position.x;
-        direction = Mathf.Sign(direction);
+        if (rb == null) return;
 
-        rb.linearVelocity = new Vector2(direction * speed, rb.linearVelocity.y);
+        // Apply horizontal movement in FixedUpdate (physics)
+        if (shouldFollow)
+        {
+            rb.linearVelocity = new Vector2(followDirection * speed, rb.linearVelocity.y);
+        }
+        else
+        {
+            // Optionally let other systems control x-velocity; set to 0 to stop when not following
+            rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+        }
 
-        Flip(direction);
+        // Apply jump if requested
+        if (jumpRequested)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            jumpRequested = false;
+        }
     }
 
     // Check ground
@@ -58,7 +91,7 @@ public class EnemyAI : MonoBehaviour
         );
     }
 
-    // Jump if wall ahead
+    // Jump if wall ahead - only request jump here
     private void CheckForJump()
     {
         RaycastHit2D hit = Physics2D.Raycast(
@@ -70,14 +103,17 @@ public class EnemyAI : MonoBehaviour
 
         if (hit.collider != null && isGrounded)
         {
-            Jump();
+            jumpRequested = true;
         }
     }
 
-    // Jump
-    private void Jump()
+    private void LateUpdate()
     {
-        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+        // Visual flip in LateUpdate so it runs after physics
+        if (shouldFollow && followDirection != 0f)
+        {
+            Flip(followDirection);
+        }
     }
 
     // Flip sprite
