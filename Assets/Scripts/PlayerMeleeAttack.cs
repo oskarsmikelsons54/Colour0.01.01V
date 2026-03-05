@@ -10,7 +10,6 @@ public class PlayerMeleeAttack : MonoBehaviour
     [Header("References")]
     [SerializeField] private Transform attackPoint;         // Empty GameObject where attack originates
     [SerializeField] private LayerMask enemyLayers;         // Which layers count as enemies
-    [SerializeField] private AtkAnim attackEffect; // Optional visual/sfx effect for attacks
 
     private float nextAttackTime = 0f;
 
@@ -29,8 +28,8 @@ public class PlayerMeleeAttack : MonoBehaviour
     private void Attack()
     {
         Debug.Log("Attack");
-        // Play effect if assigned
-        attackEffect?.Play();
+        // Play attack animation here if you have an Animator
+        // animator.SetTrigger("Attack");
 
         // Detect enemies in range
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
