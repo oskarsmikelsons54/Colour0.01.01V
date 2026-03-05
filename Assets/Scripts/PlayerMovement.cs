@@ -19,15 +19,30 @@ public class PlayerMovement : MonoBehaviour
     [Header("Jump Settings")]
     [SerializeField] private int maxJumps = 2; // 2 = double jump
 
+    [Header("Animation")]
+    [SerializeField] private Animator animator;
+    [SerializeField] private string walkingParam = "isWalking";
+    private bool isWalking;
+
     void Update()
     {
         // Get horizontal input
         horizontal = Input.GetAxisRaw("Horizontal");
 
+        // Check grounded once and reuse
+        bool grounded = IsGrounded();
+
         // Reset jumps when grounded
-        if (IsGrounded())
+        if (grounded)
         {
             jumpsLeft = maxJumps;
+        }
+
+        // Update walking state for animation (walking only when moving horizontally and grounded)
+        isWalking = horizontal != 0f && grounded;
+        if (animator != null)
+        {
+            animator.SetBool(walkingParam, isWalking);
         }
 
         // Jump (allow if we still have jumps)

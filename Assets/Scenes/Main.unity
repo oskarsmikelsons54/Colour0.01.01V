@@ -226,7 +226,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 3
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -382,7 +382,7 @@ Transform:
   m_GameObject: {fileID: 1161652958}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.3199998, y: -1.03, z: 0}
+  m_LocalPosition: {x: 2.08, y: -1.03, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6450,7 +6450,7 @@ Transform:
   m_GameObject: {fileID: 1993801939}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.98, z: 0}
+  m_LocalPosition: {x: 0, y: -2.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6465,12 +6465,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2133089265}
-  - component: {fileID: 2133089264}
+  - component: {fileID: 2133089269}
   - component: {fileID: 2133089263}
   - component: {fileID: 2133089262}
   - component: {fileID: 2133089267}
   - component: {fileID: 2133089266}
   - component: {fileID: 2133089268}
+  - component: {fileID: 2133089270}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -6539,10 +6540,82 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.09681517, y: -0.97692347}
-  m_Size: {x: 1.6777039, y: 2.0449097}
+  m_Offset: {x: 0.01, y: -1.27}
+  m_Size: {x: 1.6777039, y: 2.68}
   m_Direction: 0
---- !u!212 &2133089264
+--- !u!4 &2133089265
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2133089261}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.15, y: 4.1266, z: 0}
+  m_LocalScale: {x: 0.3819, y: 0.3486365, z: 0.3819}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1993801940}
+  - {fileID: 1161652959}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2133089266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2133089261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0f05c7d16af9a4bbd498d00ad081d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  rb: {fileID: 2133089262}
+  groundCheck: {fileID: 1993801940}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  speed: 6
+  jumpingPower: 16
+  maxJumps: 2
+  animator: {fileID: 2133089270}
+  walkingParam: isWalking
+--- !u!114 &2133089267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2133089261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c50ba4de939e224aa5e5be8f68ca07e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
+  maxHealth: 10
+  health: 0
+--- !u!114 &2133089268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2133089261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdf9aa3a9f8751b478f08d836a0db6c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMeleeAttack
+  attackRange: 0.5
+  attackDamage: 25
+  attackRate: 1
+  attackPoint: {fileID: 1161652959}
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 64
+--- !u!212 &2133089269
 SpriteRenderer:
   serializedVersion: 2
   m_ObjectHideFlags: 0
@@ -6591,85 +6664,38 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: c5e4153cba03be0408eac2ee4551bbb4, type: 3}
+  m_Sprite: {fileID: -5152802150022372168, guid: 8b7c7112ff08fe34495f3d680a81a688, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 2}
+  m_Size: {x: 0.2, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!4 &2133089265
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2133089261}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.15, y: 4.1266, z: 0}
-  m_LocalScale: {x: 0.3819, y: 0.3486365, z: 0.3819}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1993801940}
-  - {fileID: 1161652959}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2133089266
-MonoBehaviour:
+--- !u!95 &2133089270
+Animator:
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2133089261}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d0f05c7d16af9a4bbd498d00ad081d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  rb: {fileID: 2133089262}
-  groundCheck: {fileID: 1993801940}
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 8
-  speed: 6
-  jumpingPower: 16
---- !u!114 &2133089267
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2133089261}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c50ba4de939e224aa5e5be8f68ca07e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
-  maxHealth: 10
-  health: 0
---- !u!114 &2133089268
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2133089261}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fdf9aa3a9f8751b478f08d836a0db6c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerMeleeAttack
-  attackRange: 0.5
-  attackDamage: 25
-  attackRate: 1
-  attackPoint: {fileID: 1161652959}
-  enemyLayers:
-    serializedVersion: 2
-    m_Bits: 64
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 045ed8d5dd637094d837fedc4a7ff02c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

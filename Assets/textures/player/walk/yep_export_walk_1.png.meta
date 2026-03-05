@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2f739ef4a9bd4be44805f6e52b09fae6
+guid: c5e4153cba03be0408eac2ee4551bbb4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8329522101872117928
-    second: yep_export_walk_3_0
+      213: 4320430374720905365
+    second: yep_export_walk_1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -49,9 +49,9 @@ TextureImporter:
   spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
+  alignment: 2
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 12
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: yep_export_walk_3_0
+      name: yep_export_walk_1_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 1
         width: 21
-        height: 32
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 857b521b7c7976c80800000000000000
-      internalID: -8329522101872117928
+      spriteID: 5902c02098045fb30800000000000000
+      internalID: 4320430374720905365
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      yep_export_walk_3_0: -8329522101872117928
+      yep_export_walk_1_0: 4320430374720905365
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
