@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 593304415187029397}
   - component: {fileID: 6176902489185311051}
   - component: {fileID: 1029432499521567582}
+  - component: {fileID: 9022177416630037574}
   m_Layer: 0
   m_Name: atk1
   m_TagString: Untagged
@@ -115,7 +116,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 28f43b35d0980cc49908ab0e30cae4b9, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -160,6 +161,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   sr: {fileID: 0}
   animator: {fileID: 0}
+--- !u!114 &9022177416630037574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685559641252876984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f29178b41b6f6342a68c73c28d489ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AltSwitch
+  targetRenderer: {fileID: 593304415187029397}
+  color1: {r: 0, g: 1, b: 0.108124495, a: 1}
+  color2: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &3542770707482695485
 GameObject:
   m_ObjectHideFlags: 0
@@ -193,8 +209,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.15, y: 4.1266, z: 0}
-  m_LocalScale: {x: 0.3819, y: 0.3486365, z: 0.3819}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.40000004, y: 0.4, z: 0.40000004}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 3706267248922715262}
   - {fileID: 3859098158665553807}
@@ -338,6 +354,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
   maxHealth: 10
   health: 0
+  deathPrefab: {fileID: 3223743072580425877, guid: 522b9bdbc3d2a5a44a2f2eda3b5cef89, type: 3}
 --- !u!114 &4037433973786772848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -360,6 +377,7 @@ MonoBehaviour:
   maxJumps: 1
   animator: {fileID: 52860404213761315}
   walkingParam: isWalking
+  coyoteTime: 0.1
 --- !u!114 &7575362554721777144
 MonoBehaviour:
   m_ObjectHideFlags: 0

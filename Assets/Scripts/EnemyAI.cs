@@ -116,12 +116,14 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
-    // Flip sprite
+    // Flip sprite on the parent transform if present. This avoids flipping only the child that has this script.
     private void Flip(float direction)
     {
-        if (direction > 0)
-            transform.localScale = new Vector3(1, 1, 1);
-        else
-            transform.localScale = new Vector3(-1, 1, 1);
+        Transform target = transform.parent != null ? transform.parent : transform;
+        Vector3 scale = target.localScale;
+        // Invert sign mapping so the visual faces the player when default art orientation differs.
+        float sign = direction > 0 ? -1f : 1f;
+        scale.x = Mathf.Abs(scale.x) * sign;
+        target.localScale = scale;
     }
 }
