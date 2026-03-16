@@ -1,25 +1,33 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
     public int maxHealth = 10;
     public int health;
 
-    // Optional prefab to spawn when the player is destroyed (e.g., death effect or ragdoll)
+    public Slider healthSlider;   // UI slider reference
+
     public GameObject deathPrefab;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         health = maxHealth;
+
+        // Set slider values
+        healthSlider.maxValue = maxHealth;
+        healthSlider.value = health;
     }
 
     public void TakeDamage(int damage)
     {
         health -= damage;
+
+        // Update UI
+        healthSlider.value = health;
+
         if (health <= 0)
         {
-            // Spawn the death prefab at the same position/rotation if provided
             if (deathPrefab != null)
             {
                 Instantiate(deathPrefab, transform.position, transform.rotation);
@@ -28,5 +36,4 @@ public class PlayerHealth : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    
 }
