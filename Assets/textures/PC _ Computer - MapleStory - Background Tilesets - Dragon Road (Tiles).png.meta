@@ -267,6 +267,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -276,8 +289,8 @@ TextureImporter:
         serializedVersion: 2
         x: 12
         y: 259
-        width: 90
-        height: 60
+        width: 1
+        height: 1
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -450,12 +463,12 @@ TextureImporter:
       name: PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_8
       rect:
         serializedVersion: 2
-        x: 121
+        x: 119
         y: 204
         width: 64
         height: 37
-      alignment: 9
-      pivot: {x: 0.5, y: 0.8108108}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -476,8 +489,8 @@ TextureImporter:
         y: 204
         width: 61
         height: 36
-      alignment: 9
-      pivot: {x: 0.5, y: 0.8333333}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -498,8 +511,8 @@ TextureImporter:
         y: 204
         width: 90
         height: 36
-      alignment: 9
-      pivot: {x: 0.5, y: 0.8333333}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -520,8 +533,8 @@ TextureImporter:
         y: 204
         width: 90
         height: 37
-      alignment: 9
-      pivot: {x: 0.5, y: 0.8108108}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -542,8 +555,8 @@ TextureImporter:
         y: 204
         width: 90
         height: 37
-      alignment: 9
-      pivot: {x: 0.5, y: 0.8108108}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -561,11 +574,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 14
-        y: 151
+        y: 152
         width: 90
         height: 32
-      alignment: 9
-      pivot: {x: 0.5, y: 0.0625}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -586,8 +599,8 @@ TextureImporter:
         y: 149
         width: 90
         height: 35
-      alignment: 9
-      pivot: {x: 0.5, y: 0.14285715}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -608,8 +621,8 @@ TextureImporter:
         y: 146
         width: 90
         height: 38
-      alignment: 9
-      pivot: {x: 0.5, y: 0.21052632}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1054,10 +1067,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: cd0199d8eff90ddd0800000000000000
-      internalID: -2463293080525532964
+      spriteID: 53f74641969833e45b3ab4c57f091df9
+      internalID: 1251067934
       vertices: []
       indices: 
       edges: []
@@ -1076,10 +1089,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a9a7391105426c0d0800000000000000
-      internalID: -3402992542120969574
+      spriteID: d5434a64e3142054aa31ea828fccda77
+      internalID: 143276997
       vertices: []
       indices: 
       edges: []
@@ -1098,10 +1111,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e9e094e7ede35f2f0800000000000000
-      internalID: -939775821914501474
+      spriteID: f12542b13308043448f69517f9e8a295
+      internalID: 264174923
       vertices: []
       indices: 
       edges: []
@@ -1120,10 +1133,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ae87ef2eb0d4c6350800000000000000
-      internalID: 6011264316081076458
+      spriteID: d902d2851faf50a4786a9c978ab83f4e
+      internalID: -1145982325
       vertices: []
       indices: 
       edges: []
@@ -1142,10 +1155,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 95953e1cd33691550800000000000000
-      internalID: 6132041484538698073
+      spriteID: 35c597129857add4a8be030777c2a1b5
+      internalID: -902337333
       vertices: []
       indices: 
       edges: []
@@ -1164,10 +1177,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1888d38fc39ba4740800000000000000
-      internalID: 5137121996483430529
+      spriteID: 806960adb4537fc498f5fcba7b4701cc
+      internalID: -921327167
       vertices: []
       indices: 
       edges: []
@@ -1186,10 +1199,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6186efeb5265d8810800000000000000
-      internalID: 1769164948744595478
+      spriteID: 19154ebe4d8a6d340b93d642733aecf8
+      internalID: 999916854
       vertices: []
       indices: 
       edges: []
@@ -1208,10 +1221,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c6ba12ea5e2556d70800000000000000
-      internalID: 9035719373811198828
+      spriteID: 5b30326fce0db6d4ab5615f0def27daf
+      internalID: 1000179402
       vertices: []
       indices: 
       edges: []
@@ -1230,10 +1243,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ec6a79176749dcdf0800000000000000
-      internalID: -158307175455283506
+      spriteID: c586f44c7b59a4b4ca7ad7b29240bb80
+      internalID: -1778878082
       vertices: []
       indices: 
       edges: []
@@ -1252,10 +1265,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f2b15596b3b4fd2d0800000000000000
-      internalID: -3251797687395869905
+      spriteID: 14648ef231d8a1d46aeaf2c67a3078f8
+      internalID: -1912832057
       vertices: []
       indices: 
       edges: []
@@ -1274,10 +1287,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 49f80186df5fc7a60800000000000000
-      internalID: 7673278333853929364
+      spriteID: 594a26314c4526b40a01d39c237aa0f3
+      internalID: 936044943
       vertices: []
       indices: 
       edges: []
@@ -1296,10 +1309,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a0410c940ec7199d0800000000000000
-      internalID: -2769294993104301046
+      spriteID: f60b729ae266edd49a2a38c2542f3652
+      internalID: 1603414213
       vertices: []
       indices: 
       edges: []
@@ -1318,10 +1331,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 76e7e927e49afaf00800000000000000
-      internalID: 1130308185888816743
+      spriteID: 9559fccdb5da6ea48b57763ec8d6a152
+      internalID: -1516250902
       vertices: []
       indices: 
       edges: []
@@ -1340,10 +1353,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f83f915c009d4efc0800000000000000
-      internalID: -3466407215838399601
+      spriteID: 1cc5400fba315e34197cb37324eeaf3e
+      internalID: -382723343
       vertices: []
       indices: 
       edges: []
@@ -1362,10 +1375,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5596e8865df362230800000000000000
-      internalID: 3613645936826149205
+      spriteID: 0faf4d00dbacaa242a48b8c6ebfe7c04
+      internalID: 732091569
       vertices: []
       indices: 
       edges: []
@@ -1384,10 +1397,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: cc0406a652feac540800000000000000
-      internalID: 5029094877890101452
+      spriteID: b1ad7aa8115c8684c958a5521a0e0aa8
+      internalID: 647457347
       vertices: []
       indices: 
       edges: []
@@ -1406,10 +1419,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6b806df4f7fbcc5b0800000000000000
-      internalID: -5346688104074442570
+      spriteID: 59668a83208ac034b80188fe05bb251b
+      internalID: 1304088476
       vertices: []
       indices: 
       edges: []
@@ -1428,10 +1441,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5cd8d5b9088104110800000000000000
-      internalID: 1243020437795737029
+      spriteID: dce5df6a5bd91d040b24a20b24af6531
+      internalID: -604572882
       vertices: []
       indices: 
       edges: []
@@ -1444,16 +1457,16 @@ TextureImporter:
         y: 69
         width: 90
         height: 36
-      alignment: 9
-      pivot: {x: 0.5, y: 0.8333333}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: adb974b752a7c42d0800000000000000
-      internalID: -3293122926114006054
+      spriteID: adc0b4d297429db4baef950e2e7fc39e
+      internalID: 178837910
       vertices: []
       indices: 
       edges: []
@@ -1472,10 +1485,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 210317d5f9b732c80800000000000000
-      internalID: -8348693359817052142
+      spriteID: 1d56fe0296ff4bf4587ab252e66bc01a
+      internalID: 140862979
       vertices: []
       indices: 
       edges: []
@@ -1488,16 +1501,16 @@ TextureImporter:
         y: 8
         width: 90
         height: 95
-      alignment: 9
-      pivot: {x: 0.5, y: 0.31578946}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b2a9fc0ab06defc10800000000000000
-      internalID: 2089342622577433131
+      spriteID: fa51e819f1f79b84da478318159540d9
+      internalID: -636760388
       vertices: []
       indices: 
       edges: []
@@ -1510,16 +1523,16 @@ TextureImporter:
         y: 22
         width: 90
         height: 81
-      alignment: 9
+      alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 53925d06953fb8a80800000000000000
-      internalID: -8463403509510493899
+      spriteID: 5ac32d035b1414a44a9630cb7a6c7b1f
+      internalID: -406723897
       vertices: []
       indices: 
       edges: []
@@ -1532,16 +1545,16 @@ TextureImporter:
         y: 8
         width: 90
         height: 95
-      alignment: 9
-      pivot: {x: 0.5, y: 0.31578946}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 29c9defac1d2db910800000000000000
-      internalID: 1854688222780431506
+      spriteID: f55e6dcf19d596c4a9297fa22b6d6347
+      internalID: -1268249358
       vertices: []
       indices: 
       edges: []
@@ -1560,7 +1573,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":66.0,"y":66.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_0: 7779824313162632190
       PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_1: -6637413236878079831
@@ -1591,31 +1604,31 @@ TextureImporter:
       PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_32: -1585708077494779373
       PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_33: 8585503392207295521
       PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_34: 4529016812902844708
-      PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_35: -2463293080525532964
-      PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_36: -3402992542120969574
-      PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_37: -939775821914501474
-      PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_38: 6011264316081076458
-      PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_39: 6132041484538698073
+      PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_35: 1251067934
+      PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_36: 143276997
+      PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_37: 264174923
+      PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_38: -1145982325
+      PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_39: -902337333
       PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_4: 4442052636450723371
-      PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_40: 5137121996483430529
-      PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_41: 1769164948744595478
-      PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_42: 9035719373811198828
-      PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_43: -158307175455283506
-      PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_44: -3251797687395869905
-      PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_45: 7673278333853929364
-      PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_46: -2769294993104301046
-      PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_47: 1130308185888816743
-      PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_48: -3466407215838399601
-      PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_49: 3613645936826149205
+      PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_40: -921327167
+      PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_41: 999916854
+      PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_42: 1000179402
+      PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_43: -1778878082
+      PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_44: -1912832057
+      PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_45: 936044943
+      PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_46: 1603414213
+      PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_47: -1516250902
+      PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_48: -382723343
+      PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_49: 732091569
       PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_5: -233272983389758318
-      PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_50: 5029094877890101452
-      PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_51: -5346688104074442570
-      PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_52: 1243020437795737029
-      PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_53: -3293122926114006054
-      PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_54: -8348693359817052142
-      PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_55: 2089342622577433131
-      PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_56: -8463403509510493899
-      PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_57: 1854688222780431506
+      PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_50: 647457347
+      PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_51: 1304088476
+      PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_52: -604572882
+      PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_53: 178837910
+      PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_54: 140862979
+      PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_55: -636760388
+      PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_56: -406723897
+      PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_57: -1268249358
       PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_6: 370817262264502027
       PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_7: -3728838903178715161
       PC _ Computer - MapleStory - Background Tilesets - Dragon Road (Tiles)_8: -3809094936742322446
