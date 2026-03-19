@@ -19,6 +19,11 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private Transform wallCheck;
     [SerializeField] private float wallCheckDistance = 0.5f;
 
+    [Header("Animation")]
+    [SerializeField] private Animator animator;
+    [SerializeField] private string walkingParam = "isWalking";
+    private bool isWalking;
+
     private bool isGrounded;
 
     // Cached intent to avoid modifying physics in Update
@@ -31,6 +36,12 @@ public class EnemyAI : MonoBehaviour
         if (rb != null)
         {
             rb.interpolation = RigidbodyInterpolation2D.Interpolate;
+        }
+
+        // If animator not assigned on child, try to find it on parent (visual is often on parent)
+        if (animator == null)
+        {
+            animator = GetComponentInParent<Animator>();
         }
     }
 
@@ -55,6 +66,19 @@ public class EnemyAI : MonoBehaviour
         {
             shouldFollow = false;
             followDirection = 0f;
+        }
+
+        // Update walking state for animation: walking when following, grounded and moving horizontally
+        bool newIsWalking = shouldFollow && isGrounded && followDirection != 0f;
+        if (newIsWalking != isWalking)
+        {
+            isWalking = newIsWalking;
+            if (animator != null)
+            {
+                // Only update animator when value changes
+                if (animator.GetBool(walkingParam) != isWalking)
+                    animator.SetBool(walkingParam, isWalking);
+            }
         }
     }
 

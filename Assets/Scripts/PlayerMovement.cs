@@ -33,6 +33,11 @@ public class PlayerMovement : MonoBehaviour
     private bool jumpPressed = false;
     private bool jumpReleased = false;
 
+    // Input buffer so a jump press slightly before FixedUpdate or landing is still applied
+    [Header("Input Buffering")]
+    [SerializeField] private float jumpBufferTime = 0.12f;
+    private float lastJumpPressedTime = -10f;
+
     // Whether the current requested jump was triggered by coyote time
     private bool coyoteJumpRequested = false;
 
@@ -46,6 +51,15 @@ public class PlayerMovement : MonoBehaviour
         if (rb != null)
         {
             rb.interpolation = RigidbodyInterpolation2D.Interpolate;
+        }
+
+        // Initialize jumps so spawning in air still has expected jumps
+        jumpsLeft = maxJumps;
+
+        // If starting grounded, set lastGroundedTime so coyote behaves correctly
+        if (IsGrounded())
+        {
+            lastGroundedTime = Time.time;
         }
     }
 
@@ -74,33 +88,10 @@ public class PlayerMovement : MonoBehaviour
         // Sample jump input here, but do not modify the Rigidbody directly in Update
         if (Input.GetButtonDown("Jump"))
         {
-            bool canJump = false;
-            bool requestCoyote = false;
-
-            // Allow jump if grounded
-            if (grounded)
-            {
-                canJump = true;
-                requestCoyote = false;
-            }
-            // Allow jump if within coyote time after leaving ground; mark it as a coyote jump
-            else if (Time.time - lastGroundedTime <= coyoteTime)
-            {
-                canJump = true;
-                requestCoyote = true;
-            }
-            // Allow jump if we have remaining air jumps
-            else if (jumpsLeft > 0)
-            {
-                canJump = true;
-                requestCoyote = false;
-            }
-
-            if (canJump)
-            {
-                jumpPressed = true;
-                coyoteJumpRequested = requestCoyote;
-            }
+            // Record the time of the press for buffering
+            lastJumpPressedTime = Time.time;
+            // Also set jumpPressed flag for immediate application path
+            jumpPressed = true;
         }
 
         // Short jump if releasing early - sample the release in Update and timestamp it
@@ -117,30 +108,44 @@ public class PlayerMovement : MonoBehaviour
     {
         if (rb == null) return;
 
-        // Handle jump application inside FixedUpdate (physics step)
-        if (jumpPressed)
+        // Determine if there's a pending jump input (immediate flag or buffered recent press)
+        bool bufferedJump = (Time.time - lastJumpPressedTime) <= jumpBufferTime;
+        bool shouldAttemptJump = jumpPressed || bufferedJump;
+
+        if (shouldAttemptJump)
         {
-            if (coyoteJumpRequested)
+            // Re-evaluate grounded and coyote at physics step
+            bool grounded = IsGrounded();
+            bool coyoteNow = !grounded && (Time.time - lastGroundedTime) <= coyoteTime;
+
+            if (grounded || coyoteNow || jumpsLeft > 0)
             {
-                // Apply jump for coyote without consuming an air jump
-                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpingPower);
-                // Do not decrement jumpsLeft so mid-air jumps remain available
+                if (coyoteNow && !grounded)
+                {
+                    // Apply coyote jump without consuming an air jump
+                    rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpingPower);
+                }
+                else if (grounded)
+                {
+                    rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpingPower);
+                }
+                else
+                {
+                    // Mid-air jump consumes one jump
+                    rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpingPower);
+                    jumpsLeft--;
+                }
+
+                // Record application and clear input markers
+                lastJumpAppliedTime = Time.time;
                 jumpPressed = false;
+                lastJumpPressedTime = -10f;
                 coyoteJumpRequested = false;
-                lastJumpAppliedTime = Time.time;
-            }
-            else if (jumpsLeft > 0)
-            {
-                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpingPower);
-                jumpsLeft--;
-                jumpPressed = false;
-                lastJumpAppliedTime = Time.time;
             }
             else
             {
-                // No jump performed; clear the request
-                jumpPressed = false;
-                coyoteJumpRequested = false;
+                // Could not jump now; keep buffered input until it expires
+                jumpPressed = false; // clear immediate flag so we rely on buffer
             }
         }
 
