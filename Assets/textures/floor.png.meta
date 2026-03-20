@@ -1,11 +1,10 @@
 fileFormatVersion: 2
-guid: 50b40be43a1ff924992deeb44a615989
+guid: bd8c97cb817f4654b95279b22721c24c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -718358839422719356
-    second: Game Boy Advance - Game & Watch Gallery 4 _ Game & Watch Gallery Advance
-      - Modern Games - Donkey Kong Jr. (Modern)_0
+      213: -4373184736405950995
+    second: floor_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -47,13 +46,13 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 9
-  spritePivot: {x: 0.25378788, y: 0.64724576}
-  spritePixelsToUnits: 100
-  spriteBorder: {x: 8, y: 528, z: 264, w: 256}
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -101,24 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Game Boy Advance - Game & Watch Gallery 4 _ Game & Watch Gallery Advance
-        - Modern Games - Donkey Kong Jr. (Modern)_0
+      name: floor_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 528
-        width: 256
-        height: 160
+        x: 0
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 48a62fa0170e706f0800000000000000
-      internalID: -718358839422719356
+      spriteID: dedec5107a35f43c0800000000000000
+      internalID: -4373184736405950995
       vertices: []
       indices: 
       edges: []
@@ -128,7 +126,7 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 1537655665
+    internalID: 0
     vertices: []
     indices: 
     edges: []
@@ -137,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Game Boy Advance - Game & Watch Gallery 4 _ Game & Watch Gallery Advance - Modern Games - Donkey Kong Jr. (Modern)_0: -718358839422719356
+      floor_0: -4373184736405950995
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
