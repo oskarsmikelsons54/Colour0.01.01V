@@ -1,97 +1,97 @@
 fileFormatVersion: 2
-guid: 07054b53bde53b54f974debe1327a85b
+guid: 0eafd5601efdb984ca269490fe6d9b36
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4852447241722825888
-    second: mech_walk_0
+      213: 8755953395345351177
+    second: real_mech_export_walk_0
   - first:
-      213: -977297861817109365
-    second: mech_walk_1
+      213: 1193127511543810708
+    second: real_mech_export_walk_1
   - first:
-      213: -844861896873370074
-    second: mech_walk_2
+      213: 3787090568609261909
+    second: real_mech_export_walk_2
   - first:
-      213: 5513295585423754387
-    second: mech_walk_3
+      213: 4063571939321778093
+    second: real_mech_export_walk_3
   - first:
-      213: 4854913278664511837
-    second: mech_walk_4
+      213: -5458601898480200194
+    second: real_mech_export_walk_4
   - first:
-      213: -8736778169262326159
-    second: mech_walk_5
+      213: 3962704508085533831
+    second: real_mech_export_walk_5
   - first:
-      213: -7456273318113740024
-    second: mech_walk_6
+      213: -3265368679995439658
+    second: real_mech_export_walk_6
   - first:
-      213: -4138830430946293156
-    second: mech_walk_7
+      213: 2082031703939051254
+    second: real_mech_export_walk_7
   - first:
-      213: -5419968861963438790
-    second: mech_walk_8
+      213: 8229062031707862367
+    second: real_mech_export_walk_8
   - first:
-      213: -7345251688168555963
-    second: mech_walk_9
+      213: -6415152365051890356
+    second: real_mech_export_walk_9
   - first:
-      213: -3388250813597824939
-    second: mech_walk_10
+      213: 2207432973867351945
+    second: real_mech_export_walk_10
   - first:
-      213: 7841432595919077846
-    second: mech_walk_11
+      213: -1973543103175358870
+    second: real_mech_export_walk_11
   - first:
-      213: -3956249925670548688
-    second: mech_walk_12
+      213: 6437681546784332393
+    second: real_mech_export_walk_12
   - first:
-      213: 6420291097452456364
-    second: mech_walk_13
+      213: -6016791555092882582
+    second: real_mech_export_walk_13
   - first:
-      213: 8471085762632429961
-    second: mech_walk_14
+      213: -476489519465450951
+    second: real_mech_export_walk_14
   - first:
-      213: 8898065942003024552
-    second: mech_walk_15
+      213: -1193837624263920497
+    second: real_mech_export_walk_15
   - first:
-      213: 4758370414124350543
-    second: mech_walk_16
+      213: 950664863153041327
+    second: real_mech_export_walk_16
   - first:
-      213: 4772497215322432348
-    second: mech_walk_17
+      213: 6125664388962095979
+    second: real_mech_export_walk_17
   - first:
-      213: -6637772442797007049
-    second: mech_walk_18
+      213: 2737834490549755883
+    second: real_mech_export_walk_18
   - first:
-      213: 934391294635110673
-    second: mech_walk_19
+      213: -911762601610272088
+    second: real_mech_export_walk_19
   - first:
-      213: -510282513850579051
-    second: mech_walk_20
+      213: 1963454729070649603
+    second: real_mech_export_walk_20
   - first:
-      213: 7524329240073270417
-    second: mech_walk_21
+      213: -4340349018732724091
+    second: real_mech_export_walk_21
   - first:
-      213: -151081108699572091
-    second: mech_walk_22
+      213: -8628286289538663368
+    second: real_mech_export_walk_22
   - first:
-      213: 3926997947573972923
-    second: mech_walk_23
+      213: -1424293117124939599
+    second: real_mech_export_walk_23
   - first:
-      213: -8111142900927891329
-    second: mech_walk_24
+      213: -4599895574675935768
+    second: real_mech_export_walk_24
   - first:
-      213: 717560478985704943
-    second: mech_walk_25
+      213: 3116381179391741798
+    second: real_mech_export_walk_25
   - first:
-      213: 936138165819674275
-    second: mech_walk_26
+      213: -8677101799055564388
+    second: real_mech_export_walk_26
   - first:
-      213: -6689035542525994946
-    second: mech_walk_27
+      213: 3440478921873363044
+    second: real_mech_export_walk_27
   - first:
-      213: 6690579379040985632
-    second: mech_walk_28
+      213: 5159986633488595581
+    second: real_mech_export_walk_28
   - first:
-      213: -5538047849648368916
-    second: mech_walk_29
+      213: 6536807449834556055
+    second: real_mech_export_walk_29
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -187,661 +187,661 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: mech_walk_0
+      name: real_mech_export_walk_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1040
-        width: 335
-        height: 247
+        x: 8
+        y: 1037
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0ac86369e0b575340800000000000000
-      internalID: 4852447241722825888
+      spriteID: 9026f67d835638970800000000000000
+      internalID: 8755953395345351177
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_walk_1
+      name: real_mech_export_walk_1
       rect:
         serializedVersion: 2
-        x: 345
-        y: 1040
-        width: 329
-        height: 247
+        x: 349
+        y: 1037
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b8474aac5c0ff62f0800000000000000
-      internalID: -977297861817109365
+      spriteID: 49a80597627de8010800000000000000
+      internalID: 1193127511543810708
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_walk_2
+      name: real_mech_export_walk_2
       rect:
         serializedVersion: 2
-        x: 691
-        y: 1040
-        width: 320
-        height: 248
+        x: 690
+        y: 1037
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 62e9990c4927644f0800000000000000
-      internalID: -844861896873370074
+      spriteID: 559ef2aaec27e8430800000000000000
+      internalID: 3787090568609261909
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_walk_3
+      name: real_mech_export_walk_3
       rect:
         serializedVersion: 2
-        x: 1041
-        y: 1040
-        width: 304
-        height: 248
+        x: 1031
+        y: 1037
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 39489eecf19238c40800000000000000
-      internalID: 5513295585423754387
+      spriteID: daf058a2625b46830800000000000000
+      internalID: 4063571939321778093
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_walk_4
+      name: real_mech_export_walk_4
       rect:
         serializedVersion: 2
-        x: 1395
-        y: 1040
-        width: 280
-        height: 249
+        x: 1372
+        y: 1037
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d51102e87ed106340800000000000000
-      internalID: 4854913278664511837
+      spriteID: ef590d68e762f34b0800000000000000
+      internalID: -5458601898480200194
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_walk_5
+      name: real_mech_export_walk_5
       rect:
         serializedVersion: 2
-        x: 1748
-        y: 1040
-        width: 258
-        height: 250
+        x: 1713
+        y: 1037
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 17e3bb36b8ab0c680800000000000000
-      internalID: -8736778169262326159
+      spriteID: 78cf64a31ca5ef630800000000000000
+      internalID: 3962704508085533831
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_walk_6
+      name: real_mech_export_walk_6
       rect:
         serializedVersion: 2
-        x: 53
-        y: 783
-        width: 236
-        height: 249
+        x: 8
+        y: 780
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 80b7b951ceef58890800000000000000
-      internalID: -7456273318113740024
+      spriteID: 6d58f287c741fa2d0800000000000000
+      internalID: -3265368679995439658
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_walk_7
+      name: real_mech_export_walk_7
       rect:
         serializedVersion: 2
-        x: 410
-        y: 783
-        width: 219
-        height: 249
+        x: 349
+        y: 780
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c5a8ed9c6abef86c0800000000000000
-      internalID: -4138830430946293156
+      spriteID: 6fe636cbdccd4ec10800000000000000
+      internalID: 2082031703939051254
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_walk_8
+      name: real_mech_export_walk_8
       rect:
         serializedVersion: 2
-        x: 766
-        y: 783
-        width: 204
-        height: 249
+        x: 690
+        y: 780
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a35bdf8490768c4b0800000000000000
-      internalID: -5419968861963438790
+      spriteID: f55f9928150833270800000000000000
+      internalID: 8229062031707862367
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_walk_9
+      name: real_mech_export_walk_9
       rect:
         serializedVersion: 2
-        x: 1112
-        y: 783
-        width: 195
-        height: 249
+        x: 1031
+        y: 780
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 54affd4a18c601a90800000000000000
-      internalID: -7345251688168555963
+      spriteID: c453315b9ecc8f6a0800000000000000
+      internalID: -6415152365051890356
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_walk_10
+      name: real_mech_export_walk_10
       rect:
         serializedVersion: 2
-        x: 1442
-        y: 783
-        width: 200
-        height: 248
+        x: 1372
+        y: 780
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 558c29536d38af0d0800000000000000
-      internalID: -3388250813597824939
+      spriteID: 98ff8d0289062ae10800000000000000
+      internalID: 2207432973867351945
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_walk_11
+      name: real_mech_export_walk_11
       rect:
         serializedVersion: 2
-        x: 1771
-        y: 783
-        width: 212
-        height: 247
+        x: 1713
+        y: 780
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6d10de9766d52dc60800000000000000
-      internalID: 7841432595919077846
+      spriteID: a668f4201019c94e0800000000000000
+      internalID: -1973543103175358870
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_walk_12
+      name: real_mech_export_walk_12
       rect:
         serializedVersion: 2
-        x: 50
-        y: 524
-        width: 234
-        height: 248
-      alignment: 7
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 03bcdb957a39819c0800000000000000
-      internalID: -3956249925670548688
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mech_walk_13
-      rect:
-        serializedVersion: 2
-        x: 385
+        x: 8
         y: 523
-        width: 248
-        height: 249
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ca9a14aacb4791950800000000000000
-      internalID: 6420291097452456364
+      spriteID: 96ada2d224d375950800000000000000
+      internalID: 6437681546784332393
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_walk_14
+      name: real_mech_export_walk_13
       rect:
         serializedVersion: 2
-        x: 720
+        x: 349
         y: 523
-        width: 262
-        height: 248
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 981339f8e975f8570800000000000000
-      internalID: 8471085762632429961
+      spriteID: a6b5e1f75ff008ca0800000000000000
+      internalID: -6016791555092882582
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_walk_15
+      name: real_mech_export_walk_14
       rect:
         serializedVersion: 2
-        x: 1060
-        y: 524
-        width: 266
-        height: 247
+        x: 690
+        y: 523
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8a2871d84d74c7b70800000000000000
-      internalID: 8898065942003024552
+      spriteID: 932b01d7e4b2369f0800000000000000
+      internalID: -476489519465450951
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_walk_16
+      name: real_mech_export_walk_15
       rect:
         serializedVersion: 2
-        x: 1405
-        y: 524
-        width: 260
-        height: 247
+        x: 1031
+        y: 523
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f4c3c934ea0290240800000000000000
-      internalID: 4758370414124350543
+      spriteID: f84b0468103ae6fe0800000000000000
+      internalID: -1193837624263920497
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_walk_17
+      name: real_mech_export_walk_16
       rect:
         serializedVersion: 2
-        x: 1752
-        y: 524
-        width: 250
-        height: 248
+        x: 1372
+        y: 523
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c53a5da7ee05b3240800000000000000
-      internalID: 4772497215322432348
+      spriteID: fafaeacf7a0713d00800000000000000
+      internalID: 950664863153041327
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_walk_18
+      name: real_mech_export_walk_17
       rect:
         serializedVersion: 2
-        x: 50
-        y: 267
-        width: 234
-        height: 246
+        x: 1713
+        y: 523
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 73f1537b125e1e3a0800000000000000
-      internalID: -6637772442797007049
+      spriteID: b63985d7e4bb20550800000000000000
+      internalID: 6125664388962095979
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_walk_19
+      name: real_mech_export_walk_18
       rect:
         serializedVersion: 2
-        x: 404
-        y: 267
-        width: 210
-        height: 247
+        x: 8
+        y: 266
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 11171fd8eef97fc00800000000000000
-      internalID: 934391294635110673
+      spriteID: befd707a6fdbef520800000000000000
+      internalID: 2737834490549755883
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_walk_20
+      name: real_mech_export_walk_19
       rect:
         serializedVersion: 2
-        x: 757
-        y: 267
-        width: 193
-        height: 248
+        x: 349
+        y: 266
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 597c7dad1cc1be8f0800000000000000
-      internalID: -510282513850579051
+      spriteID: 8a2a88b9eb4c853f0800000000000000
+      internalID: -911762601610272088
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_walk_21
+      name: real_mech_export_walk_20
       rect:
         serializedVersion: 2
-        x: 1112
-        y: 267
-        width: 186
-        height: 249
+        x: 690
+        y: 266
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 194f6a70499cb6860800000000000000
-      internalID: 7524329240073270417
+      spriteID: e507cbadd525cd64baecc3a783787f36
+      internalID: 1963454729070649603
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_walk_22
+      name: real_mech_export_walk_21
       rect:
         serializedVersion: 2
-        x: 1451
-        y: 267
-        width: 192
-        height: 249
+        x: 1031
+        y: 266
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 58890b7388047edf0800000000000000
-      internalID: -151081108699572091
+      spriteID: d52f885462b044e42afd237599128b10
+      internalID: -4340349018732724091
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_walk_23
+      name: real_mech_export_walk_22
       rect:
         serializedVersion: 2
-        x: 1777
-        y: 267
-        width: 212
-        height: 249
+        x: 1372
+        y: 266
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: bbfa5d2c3df7f7630800000000000000
-      internalID: 3926997947573972923
+      spriteID: 75c496a1b3d09e14ca1c498f7dfdc575
+      internalID: -8628286289538663368
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_walk_24
+      name: real_mech_export_walk_23
       rect:
         serializedVersion: 2
-        x: 53
-        y: 8
-        width: 229
-        height: 251
+        x: 1713
+        y: 266
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f78f2cb918e6f6f80800000000000000
-      internalID: -8111142900927891329
+      spriteID: 8ad70d5ecc2bcf5418e15096fff92727
+      internalID: -1424293117124939599
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_walk_25
+      name: real_mech_export_walk_24
       rect:
         serializedVersion: 2
-        x: 381
-        y: 8
-        width: 256
-        height: 250
+        x: 8
+        y: 9
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: fe55dce247945f900800000000000000
-      internalID: 717560478985704943
+      spriteID: ce63323e8e15a8747a56baa88c8a6994
+      internalID: -4599895574675935768
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_walk_26
+      name: real_mech_export_walk_25
       rect:
         serializedVersion: 2
-        x: 710
-        y: 8
-        width: 282
-        height: 249
+        x: 349
+        y: 9
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3ae0e52b3b4ddfc00800000000000000
-      internalID: 936138165819674275
+      spriteID: 86ae26c8745d3644fbe5ef64a46a7c20
+      internalID: 3116381179391741798
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_walk_27
+      name: real_mech_export_walk_26
       rect:
         serializedVersion: 2
-        x: 1041
-        y: 8
-        width: 304
-        height: 248
+        x: 690
+        y: 9
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e3896c53d95cb23a0800000000000000
-      internalID: -6689035542525994946
+      spriteID: f0993d1c8390b204ab7e998095f1769c
+      internalID: -8677101799055564388
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_walk_28
+      name: real_mech_export_walk_27
       rect:
         serializedVersion: 2
-        x: 1376
-        y: 8
-        width: 318
-        height: 248
+        x: 1031
+        y: 9
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 022aa4d3f76b9dc50800000000000000
-      internalID: 6690579379040985632
+      spriteID: 120f2ef0d58d5f94da91a4ad760207dc
+      internalID: 3440478921873363044
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_walk_29
+      name: real_mech_export_walk_28
       rect:
         serializedVersion: 2
-        x: 1712
-        y: 8
-        width: 331
-        height: 247
+        x: 1372
+        y: 9
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ce2d79492d6e423b0800000000000000
-      internalID: -5538047849648368916
+      spriteID: 36750bc58c52404449aa9721fc5e6ceb
+      internalID: 5159986633488595581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: real_mech_export_walk_29
+      rect:
+        serializedVersion: 2
+        x: 1713
+        y: 9
+        width: 337
+        height: 253
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42bb6291ce36905428d6721501006aef
+      internalID: 6536807449834556055
       vertices: []
       indices: 
       edges: []
@@ -850,7 +850,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 8307c1e7bc892f34bba88b26fddc4c34
+    spriteID: 61137e496e81c6e45837acf4a5150899
     internalID: 0
     vertices: []
     indices: 
@@ -860,38 +860,38 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":1,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":337.0,"y":253.0},"gridSpriteOffset":{"x":8.0,"y":8.0},"gridSpritePadding":{"x":4.0,"y":4.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":1,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      mech_walk_0: 4852447241722825888
-      mech_walk_1: -977297861817109365
-      mech_walk_10: -3388250813597824939
-      mech_walk_11: 7841432595919077846
-      mech_walk_12: -3956249925670548688
-      mech_walk_13: 6420291097452456364
-      mech_walk_14: 8471085762632429961
-      mech_walk_15: 8898065942003024552
-      mech_walk_16: 4758370414124350543
-      mech_walk_17: 4772497215322432348
-      mech_walk_18: -6637772442797007049
-      mech_walk_19: 934391294635110673
-      mech_walk_2: -844861896873370074
-      mech_walk_20: -510282513850579051
-      mech_walk_21: 7524329240073270417
-      mech_walk_22: -151081108699572091
-      mech_walk_23: 3926997947573972923
-      mech_walk_24: -8111142900927891329
-      mech_walk_25: 717560478985704943
-      mech_walk_26: 936138165819674275
-      mech_walk_27: -6689035542525994946
-      mech_walk_28: 6690579379040985632
-      mech_walk_29: -5538047849648368916
-      mech_walk_3: 5513295585423754387
-      mech_walk_4: 4854913278664511837
-      mech_walk_5: -8736778169262326159
-      mech_walk_6: -7456273318113740024
-      mech_walk_7: -4138830430946293156
-      mech_walk_8: -5419968861963438790
-      mech_walk_9: -7345251688168555963
+      real_mech_export_walk_0: 8755953395345351177
+      real_mech_export_walk_1: 1193127511543810708
+      real_mech_export_walk_10: 2207432973867351945
+      real_mech_export_walk_11: -1973543103175358870
+      real_mech_export_walk_12: 6437681546784332393
+      real_mech_export_walk_13: -6016791555092882582
+      real_mech_export_walk_14: -476489519465450951
+      real_mech_export_walk_15: -1193837624263920497
+      real_mech_export_walk_16: 950664863153041327
+      real_mech_export_walk_17: 6125664388962095979
+      real_mech_export_walk_18: 2737834490549755883
+      real_mech_export_walk_19: -911762601610272088
+      real_mech_export_walk_2: 3787090568609261909
+      real_mech_export_walk_20: 1963454729070649603
+      real_mech_export_walk_21: -4340349018732724091
+      real_mech_export_walk_22: -8628286289538663368
+      real_mech_export_walk_23: -1424293117124939599
+      real_mech_export_walk_24: -4599895574675935768
+      real_mech_export_walk_25: 3116381179391741798
+      real_mech_export_walk_26: -8677101799055564388
+      real_mech_export_walk_27: 3440478921873363044
+      real_mech_export_walk_28: 5159986633488595581
+      real_mech_export_walk_29: 6536807449834556055
+      real_mech_export_walk_3: 4063571939321778093
+      real_mech_export_walk_4: -5458601898480200194
+      real_mech_export_walk_5: 3962704508085533831
+      real_mech_export_walk_6: -3265368679995439658
+      real_mech_export_walk_7: 2082031703939051254
+      real_mech_export_walk_8: 8229062031707862367
+      real_mech_export_walk_9: -6415152365051890356
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

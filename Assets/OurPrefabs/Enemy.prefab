@@ -120,12 +120,12 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -5366246198297803592, guid: c857284777006ac4c914a1c0e81c9a7c, type: 3}
+  m_Sprite: {fileID: -6607071007810862656, guid: 9a073761c9162ff40895d55a5f02a980, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.0107582, y: 2.47}
+  m_Size: {x: 2.5133548, y: 3.0875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -145,7 +145,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 3
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -205,8 +205,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.016388891, y: 2.085259}
-  m_Size: {x: 3.3829484, y: 4.1305175}
+  m_Offset: {x: 0.3, y: 2.1}
+  m_Size: {x: 3, y: 4}
   m_Direction: 0
 --- !u!114 &2504948952992805141
 MonoBehaviour:
@@ -295,7 +295,7 @@ MonoBehaviour:
     m_Bits: 8
   player: {fileID: 0}
   speed: 2
-  jumpForce: 8
+  jumpForce: 14
   followRange: 7.5
   wallCheck: {fileID: 5770737472055250186}
   wallCheckDistance: 0.5
@@ -326,7 +326,7 @@ Transform:
   m_GameObject: {fileID: 8065073922533113666}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.14, y: 1.81, z: 0}
+  m_LocalPosition: {x: -2.43, y: 1.81, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []

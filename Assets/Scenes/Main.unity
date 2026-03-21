@@ -10151,18 +10151,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7772582320411706104, guid: 5e9a6020391df124b95c5dfd2e3257bf, type: 3}
-      propertyPath: m_Color.b
-      value: 0.75519824
-      objectReference: {fileID: 0}
-    - target: {fileID: 7772582320411706104, guid: 5e9a6020391df124b95c5dfd2e3257bf, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7772582320411706104, guid: 5e9a6020391df124b95c5dfd2e3257bf, type: 3}
-      propertyPath: m_Color.r
-      value: 0.7012578
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10224,6 +10212,10 @@ PrefabInstance:
       propertyPath: healthSlider
       value: 
       objectReference: {fileID: 1236201746}
+    - target: {fileID: 6809730749298800959, guid: 537bf453e79710e4baaddb5e377e8b12, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

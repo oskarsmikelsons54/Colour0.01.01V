@@ -1,97 +1,97 @@
 fileFormatVersion: 2
-guid: c857284777006ac4c914a1c0e81c9a7c
+guid: 9a073761c9162ff40895d55a5f02a980
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5366246198297803592
-    second: mech_idle_0
+      213: -6607071007810862656
+    second: real_mech_export_idle_0
   - first:
-      213: -1227943438056419058
-    second: mech_idle_1
+      213: -6178817662430754003
+    second: real_mech_export_idle_1
   - first:
-      213: -623564615605029930
-    second: mech_idle_2
+      213: 491060385614117937
+    second: real_mech_export_idle_2
   - first:
-      213: -9108396333238039043
-    second: mech_idle_3
+      213: -7148703743607431354
+    second: real_mech_export_idle_3
   - first:
-      213: 2462296104033715503
-    second: mech_idle_4
+      213: 6809953064572036948
+    second: real_mech_export_idle_4
   - first:
-      213: -5203270370430122580
-    second: mech_idle_5
+      213: 3137628892737476047
+    second: real_mech_export_idle_5
   - first:
-      213: -5423986462685698274
-    second: mech_idle_6
+      213: -2838820701471402660
+    second: real_mech_export_idle_6
   - first:
-      213: -2880577163743797029
-    second: mech_idle_7
+      213: 1296262257429202737
+    second: real_mech_export_idle_7
   - first:
-      213: 563602355505105100
-    second: mech_idle_8
+      213: 8210410000697037433
+    second: real_mech_export_idle_8
   - first:
-      213: -4117264716607947157
-    second: mech_idle_9
+      213: 3625379675615236607
+    second: real_mech_export_idle_9
   - first:
-      213: 6926304657982883260
-    second: mech_idle_10
+      213: -8377167083618667702
+    second: real_mech_export_idle_10
   - first:
-      213: 5089152064663986404
-    second: mech_idle_11
+      213: -8407462485618301549
+    second: real_mech_export_idle_11
   - first:
-      213: -4895539302524625765
-    second: mech_idle_12
+      213: 1293462964662202049
+    second: real_mech_export_idle_12
   - first:
-      213: 4343084160018201781
-    second: mech_idle_13
+      213: 5991995146795381315
+    second: real_mech_export_idle_13
   - first:
-      213: -2882580228777370520
-    second: mech_idle_14
+      213: 4064439119232062467
+    second: real_mech_export_idle_14
   - first:
-      213: 6396123443214303063
-    second: mech_idle_15
+      213: -8675168146795952370
+    second: real_mech_export_idle_15
   - first:
-      213: 3519623277477777335
-    second: mech_idle_16
+      213: -7417411649932492974
+    second: real_mech_export_idle_16
   - first:
-      213: -5218821202577275735
-    second: mech_idle_17
+      213: 3616201437804230915
+    second: real_mech_export_idle_17
   - first:
-      213: 3950076481584959167
-    second: mech_idle_18
+      213: -1362726406585873457
+    second: real_mech_export_idle_18
   - first:
-      213: -786892700180072450
-    second: mech_idle_19
+      213: 4163446910346339694
+    second: real_mech_export_idle_19
   - first:
-      213: 4579361222261020193
-    second: mech_idle_20
+      213: 2792509209558645921
+    second: real_mech_export_idle_20
   - first:
-      213: 2501880413699754655
-    second: mech_idle_21
+      213: -5725355372540899710
+    second: real_mech_export_idle_21
   - first:
-      213: -1744021113404638503
-    second: mech_idle_22
+      213: -1307535537087774489
+    second: real_mech_export_idle_22
   - first:
-      213: 1254415362279635603
-    second: mech_idle_23
+      213: -2012874319258178724
+    second: real_mech_export_idle_23
   - first:
-      213: -1018728830146985622
-    second: mech_idle_24
+      213: -3593624407476131067
+    second: real_mech_export_idle_24
   - first:
-      213: -2578770906628933703
-    second: mech_idle_25
+      213: -634186347733768159
+    second: real_mech_export_idle_25
   - first:
-      213: -1071585164232714844
-    second: mech_idle_26
+      213: -5651459416613836214
+    second: real_mech_export_idle_26
   - first:
-      213: 2330995275804067632
-    second: mech_idle_27
+      213: 8251595327367133966
+    second: real_mech_export_idle_27
   - first:
-      213: -2535019831493943055
-    second: mech_idle_28
+      213: -4007891900988581040
+    second: real_mech_export_idle_28
   - first:
-      213: -4936533079961020701
-    second: mech_idle_29
+      213: 5577779147287387616
+    second: real_mech_export_idle_29
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -187,661 +187,661 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: mech_idle_0
+      name: real_mech_export_idle_0
       rect:
         serializedVersion: 2
-        x: 91
-        y: 1040
-        width: 201
-        height: 247
+        x: 8
+        y: 1037
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8b44b25a3834785b0800000000000000
-      internalID: -5366246198297803592
+      spriteID: 0c1c6a59ce7fe44a0800000000000000
+      internalID: -6607071007810862656
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_idle_1
+      name: real_mech_export_idle_1
       rect:
         serializedVersion: 2
-        x: 434
-        y: 1040
-        width: 199
-        height: 247
+        x: 349
+        y: 1037
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e011062f2f775fee0800000000000000
-      internalID: -1227943438056419058
+      spriteID: d2bc7e2a21e604aa0800000000000000
+      internalID: -6178817662430754003
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_idle_2
+      name: real_mech_export_idle_2
       rect:
         serializedVersion: 2
-        x: 776
-        y: 1040
-        width: 200
-        height: 246
+        x: 690
+        y: 1037
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6d3fb503947a857f0800000000000000
-      internalID: -623564615605029930
+      spriteID: 13cbbc7a1d890d600800000000000000
+      internalID: 491060385614117937
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_idle_3
+      name: real_mech_export_idle_3
       rect:
         serializedVersion: 2
-        x: 1117
-        y: 1040
-        width: 201
-        height: 246
+        x: 1031
+        y: 1037
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dfd40e31bc9789180800000000000000
-      internalID: -9108396333238039043
+      spriteID: 64f16c512d3bacc90800000000000000
+      internalID: -7148703743607431354
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_idle_4
+      name: real_mech_export_idle_4
       rect:
         serializedVersion: 2
-        x: 1460
-        y: 1040
-        width: 199
-        height: 245
+        x: 1372
+        y: 1037
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f2502c4c245db2220800000000000000
-      internalID: 2462296104033715503
+      spriteID: 45726e64b30d18e50800000000000000
+      internalID: 6809953064572036948
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_idle_5
+      name: real_mech_export_idle_5
       rect:
         serializedVersion: 2
-        x: 1802
-        y: 1040
-        width: 200
-        height: 245
+        x: 1713
+        y: 1037
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ca5823c8a254ac7b0800000000000000
-      internalID: -5203270370430122580
+      spriteID: fc59e94aad81b8b20800000000000000
+      internalID: 3137628892737476047
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_idle_6
+      name: real_mech_export_idle_6
       rect:
         serializedVersion: 2
-        x: 91
-        y: 783
-        width: 201
-        height: 242
+        x: 8
+        y: 780
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e176719bc012ab4b0800000000000000
-      internalID: -5423986462685698274
+      spriteID: c5595cbdc9b7a98d0800000000000000
+      internalID: -2838820701471402660
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_idle_7
+      name: real_mech_export_idle_7
       rect:
         serializedVersion: 2
-        x: 435
-        y: 783
-        width: 198
-        height: 241
+        x: 349
+        y: 780
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bd0e2fed4522608d0800000000000000
-      internalID: -2880577163743797029
+      spriteID: 13740ddb7af3df110800000000000000
+      internalID: 1296262257429202737
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_idle_8
+      name: real_mech_export_idle_8
       rect:
         serializedVersion: 2
-        x: 777
-        y: 783
-        width: 199
-        height: 241
+        x: 690
+        y: 780
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cc884723b5152d700800000000000000
-      internalID: 563602355505105100
+      spriteID: 9729cdf156c31f170800000000000000
+      internalID: 8210410000697037433
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_idle_9
+      name: real_mech_export_idle_9
       rect:
         serializedVersion: 2
-        x: 1118
-        y: 783
-        width: 200
-        height: 240
+        x: 1031
+        y: 780
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b6e7550fd898cd6c0800000000000000
-      internalID: -4117264716607947157
+      spriteID: ff197fc5b9fef4230800000000000000
+      internalID: 3625379675615236607
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_idle_10
+      name: real_mech_export_idle_10
       rect:
         serializedVersion: 2
-        x: 1461
-        y: 783
-        width: 198
-        height: 239
+        x: 1372
+        y: 780
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cb50439a36d2f1060800000000000000
-      internalID: 6926304657982883260
+      spriteID: a4370dcebe25ebb80800000000000000
+      internalID: -8377167083618667702
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_idle_11
+      name: real_mech_export_idle_11
       rect:
         serializedVersion: 2
-        x: 1803
-        y: 783
-        width: 199
-        height: 239
+        x: 1713
+        y: 780
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4e02e3ed6dc40a640800000000000000
-      internalID: 5089152064663986404
+      spriteID: 3956c4af961b25b80800000000000000
+      internalID: -8407462485618301549
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_idle_12
+      name: real_mech_export_idle_12
       rect:
         serializedVersion: 2
-        x: 92
-        y: 524
-        width: 200
-        height: 240
+        x: 8
+        y: 523
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b9c5e0921fc8f0cb0800000000000000
-      internalID: -4895539302524625765
+      spriteID: 1ce60da96bd43f110800000000000000
+      internalID: 1293462964662202049
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_idle_13
+      name: real_mech_export_idle_13
       rect:
         serializedVersion: 2
-        x: 436
-        y: 524
-        width: 197
-        height: 240
+        x: 349
+        y: 523
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5bcb28b680cb54c30800000000000000
-      internalID: 4343084160018201781
+      spriteID: 3427a9cc6d7d72350800000000000000
+      internalID: 5991995146795381315
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_idle_14
+      name: real_mech_export_idle_14
       rect:
         serializedVersion: 2
-        x: 778
-        y: 524
-        width: 199
-        height: 239
+        x: 690
+        y: 523
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 86c1923fd840ff7d0800000000000000
-      internalID: -2882580228777370520
+      spriteID: 304570938d9c76830800000000000000
+      internalID: 4064439119232062467
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_idle_15
+      name: real_mech_export_idle_15
       rect:
         serializedVersion: 2
-        x: 1119
-        y: 524
-        width: 200
-        height: 239
+        x: 1031
+        y: 523
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 75f365c226893c850800000000000000
-      internalID: 6396123443214303063
+      spriteID: e078173988c9b9780800000000000000
+      internalID: -8675168146795952370
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_idle_16
+      name: real_mech_export_idle_16
       rect:
         serializedVersion: 2
-        x: 1462
-        y: 524
-        width: 198
-        height: 239
+        x: 1372
+        y: 523
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7bf424d19b638d030800000000000000
-      internalID: 3519623277477777335
+      spriteID: 25ffdec476f001990800000000000000
+      internalID: -7417411649932492974
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_idle_17
+      name: real_mech_export_idle_17
       rect:
         serializedVersion: 2
-        x: 1804
-        y: 524
-        width: 198
-        height: 240
+        x: 1713
+        y: 523
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9a4ca1a44c50397b0800000000000000
-      internalID: -5218821202577275735
+      spriteID: 309f3985c045f2230800000000000000
+      internalID: 3616201437804230915
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_idle_18
+      name: real_mech_export_idle_18
       rect:
         serializedVersion: 2
-        x: 92
-        y: 267
-        width: 200
-        height: 238
+        x: 8
+        y: 266
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fbe0f70b1ad71d630800000000000000
-      internalID: 3950076481584959167
+      spriteID: fcb8761ad8f961de0800000000000000
+      internalID: -1362726406585873457
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_idle_19
+      name: real_mech_export_idle_19
       rect:
         serializedVersion: 2
-        x: 435
-        y: 267
-        width: 198
-        height: 239
+        x: 349
+        y: 266
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ef73b6122456415f0800000000000000
-      internalID: -786892700180072450
+      spriteID: e652464f7e887c930800000000000000
+      internalID: 4163446910346339694
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_idle_20
+      name: real_mech_export_idle_20
       rect:
         serializedVersion: 2
-        x: 777
-        y: 267
-        width: 199
-        height: 239
+        x: 690
+        y: 266
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1261117e4c82d8f30800000000000000
-      internalID: 4579361222261020193
+      spriteID: 1acffbba45cf0c620800000000000000
+      internalID: 2792509209558645921
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_idle_21
+      name: real_mech_export_idle_21
       rect:
         serializedVersion: 2
-        x: 1118
-        y: 267
-        width: 200
-        height: 240
+        x: 1031
+        y: 266
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f9ac4111bf678b220800000000000000
-      internalID: 2501880413699754655
+      spriteID: 28e43d67f937b80b0800000000000000
+      internalID: -5725355372540899710
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_idle_22
+      name: real_mech_export_idle_22
       rect:
         serializedVersion: 2
-        x: 1461
-        y: 267
-        width: 198
-        height: 241
+        x: 1372
+        y: 266
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9da3cbe990efbc7e0800000000000000
-      internalID: -1744021113404638503
+      spriteID: 7e00fac4b53badde0800000000000000
+      internalID: -1307535537087774489
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_idle_23
+      name: real_mech_export_idle_23
       rect:
         serializedVersion: 2
-        x: 1803
-        y: 267
-        width: 199
-        height: 241
+        x: 1713
+        y: 266
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 39a78753024986110800000000000000
-      internalID: 1254415362279635603
+      spriteID: c5b2c17a875d014e0800000000000000
+      internalID: -2012874319258178724
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_idle_24
+      name: real_mech_export_idle_24
       rect:
         serializedVersion: 2
-        x: 91
-        y: 8
-        width: 201
-        height: 244
+        x: 8
+        y: 9
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a61c3a4c68fbcd1f0800000000000000
-      internalID: -1018728830146985622
+      spriteID: 50b263824a1e02ec0800000000000000
+      internalID: -3593624407476131067
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_idle_25
+      name: real_mech_export_idle_25
       rect:
         serializedVersion: 2
-        x: 434
-        y: 8
-        width: 199
-        height: 245
+        x: 349
+        y: 9
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9b73549f58d563cd0800000000000000
-      internalID: -2578770906628933703
+      spriteID: 1282de570eae237f0800000000000000
+      internalID: -634186347733768159
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_idle_26
+      name: real_mech_export_idle_26
       rect:
         serializedVersion: 2
-        x: 776
-        y: 8
-        width: 200
-        height: 245
+        x: 690
+        y: 9
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4a5945b78f6f021f0800000000000000
-      internalID: -1071585164232714844
+      spriteID: a4a22327a9bf191b0800000000000000
+      internalID: -5651459416613836214
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_idle_27
+      name: real_mech_export_idle_27
       rect:
         serializedVersion: 2
-        x: 1117
-        y: 8
-        width: 201
-        height: 246
+        x: 1031
+        y: 9
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0374a6b6adb595020800000000000000
-      internalID: 2330995275804067632
+      spriteID: e0bbdfd3b3e838270800000000000000
+      internalID: 8251595327367133966
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_idle_28
+      name: real_mech_export_idle_28
       rect:
         serializedVersion: 2
-        x: 1460
-        y: 8
-        width: 199
-        height: 246
+        x: 1372
+        y: 9
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1f0ab35f4ecc1dcd0800000000000000
-      internalID: -2535019831493943055
+      spriteID: 05b196ffc8b1168c0800000000000000
+      internalID: -4007891900988581040
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mech_idle_29
+      name: real_mech_export_idle_29
       rect:
         serializedVersion: 2
-        x: 1802
-        y: 8
-        width: 200
-        height: 247
+        x: 1713
+        y: 9
+        width: 337
+        height: 253
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3e655f29159ed7bb0800000000000000
-      internalID: -4936533079961020701
+      spriteID: 0ed55a50590486d40800000000000000
+      internalID: 5577779147287387616
       vertices: []
       indices: 
       edges: []
@@ -850,7 +850,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 4bae10698a8078144a3637287efc014d
+    spriteID: c5e3e1bb9ce99b6419f0d7a2ed8d163e
     internalID: 0
     vertices: []
     indices: 
@@ -860,38 +860,38 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":1,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":337.0,"y":253.0},"gridSpriteOffset":{"x":8.0,"y":8.0},"gridSpritePadding":{"x":4.0,"y":4.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":1,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      mech_idle_0: -5366246198297803592
-      mech_idle_1: -1227943438056419058
-      mech_idle_10: 6926304657982883260
-      mech_idle_11: 5089152064663986404
-      mech_idle_12: -4895539302524625765
-      mech_idle_13: 4343084160018201781
-      mech_idle_14: -2882580228777370520
-      mech_idle_15: 6396123443214303063
-      mech_idle_16: 3519623277477777335
-      mech_idle_17: -5218821202577275735
-      mech_idle_18: 3950076481584959167
-      mech_idle_19: -786892700180072450
-      mech_idle_2: -623564615605029930
-      mech_idle_20: 4579361222261020193
-      mech_idle_21: 2501880413699754655
-      mech_idle_22: -1744021113404638503
-      mech_idle_23: 1254415362279635603
-      mech_idle_24: -1018728830146985622
-      mech_idle_25: -2578770906628933703
-      mech_idle_26: -1071585164232714844
-      mech_idle_27: 2330995275804067632
-      mech_idle_28: -2535019831493943055
-      mech_idle_29: -4936533079961020701
-      mech_idle_3: -9108396333238039043
-      mech_idle_4: 2462296104033715503
-      mech_idle_5: -5203270370430122580
-      mech_idle_6: -5423986462685698274
-      mech_idle_7: -2880577163743797029
-      mech_idle_8: 563602355505105100
-      mech_idle_9: -4117264716607947157
+      real_mech_export_idle_0: -6607071007810862656
+      real_mech_export_idle_1: -6178817662430754003
+      real_mech_export_idle_10: -8377167083618667702
+      real_mech_export_idle_11: -8407462485618301549
+      real_mech_export_idle_12: 1293462964662202049
+      real_mech_export_idle_13: 5991995146795381315
+      real_mech_export_idle_14: 4064439119232062467
+      real_mech_export_idle_15: -8675168146795952370
+      real_mech_export_idle_16: -7417411649932492974
+      real_mech_export_idle_17: 3616201437804230915
+      real_mech_export_idle_18: -1362726406585873457
+      real_mech_export_idle_19: 4163446910346339694
+      real_mech_export_idle_2: 491060385614117937
+      real_mech_export_idle_20: 2792509209558645921
+      real_mech_export_idle_21: -5725355372540899710
+      real_mech_export_idle_22: -1307535537087774489
+      real_mech_export_idle_23: -2012874319258178724
+      real_mech_export_idle_24: -3593624407476131067
+      real_mech_export_idle_25: -634186347733768159
+      real_mech_export_idle_26: -5651459416613836214
+      real_mech_export_idle_27: 8251595327367133966
+      real_mech_export_idle_28: -4007891900988581040
+      real_mech_export_idle_29: 5577779147287387616
+      real_mech_export_idle_3: -7148703743607431354
+      real_mech_export_idle_4: 6809953064572036948
+      real_mech_export_idle_5: 3137628892737476047
+      real_mech_export_idle_6: -2838820701471402660
+      real_mech_export_idle_7: 1296262257429202737
+      real_mech_export_idle_8: 8210410000697037433
+      real_mech_export_idle_9: 3625379675615236607
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
