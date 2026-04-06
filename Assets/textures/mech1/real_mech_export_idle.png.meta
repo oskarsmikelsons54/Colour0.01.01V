@@ -190,12 +190,12 @@ TextureImporter:
       name: real_mech_export_idle_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 1037
-        width: 337
-        height: 253
+        x: 100
+        y: 1040
+        width: 200
+        height: 247
       alignment: 7
-      pivot: {x: 0.5, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -212,12 +212,12 @@ TextureImporter:
       name: real_mech_export_idle_1
       rect:
         serializedVersion: 2
-        x: 349
-        y: 1037
-        width: 337
-        height: 253
+        x: 442
+        y: 1040
+        width: 200
+        height: 247
       alignment: 7
-      pivot: {x: 0.5, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -234,12 +234,12 @@ TextureImporter:
       name: real_mech_export_idle_2
       rect:
         serializedVersion: 2
-        x: 690
-        y: 1037
-        width: 337
-        height: 253
+        x: 784
+        y: 1040
+        width: 200
+        height: 246
       alignment: 7
-      pivot: {x: 0.5, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -256,12 +256,12 @@ TextureImporter:
       name: real_mech_export_idle_3
       rect:
         serializedVersion: 2
-        x: 1031
-        y: 1037
-        width: 337
-        height: 253
+        x: 1126
+        y: 1040
+        width: 200
+        height: 246
       alignment: 7
-      pivot: {x: 0.5, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -278,12 +278,12 @@ TextureImporter:
       name: real_mech_export_idle_4
       rect:
         serializedVersion: 2
-        x: 1372
-        y: 1037
-        width: 337
-        height: 253
+        x: 1468
+        y: 1040
+        width: 200
+        height: 245
       alignment: 7
-      pivot: {x: 0.5, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -300,12 +300,12 @@ TextureImporter:
       name: real_mech_export_idle_5
       rect:
         serializedVersion: 2
-        x: 1713
-        y: 1037
-        width: 337
-        height: 253
+        x: 1810
+        y: 1040
+        width: 200
+        height: 245
       alignment: 7
-      pivot: {x: 0.5, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -322,12 +322,12 @@ TextureImporter:
       name: real_mech_export_idle_6
       rect:
         serializedVersion: 2
-        x: 8
-        y: 780
-        width: 337
-        height: 253
+        x: 100
+        y: 783
+        width: 200
+        height: 242
       alignment: 7
-      pivot: {x: 0.5, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -344,12 +344,12 @@ TextureImporter:
       name: real_mech_export_idle_7
       rect:
         serializedVersion: 2
-        x: 349
-        y: 780
-        width: 337
-        height: 253
+        x: 443
+        y: 783
+        width: 199
+        height: 241
       alignment: 7
-      pivot: {x: 0.5, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -366,12 +366,12 @@ TextureImporter:
       name: real_mech_export_idle_8
       rect:
         serializedVersion: 2
-        x: 690
-        y: 780
-        width: 337
-        height: 253
+        x: 785
+        y: 783
+        width: 199
+        height: 241
       alignment: 7
-      pivot: {x: 0.5, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -388,12 +388,12 @@ TextureImporter:
       name: real_mech_export_idle_9
       rect:
         serializedVersion: 2
-        x: 1031
-        y: 780
-        width: 337
-        height: 253
+        x: 1127
+        y: 783
+        width: 199
+        height: 240
       alignment: 7
-      pivot: {x: 0.5, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -410,12 +410,12 @@ TextureImporter:
       name: real_mech_export_idle_10
       rect:
         serializedVersion: 2
-        x: 1372
-        y: 780
-        width: 337
-        height: 253
+        x: 1469
+        y: 783
+        width: 199
+        height: 239
       alignment: 7
-      pivot: {x: 0.5, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -432,12 +432,12 @@ TextureImporter:
       name: real_mech_export_idle_11
       rect:
         serializedVersion: 2
-        x: 1713
-        y: 780
-        width: 337
-        height: 253
+        x: 1811
+        y: 783
+        width: 199
+        height: 239
       alignment: 7
-      pivot: {x: 0.5, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -454,12 +454,12 @@ TextureImporter:
       name: real_mech_export_idle_12
       rect:
         serializedVersion: 2
-        x: 8
-        y: 523
-        width: 337
-        height: 253
+        x: 101
+        y: 524
+        width: 199
+        height: 240
       alignment: 7
-      pivot: {x: 0.5, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -476,12 +476,12 @@ TextureImporter:
       name: real_mech_export_idle_13
       rect:
         serializedVersion: 2
-        x: 349
-        y: 523
-        width: 337
-        height: 253
+        x: 444
+        y: 524
+        width: 198
+        height: 240
       alignment: 7
-      pivot: {x: 0.5, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -498,12 +498,12 @@ TextureImporter:
       name: real_mech_export_idle_14
       rect:
         serializedVersion: 2
-        x: 690
-        y: 523
-        width: 337
-        height: 253
+        x: 786
+        y: 524
+        width: 199
+        height: 239
       alignment: 7
-      pivot: {x: 0.5, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -520,12 +520,12 @@ TextureImporter:
       name: real_mech_export_idle_15
       rect:
         serializedVersion: 2
-        x: 1031
-        y: 523
-        width: 337
-        height: 253
+        x: 1128
+        y: 524
+        width: 199
+        height: 239
       alignment: 7
-      pivot: {x: 0.5, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -542,12 +542,12 @@ TextureImporter:
       name: real_mech_export_idle_16
       rect:
         serializedVersion: 2
-        x: 1372
-        y: 523
-        width: 337
-        height: 253
+        x: 1470
+        y: 524
+        width: 199
+        height: 239
       alignment: 7
-      pivot: {x: 0.5, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -564,12 +564,12 @@ TextureImporter:
       name: real_mech_export_idle_17
       rect:
         serializedVersion: 2
-        x: 1713
-        y: 523
-        width: 337
-        height: 253
+        x: 1812
+        y: 524
+        width: 198
+        height: 240
       alignment: 7
-      pivot: {x: 0.5, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -586,12 +586,12 @@ TextureImporter:
       name: real_mech_export_idle_18
       rect:
         serializedVersion: 2
-        x: 8
-        y: 266
-        width: 337
-        height: 253
+        x: 101
+        y: 267
+        width: 199
+        height: 239
       alignment: 7
-      pivot: {x: 0.5, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -608,12 +608,12 @@ TextureImporter:
       name: real_mech_export_idle_19
       rect:
         serializedVersion: 2
-        x: 349
-        y: 266
-        width: 337
-        height: 253
+        x: 443
+        y: 267
+        width: 199
+        height: 240
       alignment: 7
-      pivot: {x: 0.5, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -630,12 +630,12 @@ TextureImporter:
       name: real_mech_export_idle_20
       rect:
         serializedVersion: 2
-        x: 690
-        y: 266
-        width: 337
-        height: 253
+        x: 785
+        y: 267
+        width: 199
+        height: 240
       alignment: 7
-      pivot: {x: 0.5, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -652,12 +652,12 @@ TextureImporter:
       name: real_mech_export_idle_21
       rect:
         serializedVersion: 2
-        x: 1031
-        y: 266
-        width: 337
-        height: 253
+        x: 1127
+        y: 267
+        width: 199
+        height: 241
       alignment: 7
-      pivot: {x: 0.5, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -674,12 +674,12 @@ TextureImporter:
       name: real_mech_export_idle_22
       rect:
         serializedVersion: 2
-        x: 1372
-        y: 266
-        width: 337
-        height: 253
+        x: 1469
+        y: 267
+        width: 199
+        height: 242
       alignment: 7
-      pivot: {x: 0.5, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -696,12 +696,12 @@ TextureImporter:
       name: real_mech_export_idle_23
       rect:
         serializedVersion: 2
-        x: 1713
-        y: 266
-        width: 337
-        height: 253
+        x: 1811
+        y: 267
+        width: 199
+        height: 242
       alignment: 7
-      pivot: {x: 0.5, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -718,12 +718,12 @@ TextureImporter:
       name: real_mech_export_idle_24
       rect:
         serializedVersion: 2
-        x: 8
-        y: 9
-        width: 337
-        height: 253
+        x: 100
+        y: 8
+        width: 200
+        height: 244
       alignment: 7
-      pivot: {x: 0.5, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -740,12 +740,12 @@ TextureImporter:
       name: real_mech_export_idle_25
       rect:
         serializedVersion: 2
-        x: 349
-        y: 9
-        width: 337
-        height: 253
+        x: 442
+        y: 8
+        width: 200
+        height: 245
       alignment: 7
-      pivot: {x: 0.5, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -762,12 +762,12 @@ TextureImporter:
       name: real_mech_export_idle_26
       rect:
         serializedVersion: 2
-        x: 690
-        y: 9
-        width: 337
-        height: 253
+        x: 784
+        y: 8
+        width: 200
+        height: 245
       alignment: 7
-      pivot: {x: 0.5, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -784,12 +784,12 @@ TextureImporter:
       name: real_mech_export_idle_27
       rect:
         serializedVersion: 2
-        x: 1031
-        y: 9
-        width: 337
-        height: 253
+        x: 1126
+        y: 8
+        width: 200
+        height: 246
       alignment: 7
-      pivot: {x: 0.5, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -806,12 +806,12 @@ TextureImporter:
       name: real_mech_export_idle_28
       rect:
         serializedVersion: 2
-        x: 1372
-        y: 9
-        width: 337
-        height: 253
+        x: 1468
+        y: 8
+        width: 200
+        height: 246
       alignment: 7
-      pivot: {x: 0.5, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -828,12 +828,12 @@ TextureImporter:
       name: real_mech_export_idle_29
       rect:
         serializedVersion: 2
-        x: 1713
-        y: 9
-        width: 337
-        height: 253
+        x: 1810
+        y: 8
+        width: 200
+        height: 247
       alignment: 7
-      pivot: {x: 0.5, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -860,7 +860,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":337.0,"y":253.0},"gridSpriteOffset":{"x":8.0,"y":8.0},"gridSpritePadding":{"x":4.0,"y":4.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":1,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":1,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       real_mech_export_idle_0: -6607071007810862656
       real_mech_export_idle_1: -6178817662430754003

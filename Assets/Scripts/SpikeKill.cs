@@ -2,17 +2,13 @@ using UnityEngine;
 
 public class SpikeKill : MonoBehaviour
 {
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        // Debug: log everything that enters the spike trigger
-        Debug.Log("Trigger entered by: " + other.name);
+        Debug.Log("Spike trigger entered by: " + other.name);
 
-        // Check if it’s the player
         if (other.CompareTag("Player"))
         {
             Debug.Log("Player touched spikes! Destroying...");
-
-            // Destroy the player
             Destroy(other.gameObject);
         }
     }
