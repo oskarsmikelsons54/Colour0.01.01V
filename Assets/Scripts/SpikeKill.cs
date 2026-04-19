@@ -8,8 +8,14 @@ public class SpikeKill : MonoBehaviour
 
         if (other.CompareTag("Player"))
         {
-            Debug.Log("Player touched spikes! Destroying...");
-            Destroy(other.gameObject);
+            Debug.Log("Player touched spikes!");
+
+            PlayerHealth player = other.GetComponent<PlayerHealth>();
+
+            if (player != null)
+            {
+                player.TakeDamage(player.health); // instant kill
+            }
         }
     }
 }

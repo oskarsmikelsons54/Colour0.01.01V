@@ -14,6 +14,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameOverScreen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.tilemap@2428aeee2f73/Editor/GridEditorUtility.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
@@ -107,6 +108,7 @@
       <workItem from="1773662520667" duration="2855000" />
       <workItem from="1775487904134" duration="778000" />
       <workItem from="1775488706433" duration="3355000" />
+      <workItem from="1776594307780" duration="7335000" />
     </task>
     <servers />
   </component>
