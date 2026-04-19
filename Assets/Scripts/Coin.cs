@@ -2,22 +2,20 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
-    public int value = 1; // Coin value
-    private bool collected = false; // Prevent double collection
+    public int value = 1;
+    private bool collected = false;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        // Only allow collection by player
         if (!collected && other.CompareTag("Player"))
         {
-            collected = true; // Mark as collected
+            collected = true;
 
-            // Increase coin count
-            CoinCounter.instance.IncreaseCoins(value);
+            if (CoinCounter.instance != null)
+            {
+                CoinCounter.instance.IncreaseCoins(value);
+            }
 
-            // Optional: Play sound or animation here
-
-            // Destroy coin
             Destroy(gameObject);
         }
     }

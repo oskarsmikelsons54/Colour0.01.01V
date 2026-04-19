@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using System.Collections;
 
 public class CoinCounter : MonoBehaviour
 {
@@ -11,27 +12,43 @@ public class CoinCounter : MonoBehaviour
     private void Awake()
     {
         if (instance == null)
-        {
             instance = this;
-        }
         else
-        {
             Destroy(gameObject);
-        }
 
-        // Initialize UI
-        if (coinText != null)
-            coinText.text = "Coins: " + coins;
+        UpdateUI();
     }
 
     public void IncreaseCoins(int amount)
     {
         coins += amount;
+        UpdateUI();
+    }
 
-        // Update UI
+    public bool HasEnoughCoins(int amount)
+    {
+        return coins >= amount;
+    }
+
+    public IEnumerator DrainCoins(int amount, float delay)
+    {
+        for (int i = 0; i < amount; i++)
+        {
+            coins--;
+            UpdateUI();
+            yield return new WaitForSeconds(delay);
+        }
+    }
+
+    public void ResetCoins()
+    {
+        coins = 0;
+        UpdateUI();
+    }
+
+    void UpdateUI()
+    {
         if (coinText != null)
             coinText.text = "Coins: " + coins;
-
-        Debug.Log("Coins: " + coins);
     }
 }
