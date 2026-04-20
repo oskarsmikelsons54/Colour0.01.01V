@@ -6,7 +6,7 @@ public class PlayerMeleeAttack : MonoBehaviour
     [Header("Attack Settings")]
     [SerializeField] private float attackRange = 0.5f;      // How far the attack reaches
     [SerializeField] private int attackDamage = 25;         // Damage dealt per hit
-    [SerializeField] private float attackRate = 1f;         // Attacks per second
+    [SerializeField] private float attackRate = 1f;         // Attacks per second (used as interval)
 
     [Header("Attack Point Movement")]
     [SerializeField] private float attackPointRadius = 1f;  // How far from the center the attackPoint can move
@@ -19,26 +19,27 @@ public class PlayerMeleeAttack : MonoBehaviour
     [SerializeField] private LayerMask enemyLayers;         // Which layers count as enemies
     [SerializeField] private AtkAnim attackEffect; // Optional visual/sfx effect for attacks
 
-    [Header("Visibility")]
-    [SerializeField] private float attackVisibleDuration = 0.15f; // How long the attackPoint is visible when attacking
-
     [Header("Audio")]
     [SerializeField] private AudioClip attackSound;        // Default attack sound
     [SerializeField] private float attackSoundVolume = 1f;
     [SerializeField] private AudioClip hitSound;           // Sound played when an enemy is hit
     [SerializeField] private float hitSoundVolume = 1f;
 
-    private float nextAttackTime = 0f;
     private Camera mainCamera;
 
     // Cached renderers on the attackPoint to toggle visibility
     private Renderer[] attackPointRenderers;
-    private Coroutine hideCoroutine;
 
     // Audio source for playing clips
     private AudioSource audioSource;
 
-    void Awake()
+    // Attack coroutine reference
+    private Coroutine attackCoroutine;
+
+    // Desired world scale for the attackPoint so it doesn't mirror when parent flips
+    private Vector3 desiredAttackPointWorldScale = Vector3.one;
+
+    private void Awake()
     {
         // Cache main camera
         mainCamera = Camera.main ?? Camera.current;
@@ -53,6 +54,13 @@ public class PlayerMeleeAttack : MonoBehaviour
             attackPointRenderers = attackPoint.GetComponentsInChildren<Renderer>(true);
             // Start hidden
             SetAttackPointVisible(false);
+
+            // Cache desired world scale so we can restore it if parent flips (prevents visual mirroring)
+            desiredAttackPointWorldScale = attackPoint.lossyScale;
+
+            // Detach attackPoint from player so it doesn't inherit flips/negative scale
+            // Keep its current world transform when unparenting
+            attackPoint.SetParent(null, true);
         }
 
         // Ensure there's an AudioSource to play sounds
@@ -65,18 +73,99 @@ public class PlayerMeleeAttack : MonoBehaviour
         }
     }
 
-    void Update()
+    private void OnDisable()
+    {
+        StopAttacking();
+    }
+
+    private void OnDestroy()
+    {
+        StopAttacking();
+    }
+
+    private void Update()
     {
         // Update attackPoint position to follow mouse within radius
         UpdateAttackPointPosition();
 
-        if (Time.time >= nextAttackTime)
+        // Start attack when button pressed, stop when released
+        if (Input.GetButtonDown("Fire1"))
         {
-            if (Input.GetButtonDown("Fire1")) // Default: left mouse button or Ctrl
+            StartAttacking();
+        }
+        else if (Input.GetButtonUp("Fire1"))
+        {
+            StopAttacking();
+        }
+    }
+
+    private void StartAttacking()
+    {
+        if (attackCoroutine != null) return;
+        attackCoroutine = StartCoroutine(AttackLoop());
+
+        // Show visuals immediately when starting
+        SetAttackPointVisible(true);
+
+        // Trigger effect at start (looping animation should be handled by the effect's animator)
+        attackEffect?.Play();
+    }
+
+    private void StopAttacking()
+    {
+        if (attackCoroutine != null)
+        {
+            StopCoroutine(attackCoroutine);
+            attackCoroutine = null;
+        }
+
+        // Hide visuals when stopping
+        SetAttackPointVisible(false);
+
+        // Hide/stop effect if available
+        attackEffect?.Hide();
+    }
+
+    private IEnumerator AttackLoop()
+    {
+        // interval between attacks
+        float interval = (attackRate > 0f) ? (1f / attackRate) : 0.1f;
+
+        while (true)
+        {
+            // Play attack sound if assigned
+            if (attackSound != null && audioSource != null)
             {
-                Attack();
-                nextAttackTime = Time.time + 1f / attackRate;
+                audioSource.PlayOneShot(attackSound, Mathf.Clamp01(attackSoundVolume));
             }
+
+            // Detect enemies in range
+            Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+
+            bool anyHit = false;
+            // Damage all enemies in range
+            foreach (Collider2D enemy in hitEnemies)
+            {
+                // Assumes enemies have a script with TakeDamage(int amount)
+                var health = enemy.GetComponent<EnemyHealth>();
+                if (health != null)
+                {
+                    health.TakeDamage(attackDamage);
+                    anyHit = true;
+                }
+            }
+
+            // Play hit sound if at least one enemy was hit
+            if (anyHit && hitSound != null && audioSource != null)
+            {
+                audioSource.PlayOneShot(hitSound, Mathf.Clamp01(hitSoundVolume));
+            }
+
+            // Wait for next tick
+            if (interval <= 0f)
+                yield return null;
+            else
+                yield return new WaitForSeconds(interval);
         }
     }
 
@@ -121,63 +210,26 @@ public class PlayerMeleeAttack : MonoBehaviour
             float angle = Mathf.Atan2(rotDir.y, rotDir.x) * Mathf.Rad2Deg;
             attackPoint.rotation = Quaternion.Euler(0f, 0f, angle + attackPointRotationOffset);
         }
-    }
 
-    private void Attack()
-    {
-        Debug.Log("Attack");
-
-        // Play attack sound if assigned
-        if (attackSound != null && audioSource != null)
+        // Restore attackPoint world scale to prevent flipping when parent scale changes (e.g. player flip)
+        if (attackPoint != null)
         {
-            audioSource.PlayOneShot(attackSound, Mathf.Clamp01(attackSoundVolume));
+            Transform parent = attackPoint.parent;
+            Vector3 parentScale = parent != null ? parent.lossyScale : Vector3.one;
+
+            // Avoid division by zero
+            float px = (Mathf.Abs(parentScale.x) < 1e-6f) ? 1f : parentScale.x;
+            float py = (Mathf.Abs(parentScale.y) < 1e-6f) ? 1f : parentScale.y;
+            float pz = (Mathf.Abs(parentScale.z) < 1e-6f) ? 1f : parentScale.z;
+
+            Vector3 newLocalScale = new Vector3(
+                desiredAttackPointWorldScale.x / px,
+                desiredAttackPointWorldScale.y / py,
+                desiredAttackPointWorldScale.z / pz
+            );
+
+            attackPoint.localScale = newLocalScale;
         }
-
-        // Temporarily show the attackPoint visuals
-        ShowAttackPointTemporarily(attackVisibleDuration);
-
-        // Play effect if assigned
-        attackEffect?.Play();
-
-        // Detect enemies in range
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
-
-        bool anyHit = false;
-        // Damage all enemies in range
-        foreach (Collider2D enemy in hitEnemies)
-        {
-            // Assumes enemies have a script with TakeDamage(int amount)
-            var health = enemy.GetComponent<EnemyHealth>();
-            if (health != null)
-            {
-                health.TakeDamage(attackDamage);
-                anyHit = true;
-            }
-        }
-
-        // Play hit sound if at least one enemy was hit
-        if (anyHit && hitSound != null && audioSource != null)
-        {
-            audioSource.PlayOneShot(hitSound, Mathf.Clamp01(hitSoundVolume));
-        }
-    }
-
-    private void ShowAttackPointTemporarily(float duration)
-    {
-        SetAttackPointVisible(true);
-
-        if (hideCoroutine != null)
-        {
-            StopCoroutine(hideCoroutine);
-        }
-        hideCoroutine = StartCoroutine(HideAfterDelay(duration));
-    }
-
-    private IEnumerator HideAfterDelay(float delay)
-    {
-        yield return new WaitForSeconds(delay);
-        SetAttackPointVisible(false);
-        hideCoroutine = null;
     }
 
     private void SetAttackPointVisible(bool visible)
