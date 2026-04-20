@@ -213,7 +213,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Exit to Home screen ESC
+  m_text: 'Exit to Home screen  : ESC
+
 
 '
   m_isRightToLeft: 0
@@ -1826,7 +1827,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Switch wepones C
+  m_text: 'Dash : C
 
 '
   m_isRightToLeft: 0
