@@ -265,11 +265,12 @@ MonoBehaviour:
   speed: 6
   jumpingPower: 16
   maxJumps: 1
+  dashSpeed: 24
+  dashDuration: 0.2
+  dashCooldown: 1
   animator: {fileID: 52860404213761315}
   walkingParam: isWalking
-  footstepAudio: {fileID: 0}
-  walkStepRate: 0.45
-  runStepRate: 0.3
+  dashingParam: isDashing
   coyoteTime: 0.1
   jumpBufferTime: 0.12
 --- !u!114 &7575362554721777144
@@ -294,6 +295,9 @@ MonoBehaviour:
   enemyLayers:
     serializedVersion: 2
     m_Bits: 64
+  destructibleLayers:
+    serializedVersion: 2
+    m_Bits: 128
   attackEffect: {fileID: 0}
   attackSound: {fileID: 8300000, guid: 10e6eccf727965042b25977e02829fd2, type: 3}
   attackSoundVolume: 1
@@ -430,7 +434,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c75649db028de6048b6b51fab4bbbcbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Footsteps
-  footstepClip: {fileID: 8300000, guid: edf96639fa6b03e4c8082c5255cc7331, type: 3}
+  footstepClip: {fileID: 8300000, guid: 2c5ee4df09ca51a42a09dfe2376970d8, type: 3}
   stepDistance: 1
   groundCheck: {fileID: 3706267248922715262}
   groundCheckRadius: 0.1
