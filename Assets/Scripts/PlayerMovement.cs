@@ -1,10 +1,10 @@
+using System.Collections;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
     private float horizontal;
     private bool isFacingRight = true;
-
     private int jumpsLeft;
 
     [Header("References")]
@@ -19,18 +19,18 @@ public class PlayerMovement : MonoBehaviour
     [Header("Jump Settings")]
     [SerializeField] private int maxJumps = 2;
 
+    [Header("Dash Settings")]
+    [SerializeField] private float dashSpeed = 24f; 
+    [SerializeField] private float dashDuration = 0.2f;
+    [SerializeField] private float dashCooldown = 1f;
+    private bool canDash = true;
+    private bool isDashing;
+
     [Header("Animation")]
     [SerializeField] private Animator animator;
     [SerializeField] private string walkingParam = "isWalking";
+    [SerializeField] private string dashingParam = "isDashing"; 
     private bool isWalking;
-
-    [Header("Audio")]
-    [SerializeField] private AudioSource footstepAudio;
-
-    [Header("Footstep Timing")]
-    [SerializeField] private float walkStepRate = 0.45f;
-    [SerializeField] private float runStepRate = 0.3f;
-    private float stepTimer;
 
     [Header("Coyote / Grace Settings")]
     [SerializeField] private float coyoteTime = 0.15f;
@@ -42,7 +42,6 @@ public class PlayerMovement : MonoBehaviour
     [Header("Input Buffering")]
     [SerializeField] private float jumpBufferTime = 0.12f;
     private float lastJumpPressedTime = -10f;
-
     private float lastJumpAppliedTime = -1f;
     private float lastJumpReleasedTime = -1f;
 
@@ -52,19 +51,15 @@ public class PlayerMovement : MonoBehaviour
             rb.interpolation = RigidbodyInterpolation2D.Interpolate;
 
         jumpsLeft = maxJumps;
-
-        if (IsGrounded())
-            lastGroundedTime = Time.time;
-
-        stepTimer = walkStepRate; // 👈 initialize footstep timer
     }
 
     void Update()
     {
+        if (isDashing) return;
+
         horizontal = Input.GetAxisRaw("Horizontal");
 
         bool grounded = IsGrounded();
-
         if (grounded)
         {
             jumpsLeft = maxJumps;
@@ -76,8 +71,13 @@ public class PlayerMovement : MonoBehaviour
         if (animator != null)
             animator.SetBool(walkingParam, isWalking);
 
-       
-        // Jump input
+        // DASH ar C taustiņu
+        if (Input.GetKeyDown(KeyCode.C) && canDash)
+        {
+            StartCoroutine(Dash());
+        }
+
+        // Lēciens
         if (Input.GetButtonDown("Jump"))
         {
             lastJumpPressedTime = Time.time;
@@ -93,8 +93,40 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (rb == null) return;
+        if (rb == null || isDashing) return;
 
+        // Izmantojam .velocity (strādā visās versijās)
+        rb.linearVelocity = new Vector2(horizontal * speed, rb.linearVelocity.y);
+
+        HandleJump();
+    }
+
+    private IEnumerator Dash()
+    {
+        canDash = false;
+        isDashing = true;
+
+        if (animator != null) animator.SetBool(dashingParam, true);
+
+        float originalGravity = rb.gravityScale;
+        rb.gravityScale = 0f;
+
+        float dashDirection = horizontal != 0 ? Mathf.Sign(horizontal) : (isFacingRight ? 1f : -1f);
+        rb.linearVelocity = new Vector2(dashDirection * dashSpeed, 0f);
+
+        yield return new WaitForSeconds(dashDuration);
+
+        rb.gravityScale = originalGravity;
+        isDashing = false;
+
+        if (animator != null) animator.SetBool(dashingParam, false);
+
+        yield return new WaitForSeconds(dashCooldown);
+        canDash = true;
+    }
+
+    private void HandleJump()
+    {
         bool bufferedJump = (Time.time - lastJumpPressedTime) <= jumpBufferTime;
         bool shouldAttemptJump = jumpPressed || bufferedJump;
 
@@ -106,12 +138,9 @@ public class PlayerMovement : MonoBehaviour
             if (grounded || coyoteNow || jumpsLeft > 0)
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpingPower);
-
-                if (!grounded && !coyoteNow)
-                    jumpsLeft--;
+                if (!grounded && !coyoteNow) jumpsLeft--;
 
                 lastJumpAppliedTime = Time.time;
-
                 jumpPressed = false;
                 lastJumpPressedTime = -10f;
             }
@@ -119,27 +148,23 @@ public class PlayerMovement : MonoBehaviour
 
         if (jumpReleased)
         {
-            if (lastJumpAppliedTime > 0f &&
-                lastJumpReleasedTime > lastJumpAppliedTime &&
-                rb.linearVelocity.y > 0f)
+            if (lastJumpAppliedTime > 0f && lastJumpReleasedTime > lastJumpAppliedTime && rb.linearVelocity.y > 0f)
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * 0.5f);
             }
-
             jumpReleased = false;
             lastJumpReleasedTime = -1f;
         }
-
-        rb.linearVelocity = new Vector2(horizontal * speed, rb.linearVelocity.y);
     }
 
     private void LateUpdate()
     {
-        Flip();
+        if (!isDashing) Flip();
     }
 
     private bool IsGrounded()
     {
+        if (groundCheck == null) return false;
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
 
@@ -148,7 +173,6 @@ public class PlayerMovement : MonoBehaviour
         if (isFacingRight && horizontal < 0f || !isFacingRight && horizontal > 0f)
         {
             isFacingRight = !isFacingRight;
-
             Vector3 localScale = transform.localScale;
             localScale.x *= -1f;
             transform.localScale = localScale;
