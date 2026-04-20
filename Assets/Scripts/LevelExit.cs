@@ -10,6 +10,11 @@ public class LevelExit : MonoBehaviour
 
     private bool activated = false;
 
+    [Header("Animation")]
+    [SerializeField] private Animator animator;
+    [SerializeField] private string openTrigger = "Open";
+    [SerializeField] private float delayAfterOpen = 1f; // seconds to wait after playing the animation
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (activated) return;
@@ -32,6 +37,19 @@ public class LevelExit : MonoBehaviour
     {
         yield return CoinCounter.instance.DrainCoins(requiredCoins, drainSpeed);
 
+        // Play exit/open animation if provided
+        if (animator != null && !string.IsNullOrEmpty(openTrigger))
+        {
+            animator.SetTrigger(openTrigger);
+        }
+
+        // Wait a short delay to allow the animation to play (configurable)
+        if (delayAfterOpen > 0f)
+        {
+            yield return new WaitForSeconds(delayAfterOpen);
+        }
+
+        // Finally load the next scene
         SceneManager.LoadScene(nextSceneName);
     }
 }

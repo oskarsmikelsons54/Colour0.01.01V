@@ -1,0 +1,509 @@
+fileFormatVersion: 2
+guid: 15e150fd4cb66484e9f7e93369c5f0b6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2461332825782521594
+    second: blast_door_export_ArmatureAction_0
+  - first:
+      213: 9040399245632203627
+    second: blast_door_export_ArmatureAction_1
+  - first:
+      213: 2985223008126928277
+    second: blast_door_export_ArmatureAction_2
+  - first:
+      213: -1448945190967714858
+    second: blast_door_export_ArmatureAction_3
+  - first:
+      213: 3900580871826901729
+    second: blast_door_export_ArmatureAction_4
+  - first:
+      213: 8351606859298597238
+    second: blast_door_export_ArmatureAction_5
+  - first:
+      213: 8468528068699448625
+    second: blast_door_export_ArmatureAction_6
+  - first:
+      213: -7866812648990940929
+    second: blast_door_export_ArmatureAction_7
+  - first:
+      213: -3503715694400649182
+    second: blast_door_export_ArmatureAction_8
+  - first:
+      213: -6258129962200365304
+    second: blast_door_export_ArmatureAction_9
+  - first:
+      213: 386733832470597731
+    second: blast_door_export_ArmatureAction_10
+  - first:
+      213: -2104199693739041638
+    second: blast_door_export_ArmatureAction_11
+  - first:
+      213: 4775931273429751478
+    second: blast_door_export_ArmatureAction_12
+  - first:
+      213: 8636453069260036806
+    second: blast_door_export_ArmatureAction_13
+  - first:
+      213: -9067494198198032090
+    second: blast_door_export_ArmatureAction_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: blast_door_export_ArmatureAction_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 620
+        width: 59
+        height: 102
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 601793de5d697ddd0800000000000000
+      internalID: -2461332825782521594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blast_door_export_ArmatureAction_1
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 620
+        width: 59
+        height: 102
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6bed9f3733f57d70800000000000000
+      internalID: 9040399245632203627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blast_door_export_ArmatureAction_2
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 620
+        width: 59
+        height: 102
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5958abe6284ad6920800000000000000
+      internalID: 2985223008126928277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blast_door_export_ArmatureAction_3
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 620
+        width: 59
+        height: 102
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dbdb51960054ebe0800000000000000
+      internalID: -1448945190967714858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blast_door_export_ArmatureAction_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 416
+        width: 59
+        height: 107
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ea0de203a5a12630800000000000000
+      internalID: 3900580871826901729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blast_door_export_ArmatureAction_5
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 416
+        width: 59
+        height: 115
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6796538903ed6e370800000000000000
+      internalID: 8351606859298597238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blast_door_export_ArmatureAction_6
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 416
+        width: 59
+        height: 124
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13561490961468570800000000000000
+      internalID: 8468528068699448625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blast_door_export_ArmatureAction_7
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 416
+        width: 59
+        height: 135
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff0685e639773d290800000000000000
+      internalID: -7866812648990940929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blast_door_export_ArmatureAction_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 212
+        width: 59
+        height: 146
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 228c941b32d406fc0800000000000000
+      internalID: -3503715694400649182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blast_door_export_ArmatureAction_9
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 212
+        width: 59
+        height: 157
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80781d4d4f7a629a0800000000000000
+      internalID: -6258129962200365304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blast_door_export_ArmatureAction_10
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 212
+        width: 59
+        height: 168
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36019032f54fd5500800000000000000
+      internalID: 386733832470597731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blast_door_export_ArmatureAction_11
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 212
+        width: 59
+        height: 177
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9cd23ee6816cc2e0800000000000000
+      internalID: -2104199693739041638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blast_door_export_ArmatureAction_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8
+        width: 59
+        height: 186
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b695707034874240800000000000000
+      internalID: 4775931273429751478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blast_door_export_ArmatureAction_13
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 8
+        width: 59
+        height: 192
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ca93900f48dad770800000000000000
+      internalID: 8636453069260036806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blast_door_export_ArmatureAction_14
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 8
+        width: 59
+        height: 196
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 629ad71811ac92280800000000000000
+      internalID: -9067494198198032090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 2e0e93cba3a21454f8b7bdfd7ffd8736
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      blast_door_export_ArmatureAction_0: -2461332825782521594
+      blast_door_export_ArmatureAction_1: 9040399245632203627
+      blast_door_export_ArmatureAction_10: 386733832470597731
+      blast_door_export_ArmatureAction_11: -2104199693739041638
+      blast_door_export_ArmatureAction_12: 4775931273429751478
+      blast_door_export_ArmatureAction_13: 8636453069260036806
+      blast_door_export_ArmatureAction_14: -9067494198198032090
+      blast_door_export_ArmatureAction_2: 2985223008126928277
+      blast_door_export_ArmatureAction_3: -1448945190967714858
+      blast_door_export_ArmatureAction_4: 3900580871826901729
+      blast_door_export_ArmatureAction_5: 8351606859298597238
+      blast_door_export_ArmatureAction_6: 8468528068699448625
+      blast_door_export_ArmatureAction_7: -7866812648990940929
+      blast_door_export_ArmatureAction_8: -3503715694400649182
+      blast_door_export_ArmatureAction_9: -6258129962200365304
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
