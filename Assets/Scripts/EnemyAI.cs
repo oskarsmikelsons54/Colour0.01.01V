@@ -8,7 +8,8 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
 
     [Header("Target")]
-    [SerializeField] private Transform player;
+    // Automatically find the player by tag at runtime instead of assigning in inspector
+    private Transform player;
 
     [Header("Movement")]
     [SerializeField] private float speed = 4f;
@@ -60,6 +61,13 @@ public class EnemyAI : MonoBehaviour
             animator = GetComponentInParent<Animator>();
         }
 
+        // Try to auto-assign the player Transform by tag if not set in inspector
+        if (player == null)
+        {
+            GameObject found = GameObject.FindWithTag("Player");
+            if (found != null) player = found.transform;
+        }
+        
         currentSpeed = speed;
         
         // Sākotnēji iestatām taimeri
@@ -68,7 +76,13 @@ public class EnemyAI : MonoBehaviour
 
     void Update()
     {
-        if (player == null) return;
+        // Ensure we have a reference to the player; try to find by tag at runtime
+        if (player == null)
+        {
+            GameObject found = GameObject.FindWithTag("Player");
+            if (found != null) player = found.transform;
+            else return;
+        }
 
         CheckGround();
 
