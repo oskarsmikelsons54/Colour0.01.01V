@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 627fab42057f34b43b19c0fa71bba800
+guid: 4803671e1c0f8c343b497f193f598ec4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6169078637606979128
-    second: Green_LEVEL_0
+      213: 280547413476643922
+    second: robot blood_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Green_LEVEL_0
+      name: robot blood_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 4
+        y: 14
+        width: 49
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 836c302f558fc9550800000000000000
-      internalID: 6169078637606979128
+      spriteID: 2541eead264b4e300800000000000000
+      internalID: 280547413476643922
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Green_LEVEL_0: 6169078637606979128
+      robot blood_0: 280547413476643922
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

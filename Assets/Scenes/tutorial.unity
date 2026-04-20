@@ -6288,7 +6288,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 1.5
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
   m_ApplyToSortingLayers: 00000000
@@ -24120,6 +24120,10 @@ PrefabInstance:
     - target: {fileID: 4175494683690352568, guid: 6719d26571523ae46839a42090bd3cf9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4175494683690352568, guid: 6719d26571523ae46839a42090bd3cf9, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7412782004917213368, guid: 6719d26571523ae46839a42090bd3cf9, type: 3}
       propertyPath: m_Name
