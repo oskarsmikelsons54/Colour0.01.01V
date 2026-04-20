@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 2680262960829408589}
   - component: {fileID: 3411727262878424691}
   - component: {fileID: 2504948952992805141}
+  - component: {fileID: 2737370708993500165}
   - component: {fileID: 827700074780021084}
   m_Layer: 6
   m_Name: Enemy
@@ -222,6 +223,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   maxHealth: 100
   deathPrefab: {fileID: 3223743072580425877, guid: 522b9bdbc3d2a5a44a2f2eda3b5cef89, type: 3}
+--- !u!114 &2737370708993500165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5739930958347872458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee656ff1494e5094094668d5f620a842, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyAI
+  rb: {fileID: 3492946923711157117}
+  groundCheck: {fileID: 7609076801224216480}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  player: {fileID: 0}
+  speed: 4
+  jumpForce: 12
+  followRange: 8
+  wallCheck: {fileID: 5770737472055250186}
+  wallCheckDistance: 0.5
+  animator: {fileID: 0}
+  walkingParam: isWalking
 --- !u!95 &827700074780021084
 Animator:
   serializedVersion: 7
