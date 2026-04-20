@@ -112,11 +112,18 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   player: {fileID: 0}
-  speed: 2
+  speed: 3
   jumpForce: 14
   followRange: 7.5
+  chargeRange: 4
+  chargeMultiplier: 1.7
+  minJumpAttackTime: 3
+  maxJumpAttackTime: 6
+  patrolSpeed: 2
   wallCheck: {fileID: 1119388845548843986}
   wallCheckDistance: 0.5
+  edgeCheck: {fileID: 2065431085619197245}
+  edgeCheckDistance: 1
   animator: {fileID: 6906578628930336406}
   walkingParam: isWalking
 --- !u!1 &4790426255542178078
@@ -157,6 +164,7 @@ Transform:
   - {fileID: 8012677225842827981}
   - {fileID: 8363719574721489648}
   - {fileID: 1119388845548843986}
+  - {fileID: 2065431085619197245}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8199946376879403982
@@ -332,3 +340,34 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &7776226767280242781
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2065431085619197245}
+  m_Layer: 6
+  m_Name: EdgeCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2065431085619197245
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7776226767280242781}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.44, y: -0.09, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1930381801834348673}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

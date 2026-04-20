@@ -14,10 +14,25 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private float speed = 4f;
     [SerializeField] private float jumpForce = 12f;
     [SerializeField] private float followRange = 8f;
+    
+    [Header("Speed Boost (Charge)")]
+    [SerializeField] private float chargeRange = 4f;
+    [SerializeField] private float chargeMultiplier = 1.5f;
 
-    [Header("Obstacle Check")]
+    // --- JAUNUMS: Lēciena uzbrukuma iestatījumi ---
+    [Header("Jump Attack")] 
+    [SerializeField] private float minJumpAttackTime = 2f; // Minimālais laiks starp lēcieniem
+    [SerializeField] private float maxJumpAttackTime = 5f; // Maksimālais laiks starp lēcieniem
+    private float jumpAttackTimer;
+
+    [Header("Patrol Settings")]
+    [SerializeField] private float patrolSpeed = 2f;
+
+    [Header("Obstacle & Edge Check")]
     [SerializeField] private Transform wallCheck;
     [SerializeField] private float wallCheckDistance = 0.5f;
+    [SerializeField] private Transform edgeCheck;
+    [SerializeField] private float edgeCheckDistance = 1f;
 
     [Header("Animation")]
     [SerializeField] private Animator animator;
@@ -26,10 +41,12 @@ public class EnemyAI : MonoBehaviour
 
     private bool isGrounded;
 
-    // Cached intent to avoid modifying physics in Update
+    // State Variables
     private bool shouldFollow = false;
-    private float followDirection = 0f; // -1, 0 or 1
+    private float moveDirection = 0f;
     private bool jumpRequested = false;
+    private float currentSpeed;
+    private float patrolDirection = 1f;
 
     void Start()
     {
@@ -38,11 +55,15 @@ public class EnemyAI : MonoBehaviour
             rb.interpolation = RigidbodyInterpolation2D.Interpolate;
         }
 
-        // If animator not assigned on child, try to find it on parent (visual is often on parent)
         if (animator == null)
         {
             animator = GetComponentInParent<Animator>();
         }
+
+        currentSpeed = speed;
+        
+        // Sākotnēji iestatām taimeri
+        ResetJumpAttackTimer(); 
     }
 
     void Update()
@@ -53,31 +74,53 @@ public class EnemyAI : MonoBehaviour
 
         float distance = Vector2.Distance(transform.position, player.position);
 
-        // Only follow if player is close; cache intent
+        // 1. Loģika: Ja spēlētājs ir uztveršanas rādiusā
         if (distance <= followRange)
         {
             shouldFollow = true;
-            followDirection = Mathf.Sign(player.position.x - transform.position.x);
+            moveDirection = Mathf.Sign(player.position.x - transform.position.x);
 
-            // Check for jump conditions and only request jump here
+            // Uzrāviens (Charge)
+            if (distance <= chargeRange)
+            {
+                currentSpeed = speed * chargeMultiplier;
+            }
+            else
+            {
+                currentSpeed = speed;
+            }
+
             CheckForJump();
+
+            // --- JAUNUMS: Jump Attack loģika ---
+            // Taimeris iet uz leju tikai tad, kad dzenas pakaļ
+            jumpAttackTimer -= Time.deltaTime;
+            
+            if (jumpAttackTimer <= 0f && isGrounded)
+            {
+                jumpRequested = true; // Pasūtam lēcienu
+                ResetJumpAttackTimer(); // Sākam skaitīt laiku līdz nākamajam lēcienam
+            }
         }
+        // 2. Loģika: Ja spēlētājs ir pārāk tālu (Patrulēšana)
         else
         {
             shouldFollow = false;
-            followDirection = 0f;
+            currentSpeed = patrolSpeed;
+            PatrolLogic();
+            
+            // Atiestatām taimeri, lai ienaidnieks nepalēktos uzreiz tajā pašā sekundē, kad ieraudzīs spēlētāju
+            ResetJumpAttackTimer(); 
         }
 
-        // Update walking state for animation: walking when following, grounded and moving horizontally
-        bool newIsWalking = shouldFollow && isGrounded && followDirection != 0f;
+        // Animācijas atjaunināšana
+        bool newIsWalking = isGrounded && moveDirection != 0f;
         if (newIsWalking != isWalking)
         {
             isWalking = newIsWalking;
-            if (animator != null)
+            if (animator != null && animator.GetBool(walkingParam) != isWalking)
             {
-                // Only update animator when value changes
-                if (animator.GetBool(walkingParam) != isWalking)
-                    animator.SetBool(walkingParam, isWalking);
+                animator.SetBool(walkingParam, isWalking);
             }
         }
     }
@@ -86,18 +129,8 @@ public class EnemyAI : MonoBehaviour
     {
         if (rb == null) return;
 
-        // Apply horizontal movement in FixedUpdate (physics)
-        if (shouldFollow)
-        {
-            rb.linearVelocity = new Vector2(followDirection * speed, rb.linearVelocity.y);
-        }
-        else
-        {
-            // Optionally let other systems control x-velocity; set to 0 to stop when not following
-            rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
-        }
+        rb.linearVelocity = new Vector2(moveDirection * currentSpeed, rb.linearVelocity.y);
 
-        // Apply jump if requested
         if (jumpRequested)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
@@ -105,48 +138,67 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
-    // Check ground
     private void CheckGround()
     {
-        isGrounded = Physics2D.OverlapCircle(
-            groundCheck.position,
-            0.2f,
-            groundLayer
-        );
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
 
-    // Jump if wall ahead - only request jump here
     private void CheckForJump()
     {
-        RaycastHit2D hit = Physics2D.Raycast(
-            wallCheck.position,
-            transform.right,
-            wallCheckDistance,
-            groundLayer
-        );
+        bool wallAhead = Physics2D.Raycast(wallCheck.position, Vector2.right * moveDirection, wallCheckDistance, groundLayer).collider != null;
 
-        if (hit.collider != null && isGrounded)
+        bool edgeAhead = false;
+        if (edgeCheck != null)
+        {
+            edgeAhead = Physics2D.Raycast(edgeCheck.position, Vector2.down, edgeCheckDistance, groundLayer).collider == null;
+        }
+
+        if ((wallAhead || edgeAhead) && isGrounded)
         {
             jumpRequested = true;
         }
     }
 
-    private void LateUpdate()
+    // --- JAUNUMS: Funkcija taimera atiestatīšanai ---
+    private void ResetJumpAttackTimer()
     {
-        // Visual flip in LateUpdate so it runs after physics
-        if (shouldFollow && followDirection != 0f)
+        // Izvēlas nejaušu laiku starp minimālo un maksimālo vērtību
+        jumpAttackTimer = Random.Range(minJumpAttackTime, maxJumpAttackTime);
+    }
+
+    private void PatrolLogic()
+    {
+        moveDirection = patrolDirection;
+
+        bool wallAhead = Physics2D.Raycast(wallCheck.position, Vector2.right * moveDirection, wallCheckDistance, groundLayer).collider != null;
+        
+        bool edgeAhead = false;
+        if (edgeCheck != null)
         {
-            Flip(followDirection);
+            edgeAhead = Physics2D.Raycast(edgeCheck.position, Vector2.down, edgeCheckDistance, groundLayer).collider == null;
+        }
+
+        if (wallAhead || edgeAhead)
+        {
+            patrolDirection *= -1f;
+            moveDirection = patrolDirection;
         }
     }
 
-    // Flip sprite on the parent transform if present. This avoids flipping only the child that has this script.
+    private void LateUpdate()
+    {
+        if (moveDirection != 0f)
+        {
+            Flip(moveDirection);
+        }
+    }
+
     private void Flip(float direction)
     {
         Transform target = transform.parent != null ? transform.parent : transform;
         Vector3 scale = target.localScale;
-        // Invert sign mapping so the visual faces the player when default art orientation differs.
-        float sign = direction > 0 ? -1f : 1f;
+        
+        float sign = direction > 0 ? -1f : 1f; 
         scale.x = Mathf.Abs(scale.x) * sign;
         target.localScale = scale;
     }
