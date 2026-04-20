@@ -23858,10 +23858,6 @@ PrefabInstance:
       propertyPath: healthSlider
       value: 
       objectReference: {fileID: 408747511}
-    - target: {fileID: 7575362554721777144, guid: 537bf453e79710e4baaddb5e377e8b12, type: 3}
-      propertyPath: attackRange
-      value: 0.2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

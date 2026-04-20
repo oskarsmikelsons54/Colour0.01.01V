@@ -284,10 +284,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdf9aa3a9f8751b478f08d836a0db6c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMeleeAttack
-  attackRange: 0.05
+  attackRange: 0.2
   attackDamage: 25
   attackRate: 10
-  attackPointRadius: 1.2
+  attackPointRadius: 1.6
   radiusCenter: {fileID: 7861183110330539565}
   attackPointRotationOffset: -90
   attackPoint: {fileID: 3859098158665553807}
