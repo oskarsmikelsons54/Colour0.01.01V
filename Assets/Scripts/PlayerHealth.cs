@@ -3,59 +3,80 @@ using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public int maxHealth = 10;
-    public int health;
+    public float maxHealth = 10f;
+    public float health;
 
-    public Slider healthSlider;   // UI slider reference
+    public Slider healthSlider;
     public GameObject deathPrefab;
-
-    public GameOverScreen gameOverUI; // 👈 ADD THIS
+    public GameOverScreen gameOverUI;
 
     void Start()
     {
         health = maxHealth;
 
-        healthSlider.maxValue = maxHealth;
-        healthSlider.value = health;
+        if (healthSlider != null)
+        {
+            healthSlider.maxValue = maxHealth;
+            healthSlider.value = health;
+        }
+        else
+        {
+            Debug.LogWarning("HealthSlider NAV PIEVIENOTS!");
+        }
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
+        Debug.Log("TAKING DAMAGE: " + damage);
+
         health -= damage;
 
-        healthSlider.value = health;
+        if (healthSlider != null)
+        {
+            healthSlider.value = health;
+        }
 
         if (health <= 0)
         {
-            Die(); // 👈 cleaner
+            Die();
         }
     }
 
     void Die()
     {
-        // Spawn death effect
+        Debug.Log("PLAYER DIED");
+
         if (deathPrefab != null)
         {
             Instantiate(deathPrefab, transform.position, transform.rotation);
         }
+        else
+        {
+            Debug.LogWarning("DeathPrefab NAV PIEVIENOTS!");
+        }
 
-        // Show Game Over UI
         if (gameOverUI != null)
         {
             gameOverUI.Show();
         }
+        else
+        {
+            Debug.LogWarning("GameOverUI NAV PIEVIENOTS!");
+        }
 
-        // Destroy player
         Destroy(gameObject);
     }
 
-    public void Heal(int amount)
+    public void Heal(float amount)
     {
         health += amount;
 
         if (health > maxHealth)
             health = maxHealth;
 
-        healthSlider.value = health;
+        if (healthSlider != null)
+        {
+            healthSlider.value = health;
+        }
     }
 }

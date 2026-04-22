@@ -3,7 +3,7 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
     public int maxHealth = 100;
-    private int currentHealth;
+    public int currentHealth;
 
     // Optional prefab to spawn on death (e.g., death effect, loot, ragdoll)
     public GameObject deathPrefab;
