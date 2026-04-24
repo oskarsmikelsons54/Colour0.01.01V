@@ -17,7 +17,12 @@ public class PlayerMeleeAttack : MonoBehaviour
     [SerializeField] private Transform attackPoint;
     [SerializeField] private LayerMask enemyLayers;
     [SerializeField] private LayerMask destructibleLayers; // ✅ NEW
+    [SerializeField] private LayerMask climbableLayers; // NEW: layers that can be climbed to
     [SerializeField] private AtkAnim attackEffect;
+
+    [Header("Climbing")]
+    [SerializeField] private float climbSpeed = 8f;
+    [SerializeField] private float climbStopDistance = 0.1f;
 
     [Header("Audio")]
     [SerializeField] private AudioClip attackSound;
@@ -30,6 +35,10 @@ public class PlayerMeleeAttack : MonoBehaviour
     private AudioSource audioSource;
     private Coroutine attackCoroutine;
     private Vector3 desiredAttackPointWorldScale = Vector3.one;
+
+    private Rigidbody2D rb;
+    private Coroutine climbCoroutine;
+    private float originalGravityScale = 1f;
 
     private void Awake()
     {
@@ -54,6 +63,10 @@ public class PlayerMeleeAttack : MonoBehaviour
             audioSource.playOnAwake = false;
             audioSource.spatialBlend = 0f;
         }
+
+        rb = GetComponent<Rigidbody2D>();
+        if (rb != null)
+            originalGravityScale = rb.gravityScale;
     }
 
     private void OnDisable() => StopAttacking();
@@ -86,6 +99,15 @@ public class PlayerMeleeAttack : MonoBehaviour
             attackCoroutine = null;
         }
 
+        // stop any ongoing climb
+        if (climbCoroutine != null)
+        {
+            StopCoroutine(climbCoroutine);
+            climbCoroutine = null;
+            if (rb != null)
+                rb.gravityScale = originalGravityScale;
+        }
+
         SetAttackPointVisible(false);
         attackEffect?.Hide();
     }
@@ -106,6 +128,10 @@ public class PlayerMeleeAttack : MonoBehaviour
             // ✅ DESTRUCTIBLE OBJECTS
             Collider2D[] hitObjects = Physics2D.OverlapCircleAll(
                 attackPoint.position, attackRange, destructibleLayers);
+
+            // ✅ CLIMBABLE TILES
+            Collider2D[] hitClimbables = Physics2D.OverlapCircleAll(
+                attackPoint.position, attackRange, climbableLayers);
 
             bool anyHit = false;
 
@@ -129,11 +155,75 @@ public class PlayerMeleeAttack : MonoBehaviour
                 }
             }
 
+            // If we hit any climbable and we're not already climbing, start pull
+            if (hitClimbables != null && hitClimbables.Length > 0 && climbCoroutine == null)
+            {
+                climbCoroutine = StartCoroutine(PullToAttackPoint());
+                anyHit = true;
+            }
+
             if (anyHit && hitSound != null)
                 audioSource.PlayOneShot(hitSound, Mathf.Clamp01(hitSoundVolume));
 
             yield return interval > 0f ? new WaitForSeconds(interval) : null;
         }
+    }
+
+    private IEnumerator PullToAttackPoint()
+    {
+        if (rb != null)
+        {
+            rb.gravityScale = 0f;
+            rb.linearVelocity = Vector2.zero;
+        }
+
+        while (true)
+        {
+            // continue pulling while attack is held and attackPoint hits a climbable
+            if (attackPoint == null) break;
+            if (!Input.GetButton("Fire1")) break;
+
+            Collider2D hit = Physics2D.OverlapCircle(attackPoint.position, attackRange, climbableLayers);
+            if (hit == null) break;
+
+            Vector3 current = transform.position;
+            Vector3 targetWorldPos = attackPoint.position;
+            Vector3 dir = targetWorldPos - current;
+            float dist = dir.magnitude;
+            if (dist <= climbStopDistance) 
+            {
+                // if we're already at the point, continue staying attached but allow continuing pull upward
+                // move a little toward the direction from radius center to attackPoint so player can keep climbing
+                Vector3 origin = radiusCenter != null ? radiusCenter.position : transform.position;
+                Vector3 climbDir = (attackPoint.position - origin).normalized;
+                if (climbDir.sqrMagnitude <= Mathf.Epsilon) break;
+
+                Vector3 moveAlt = climbDir * climbSpeed * Time.deltaTime;
+                if (rb != null)
+                    rb.MovePosition(rb.position + (Vector2)moveAlt);
+                else
+                    transform.position += moveAlt;
+
+                yield return null;
+                continue;
+            }
+
+            Vector3 move = dir.normalized * climbSpeed * Time.deltaTime;
+            if (move.magnitude > dist) move = dir;
+
+            if (rb != null)
+                rb.MovePosition(rb.position + (Vector2)move);
+            else
+                transform.position += move;
+
+            yield return null;
+        }
+
+        // restore gravity
+        if (rb != null)
+            rb.gravityScale = originalGravityScale;
+
+        climbCoroutine = null;
     }
 
     private void UpdateAttackPointPosition()
