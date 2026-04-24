@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -14,32 +15,28 @@ public class PlayerHealth : MonoBehaviour
     {
         health = maxHealth;
 
+        // 🔥 spawn pie checkpointa
+        if (GameManager.instance != null && GameManager.instance.hasCheckpoint)
+        {
+            transform.position = GameManager.instance.checkpointPosition;
+        }
+
         if (healthSlider != null)
         {
             healthSlider.maxValue = maxHealth;
             healthSlider.value = health;
         }
-        else
-        {
-            Debug.LogWarning("HealthSlider NAV PIEVIENOTS!");
-        }
     }
 
     public void TakeDamage(float damage)
     {
-        Debug.Log("TAKING DAMAGE: " + damage);
-
         health -= damage;
 
         if (healthSlider != null)
-        {
             healthSlider.value = health;
-        }
 
         if (health <= 0)
-        {
             Die();
-        }
     }
 
     void Die()
@@ -47,24 +44,10 @@ public class PlayerHealth : MonoBehaviour
         Debug.Log("PLAYER DIED");
 
         if (deathPrefab != null)
-        {
             Instantiate(deathPrefab, transform.position, transform.rotation);
-        }
-        else
-        {
-            Debug.LogWarning("DeathPrefab NAV PIEVIENOTS!");
-        }
 
-        if (gameOverUI != null)
-        {
-            gameOverUI.Show();
-        }
-        else
-        {
-            Debug.LogWarning("GameOverUI NAV PIEVIENOTS!");
-        }
-
-        Destroy(gameObject);
+        // 🔥 restartē visu scenu (boss reset utt)
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void Heal(float amount)
@@ -75,8 +58,6 @@ public class PlayerHealth : MonoBehaviour
             health = maxHealth;
 
         if (healthSlider != null)
-        {
             healthSlider.value = health;
-        }
     }
 }
