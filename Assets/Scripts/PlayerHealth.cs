@@ -11,6 +11,8 @@ public class PlayerHealth : MonoBehaviour
     public GameObject deathPrefab;
     public GameOverScreen gameOverUI;
 
+    private bool isDead = false;
+
     void Start()
     {
         health = maxHealth;
@@ -24,6 +26,8 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
+        if (isDead) return;
+
         health -= damage;
 
         if (healthSlider != null)
@@ -35,17 +39,34 @@ public class PlayerHealth : MonoBehaviour
 
     void Die()
     {
+        if (isDead) return;
+        isDead = true;
+
         Debug.Log("PLAYER DIED");
 
         if (deathPrefab != null)
             Instantiate(deathPrefab, transform.position, transform.rotation);
 
-        // immediate scene reload (restores previous behavior)
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        // Show the game-over UI if assigned; otherwise fallback to immediate reload
+        if (gameOverUI != null)
+        {
+            gameOverUI.Show();
+
+            // Optionally disable player components so they can't move/act while the panel is shown:
+            // GetComponent<PlayerMovement>()?.enabled = false;
+            // GetComponent<PlayerMeleeAttack>()?.enabled = false;
+        }
+        else
+        {
+            // immediate scene reload (restores previous behavior)
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
 
     public void Heal(float amount)
     {
+        if (isDead) return;
+
         health += amount;
 
         if (health > maxHealth)
