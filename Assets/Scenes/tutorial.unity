@@ -6327,7 +6327,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 2324413393268487548, guid: 7b56b7c825059bb4aa7d5dc50a9d470b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7186,7 +7186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.9833824, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7934,8 +7934,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -2630820897444649604, guid: 0cf529255e67e6a43a454bb423f56c7b, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -8375,7 +8375,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.1726613, g: 1, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -24257,7 +24257,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2725494585381190770, guid: 5e9a6020391df124b95c5dfd2e3257bf, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
-      value: 0
+      value: 0.001222494
       objectReference: {fileID: 0}
     - target: {fileID: 2725494585381190770, guid: 5e9a6020391df124b95c5dfd2e3257bf, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
@@ -24265,7 +24265,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2725494585381190770, guid: 5e9a6020391df124b95c5dfd2e3257bf, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 1
+      value: 0.99778426
       objectReference: {fileID: 0}
     - target: {fileID: 4173847681180211760, guid: 5e9a6020391df124b95c5dfd2e3257bf, type: 3}
       propertyPath: m_Name
@@ -24471,7 +24471,6 @@ SceneRoots:
   - {fileID: 2046392347}
   - {fileID: 5006920918040861453}
   - {fileID: 827331191}
-  - {fileID: 1606335356}
   - {fileID: 1814861942}
   - {fileID: 1499794839}
   - {fileID: 776577779}
@@ -24479,6 +24478,7 @@ SceneRoots:
   - {fileID: 3569539430132735859}
   - {fileID: 1740405077}
   - {fileID: 1357769867}
+  - {fileID: 1606335356}
   - {fileID: 582956371}
   - {fileID: 8729961179673183962}
   - {fileID: 1330513185}
