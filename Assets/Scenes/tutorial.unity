@@ -23984,15 +23984,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2725494585381190770, guid: 5e9a6020391df124b95c5dfd2e3257bf, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
-      value: 0.05256724
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2725494585381190770, guid: 5e9a6020391df124b95c5dfd2e3257bf, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 0.99999994
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2725494585381190770, guid: 5e9a6020391df124b95c5dfd2e3257bf, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 0.89601165
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4173847681180211760, guid: 5e9a6020391df124b95c5dfd2e3257bf, type: 3}
       propertyPath: m_Name
@@ -24111,6 +24111,14 @@ PrefabInstance:
       propertyPath: dashSpeed
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: 4037433973786772848, guid: 537bf453e79710e4baaddb5e377e8b12, type: 3}
+      propertyPath: dashParticle
+      value: 
+      objectReference: {fileID: 1362322522392596260, guid: 9429dfd2418b3c44b8451c5c20b2f9f1, type: 3}
+    - target: {fileID: 4037433973786772848, guid: 537bf453e79710e4baaddb5e377e8b12, type: 3}
+      propertyPath: doubleJumpParticle
+      value: 
+      objectReference: {fileID: 1362322522392596260, guid: 9429dfd2418b3c44b8451c5c20b2f9f1, type: 3}
     - target: {fileID: 7575362554721777144, guid: 537bf453e79710e4baaddb5e377e8b12, type: 3}
       propertyPath: climbStopDistance
       value: 0.01

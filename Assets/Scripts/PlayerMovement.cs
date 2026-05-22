@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private ParticleSystem dashParticle;
+    [SerializeField] private ParticleSystem doubleJumpParticle;
 
     [Header("Movement Settings")]
     [SerializeField] private float speed = 8f;
@@ -108,6 +110,9 @@ public class PlayerMovement : MonoBehaviour
 
         if (animator != null) animator.SetBool(dashingParam, true);
 
+        // spawn dash particles
+        SpawnEffect(dashParticle);
+
         float originalGravity = rb.gravityScale;
         rb.gravityScale = 0f;
 
@@ -137,12 +142,19 @@ public class PlayerMovement : MonoBehaviour
 
             if (grounded || coyoteNow || jumpsLeft > 0)
             {
+                bool isAirJump = !grounded && !coyoteNow; // treat this as a double-jump / mid-air jump
+
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpingPower);
                 if (!grounded && !coyoteNow) jumpsLeft--;
 
                 lastJumpAppliedTime = Time.time;
                 jumpPressed = false;
                 lastJumpPressedTime = -10f;
+
+                if (isAirJump)
+                {
+                    SpawnEffect(doubleJumpParticle);
+                }
             }
         }
 
@@ -177,5 +189,14 @@ public class PlayerMovement : MonoBehaviour
             localScale.x *= -1f;
             transform.localScale = localScale;
         }
+    }
+
+    private void SpawnEffect(ParticleSystem effect)
+    {
+        if (effect == null) return;
+        ParticleSystem instance = Instantiate(effect, transform.position, Quaternion.identity, transform);
+        instance.transform.localPosition = Vector3.zero;
+        instance.Play();
+        Destroy(instance.gameObject, 3f);
     }
 }
