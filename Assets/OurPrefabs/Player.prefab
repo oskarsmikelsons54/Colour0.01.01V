@@ -262,10 +262,12 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
+  dashParticle: {fileID: 1362322522392596260, guid: 9429dfd2418b3c44b8451c5c20b2f9f1, type: 3}
+  doubleJumpParticle: {fileID: 1362322522392596260, guid: 9429dfd2418b3c44b8451c5c20b2f9f1, type: 3}
   speed: 6
   jumpingPower: 16
   maxJumps: 1
-  dashSpeed: 24
+  dashSpeed: 14
   dashDuration: 0.2
   dashCooldown: 1
   animator: {fileID: 52860404213761315}
@@ -298,7 +300,12 @@ MonoBehaviour:
   destructibleLayers:
     serializedVersion: 2
     m_Bits: 128
+  climbableLayers:
+    serializedVersion: 2
+    m_Bits: 8
   attackEffect: {fileID: 0}
+  climbSpeed: 8
+  climbStopDistance: 0.01
   attackSound: {fileID: 8300000, guid: 10e6eccf727965042b25977e02829fd2, type: 3}
   attackSoundVolume: 1
   hitSound: {fileID: 8300000, guid: 6d4738b35a020a048901e6ecede4ac6a, type: 3}

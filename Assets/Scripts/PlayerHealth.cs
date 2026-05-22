@@ -15,12 +15,6 @@ public class PlayerHealth : MonoBehaviour
     {
         health = maxHealth;
 
-        // 🔥 spawn pie checkpointa
-        if (GameManager.instance != null && GameManager.instance.hasCheckpoint)
-        {
-            transform.position = GameManager.instance.checkpointPosition;
-        }
-
         if (healthSlider != null)
         {
             healthSlider.maxValue = maxHealth;
@@ -46,7 +40,7 @@ public class PlayerHealth : MonoBehaviour
         if (deathPrefab != null)
             Instantiate(deathPrefab, transform.position, transform.rotation);
 
-        // 🔥 restartē visu scenu (boss reset utt)
+        // immediate scene reload (restores previous behavior)
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
