@@ -194,8 +194,9 @@ public class PlayerMovement : MonoBehaviour
     private void SpawnEffect(ParticleSystem effect)
     {
         if (effect == null) return;
+        // Instantiate as a child of the player, then set localPosition to y = -1 so the particle spawns below the player.
         ParticleSystem instance = Instantiate(effect, transform.position, Quaternion.identity, transform);
-        instance.transform.localPosition = Vector3.zero;
+        instance.transform.localPosition = new Vector3(0f, -1f, 0f);
         instance.Play();
         Destroy(instance.gameObject, 3f);
     }

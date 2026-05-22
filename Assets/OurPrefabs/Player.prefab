@@ -307,9 +307,9 @@ MonoBehaviour:
   climbSpeed: 8
   climbStopDistance: 0.01
   attackSound: {fileID: 8300000, guid: 10e6eccf727965042b25977e02829fd2, type: 3}
-  attackSoundVolume: 1
+  attackSoundVolume: 0.3
   hitSound: {fileID: 8300000, guid: 6d4738b35a020a048901e6ecede4ac6a, type: 3}
-  hitSoundVolume: 1
+  hitSoundVolume: 0.3
 --- !u!95 &52860404213761315
 Animator:
   serializedVersion: 7
