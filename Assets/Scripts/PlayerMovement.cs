@@ -71,8 +71,8 @@ public class PlayerMovement : MonoBehaviour
         if (animator != null)
             animator.SetBool(walkingParam, isWalking);
 
-        // DASH ar C taustiņu
-        if (Input.GetKeyDown(KeyCode.C) && canDash)
+        // DASH ar Left Shift taustiņu
+        if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
         {
             StartCoroutine(Dash());
         }
