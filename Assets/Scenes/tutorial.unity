@@ -11178,11 +11178,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6414335511109890103, guid: a9198a1034e74554685c3597de8384bf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.27
+      value: 15.07
       objectReference: {fileID: 0}
     - target: {fileID: 6414335511109890103, guid: a9198a1034e74554685c3597de8384bf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.85
+      value: 8.15
       objectReference: {fileID: 0}
     - target: {fileID: 6414335511109890103, guid: a9198a1034e74554685c3597de8384bf, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11390,6 +11390,10 @@ PrefabInstance:
       propertyPath: healthSlider
       value: 
       objectReference: {fileID: 408747511}
+    - target: {fileID: 7662734599523605836, guid: 537bf453e79710e4baaddb5e377e8b12, type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11405,7 +11409,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 481098392599748395, guid: 6719d26571523ae46839a42090bd3cf9, type: 3}
       propertyPath: nextSceneName
-      value: level one room one
+      value: level one room 1
       objectReference: {fileID: 0}
     - target: {fileID: 4175494683690352568, guid: 6719d26571523ae46839a42090bd3cf9, type: 3}
       propertyPath: m_LocalPosition.x
