@@ -2305,19 +2305,19 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 6cfec1fd0e86bfe4b963c6d47cf74181, type: 3}
     - target: {fileID: 2725494585381190770, guid: 5e9a6020391df124b95c5dfd2e3257bf, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
-      value: 0
+      value: 0.023957409
       objectReference: {fileID: 0}
     - target: {fileID: 2725494585381190770, guid: 5e9a6020391df124b95c5dfd2e3257bf, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
-      value: 0.001222494
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2725494585381190770, guid: 5e9a6020391df124b95c5dfd2e3257bf, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 1
+      value: 0.95277536
       objectReference: {fileID: 0}
     - target: {fileID: 2725494585381190770, guid: 5e9a6020391df124b95c5dfd2e3257bf, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 0.99778426
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4173847681180211760, guid: 5e9a6020391df124b95c5dfd2e3257bf, type: 3}
       propertyPath: m_Name
@@ -2361,6 +2361,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6160130131454479332, guid: 5e9a6020391df124b95c5dfd2e3257bf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6163813417706697610, guid: 5e9a6020391df124b95c5dfd2e3257bf, type: 3}
+      propertyPath: m_Dithering
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6163813417706697610, guid: 5e9a6020391df124b95c5dfd2e3257bf, type: 3}
+      propertyPath: m_Antialiasing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6163813417706697610, guid: 5e9a6020391df124b95c5dfd2e3257bf, type: 3}
+      propertyPath: m_RenderPostProcessing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6163813417706697610, guid: 5e9a6020391df124b95c5dfd2e3257bf, type: 3}
+      propertyPath: m_TaaSettings.m_Quality
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7393934450943921782, guid: 5e9a6020391df124b95c5dfd2e3257bf, type: 3}

@@ -1539,6 +1539,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a73582c06f299f468e1fa6efb728e76, type: 3}
+--- !u!4 &582758485 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6160130131454479332, guid: 5e9a6020391df124b95c5dfd2e3257bf, type: 3}
+  m_PrefabInstance: {fileID: 8221055845261882689}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &582956367
 GameObject:
   m_ObjectHideFlags: 0
@@ -1952,8 +1957,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0, y: -0.00000011920929, z: 0}
-    m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
+    m_Center: {x: -0.00024998188, y: -0.000100016594, z: 0}
+    m_Extent: {x: 1.00045, y: 1.0009, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1976,12 +1981,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 619394800}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 582758485}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &635186532
 GameObject:
@@ -11235,7 +11240,7 @@ PrefabInstance:
       objectReference: {fileID: 2133089265}
     - target: {fileID: 2725494585381190770, guid: 5e9a6020391df124b95c5dfd2e3257bf, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
-      value: 0.024414062
+      value: 0.023957409
       objectReference: {fileID: 0}
     - target: {fileID: 2725494585381190770, guid: 5e9a6020391df124b95c5dfd2e3257bf, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
@@ -11243,7 +11248,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2725494585381190770, guid: 5e9a6020391df124b95c5dfd2e3257bf, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 0.9513889
+      value: 0.95277536
       objectReference: {fileID: 0}
     - target: {fileID: 2725494585381190770, guid: 5e9a6020391df124b95c5dfd2e3257bf, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
@@ -11327,7 +11332,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 6160130131454479332, guid: 5e9a6020391df124b95c5dfd2e3257bf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 619394802}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e9a6020391df124b95c5dfd2e3257bf, type: 3}
 --- !u!1001 &8227785627108834837
@@ -11382,6 +11390,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3570186772134995107, guid: 537bf453e79710e4baaddb5e377e8b12, type: 3}
+      propertyPath: damage
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 3954613080492620373, guid: 537bf453e79710e4baaddb5e377e8b12, type: 3}
       propertyPath: gameOverUI
       value: 
@@ -11390,10 +11402,6 @@ PrefabInstance:
       propertyPath: healthSlider
       value: 
       objectReference: {fileID: 408747511}
-    - target: {fileID: 7662734599523605836, guid: 537bf453e79710e4baaddb5e377e8b12, type: 3}
-      propertyPath: m_TextStyleHashCode
-      value: -1183493901
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11473,7 +11481,6 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 8221055845261882689}
-  - {fileID: 619394802}
   - {fileID: 8227785627108834837}
   - {fileID: 717384177}
   - {fileID: 744090529}
