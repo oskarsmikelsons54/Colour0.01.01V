@@ -47,12 +47,19 @@ public class PlayerMovement : MonoBehaviour
     private float lastJumpAppliedTime = -1f;
     private float lastJumpReleasedTime = -1f;
 
+    // Optional textual cooldown display (cached from children if present)
+    private CooldownText cooldownDisplay;
+
     void Start()
     {
         if (rb != null)
             rb.interpolation = RigidbodyInterpolation2D.Interpolate;
 
         jumpsLeft = maxJumps;
+
+        // cache cooldown display if added as a child of the player
+        // include inactive so we can find a CooldownText that starts hidden
+        cooldownDisplay = GetComponentInChildren<CooldownText>(true);
     }
 
     void Update()
@@ -112,6 +119,13 @@ public class PlayerMovement : MonoBehaviour
 
         // spawn dash particles
         SpawnEffect(dashParticle);
+
+        // start cooldown UI if available; show total time until dash is usable again
+        if (cooldownDisplay != null)
+        {
+            // total time until dash is available again is dashDuration + dashCooldown
+            cooldownDisplay.StartCooldown(dashDuration + dashCooldown);
+        }
 
         float originalGravity = rb.gravityScale;
         rb.gravityScale = 0f;
