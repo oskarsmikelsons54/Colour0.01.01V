@@ -11454,9 +11454,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.019386107
-    width: 0.9996848
-    height: 0.96052104
+    y: 0.017770598
+    width: 1
+    height: 0.9632472
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 34
@@ -11642,14 +11642,6 @@ PrefabInstance:
       propertyPath: healthSlider
       value: 
       objectReference: {fileID: 408747511}
-    - target: {fileID: 7575362554721777144, guid: 537bf453e79710e4baaddb5e377e8b12, type: 3}
-      propertyPath: climbSpeed
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 7575362554721777144, guid: 537bf453e79710e4baaddb5e377e8b12, type: 3}
-      propertyPath: meleeSettings
-      value: 
-      objectReference: {fileID: 11400000, guid: 5f07822de5a663b45a013287508253e3, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
