@@ -572,7 +572,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 8793639957104055765, guid: 844c7efa0204ccf48af96dd84c94ad8c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -724,7 +724,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   attackEffect: {fileID: 0}
-  climbSpeed: 8
+  climbSpeed: 10
   climbStopDistance: 0.01
   attackSound: {fileID: 8300000, guid: 10e6eccf727965042b25977e02829fd2, type: 3}
   attackSoundVolume: 0.3
@@ -748,16 +748,20 @@ MonoBehaviour:
   enemyLayers:
     serializedVersion: 2
     m_Bits: 64
-  beamPrefab: {fileID: 0}
-  beamThickness: 0.1
-  beamMaxDistance: 20
-  beamSpriteUnitLength: 1
-  beamDisplayTime: 0.15
-  useLineRenderer: 1
   lineMaterial: {fileID: 2100000, guid: 118e4fc3a1f596f4ba7d52c98372e7de, type: 2}
-  lineStartWidth: 1
-  lineEndWidth: 1
+  lineStartWidth: 1.2
+  lineEndWidth: 1.2
   textureScrollSpeed: 0
+  lineColor: {r: 1, g: 1, b: 1, a: 1}
+  tipFadeFraction: 0.313
+  lineTextureUnitLength: 1
+  beamFadeDuration: 0.25
+  beamLightPrefab: {fileID: 8111971257478184453, guid: 5884b7217290b6b46b53b3aafbcfb8f6, type: 3}
+  lightSpacing: 1
+  lightIntensity: 1
+  lightOuterRadius: 0.8
+  beamMaxDistance: 20
+  beamDisplayTime: 0.15
   windUpTime: 0
   cooldownTime: 0.7
   cooldownDisplay: {fileID: 430737677924241569}

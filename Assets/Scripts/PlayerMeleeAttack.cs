@@ -198,17 +198,19 @@ public class PlayerMeleeAttack : MonoBehaviour
                 Vector3 climbDir = (attackPoint.position - origin).normalized;
                 if (climbDir.sqrMagnitude <= Mathf.Epsilon) break;
 
-                Vector3 moveAlt = climbDir * climbSpeed * Time.deltaTime;
+                // use fixed delta for physics-consistent movement
+                Vector3 moveAlt = climbDir * climbSpeed * Time.fixedDeltaTime;
                 if (rb != null)
                     rb.MovePosition(rb.position + (Vector2)moveAlt);
                 else
                     transform.position += moveAlt;
 
-                yield return null;
+                // wait for physics step
+                yield return new WaitForFixedUpdate();
                 continue;
             }
 
-            Vector3 move = dir.normalized * climbSpeed * Time.deltaTime;
+            Vector3 move = dir.normalized * climbSpeed * Time.fixedDeltaTime;
             if (move.magnitude > dist) move = dir;
 
             if (rb != null)
@@ -216,7 +218,8 @@ public class PlayerMeleeAttack : MonoBehaviour
             else
                 transform.position += move;
 
-            yield return null;
+            // wait for physics update to keep MovePosition consistent
+            yield return new WaitForFixedUpdate();
         }
 
         // restore gravity
