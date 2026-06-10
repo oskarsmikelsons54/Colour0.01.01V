@@ -34556,6 +34556,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 568578035124252704, guid: 5e9a6020391df124b95c5dfd2e3257bf, type: 3}
+      propertyPath: m_AssetsPPU
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 955080379515212389, guid: 5e9a6020391df124b95c5dfd2e3257bf, type: 3}
       propertyPath: target
       value: 
@@ -34573,8 +34577,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 6cfec1fd0e86bfe4b963c6d47cf74181, type: 3}
     - target: {fileID: 2725494585381190770, guid: 5e9a6020391df124b95c5dfd2e3257bf, type: 3}
+      propertyPath: orthographic size
+      value: 7.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2725494585381190770, guid: 5e9a6020391df124b95c5dfd2e3257bf, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
-      value: 0
+      value: 0.023983316
       objectReference: {fileID: 0}
     - target: {fileID: 2725494585381190770, guid: 5e9a6020391df124b95c5dfd2e3257bf, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
@@ -34582,7 +34590,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2725494585381190770, guid: 5e9a6020391df124b95c5dfd2e3257bf, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 1
+      value: 0.9528444
       objectReference: {fileID: 0}
     - target: {fileID: 2725494585381190770, guid: 5e9a6020391df124b95c5dfd2e3257bf, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
@@ -34634,15 +34642,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7393934450943921782, guid: 5e9a6020391df124b95c5dfd2e3257bf, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.9
+      value: 1.4000001
       objectReference: {fileID: 0}
     - target: {fileID: 7393934450943921782, guid: 5e9a6020391df124b95c5dfd2e3257bf, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.9
+      value: 1.4000001
       objectReference: {fileID: 0}
     - target: {fileID: 7393934450943921782, guid: 5e9a6020391df124b95c5dfd2e3257bf, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.9
+      value: 1.4000001
       objectReference: {fileID: 0}
     - target: {fileID: 7772582320411706104, guid: 5e9a6020391df124b95c5dfd2e3257bf, type: 3}
       propertyPath: m_Size.x
@@ -36610,6 +36618,18 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 9a5fa0a7c149d1b4e9a0c2edf40da76e, type: 2}
+    - target: {fileID: 6891984992742375322, guid: d498deb225195eb408fd5430226bf395, type: 3}
+      propertyPath: m_Color.b
+      value: 0.6784314
+      objectReference: {fileID: 0}
+    - target: {fileID: 6891984992742375322, guid: d498deb225195eb408fd5430226bf395, type: 3}
+      propertyPath: m_Color.g
+      value: 0.6509804
+      objectReference: {fileID: 0}
+    - target: {fileID: 6891984992742375322, guid: d498deb225195eb408fd5430226bf395, type: 3}
+      propertyPath: m_Color.r
+      value: 0.7372549
+      objectReference: {fileID: 0}
     - target: {fileID: 7910458265399866312, guid: d498deb225195eb408fd5430226bf395, type: 3}
       propertyPath: m_Name
       value: Boss
