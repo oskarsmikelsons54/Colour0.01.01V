@@ -896,6 +896,9 @@ MonoBehaviour:
   windUpTime: 0
   cooldownTime: 0.7
   cooldownDisplay: {fileID: 430737677924241569}
+  audioSource: {fileID: 5130779209134798199}
+  fireClip: {fileID: 8300000, guid: a1aea7b9d5e5f8c4180f3056913de88d, type: 3}
+  fireVolume: 1
 --- !u!114 &8448916487273391829
 MonoBehaviour:
   m_ObjectHideFlags: 0

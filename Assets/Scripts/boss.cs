@@ -53,6 +53,16 @@ public class boss : MonoBehaviour
     [Tooltip("Possible teleport locations for the boss; designer-placed Transforms")]
     [SerializeField] private Transform[] teleportPoints;
 
+    [Header("Audio")]
+    [Tooltip("Optional AudioSource to play sounds. If null, PlayClipAtPoint will be used")]
+    [SerializeField] private AudioSource audioSource;
+    [Tooltip("Sound played when the boss claps")]
+    [SerializeField] private AudioClip clapClip;
+    [Range(0f, 1f)] [SerializeField] private float clapVolume = 1f;
+    [Tooltip("Sound played when the boss teleports")]
+    [SerializeField] private AudioClip teleportClip;
+    [Range(0f, 1f)] [SerializeField] private float teleportVolume = 1f;
+
     private Rigidbody2D rb;
     private Animator animator;
     private bool movingRight = true;
@@ -109,6 +119,10 @@ public class boss : MonoBehaviour
         {
             Debug.LogWarning("EnemyHealth component not found on boss; damage-driven attacks won't trigger.");
         }
+
+        // try to auto-find AudioSource if not assigned
+        if (audioSource == null)
+            audioSource = GetComponent<AudioSource>();
 
         // Validate timing bounds
         if (minWalkTime > maxWalkTime) minWalkTime = maxWalkTime = Mathf.Max(minWalkTime, 0.1f);
@@ -353,10 +367,28 @@ public class boss : MonoBehaviour
 
         // spawn a projectile somewhere near the boss
         SpawnProjectileRandom();
+
+        // play clap sound
+        if (clapClip != null)
+        {
+            if (audioSource != null)
+                audioSource.PlayOneShot(clapClip, clapVolume);
+            else
+                AudioSource.PlayClipAtPoint(clapClip, transform.position, clapVolume);
+        }
     }
 
     public void Clap2()
     {
+        // play clap sound for the second clap as well (if assigned)
+        if (clapClip != null)
+        {
+            if (audioSource != null)
+                audioSource.PlayOneShot(clapClip, clapVolume);
+            else
+                AudioSource.PlayClipAtPoint(clapClip, transform.position, clapVolume);
+        }
+
         // spawn a projectile somewhere near the boss
         SpawnProjectileRandom();
 
@@ -484,6 +516,15 @@ public class boss : MonoBehaviour
 
         if (teleportPoint != null)
         {
+            // play teleport sound at destination if assigned
+            if (teleportClip != null)
+            {
+                if (audioSource != null)
+                    audioSource.PlayOneShot(teleportClip, teleportVolume);
+                else
+                    AudioSource.PlayClipAtPoint(teleportClip, teleportPoint.position, teleportVolume);
+            }
+
             transform.position = teleportPoint.position;
             transform.eulerAngles = new Vector3(0f, movingRight ? 0f : 180f, 0f);
             if (rb != null) rb.linearVelocity = Vector2.zero;
