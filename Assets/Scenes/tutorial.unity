@@ -715,8 +715,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: PRESS A OR D TO MOVE
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
-  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -740,8 +740,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 10
-  m_fontSizeBase: 10
+  m_fontSize: 6
+  m_fontSizeBase: 6
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -813,7 +813,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -853,8 +853,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3.33, y: 3.83}
-  m_SizeDelta: {x: 12.597, y: 4.7786}
+  m_AnchoredPosition: {x: -4.78, y: 3.85}
+  m_SizeDelta: {x: 7.5918, y: 4.8704}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &319572506
 PrefabInstance:
@@ -24847,7 +24847,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3504982696752477330, guid: 58809439cd8d3974b812899420bcd230, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 87.136
+      value: 88.973
       objectReference: {fileID: 0}
     - target: {fileID: 3504982696752477330, guid: 58809439cd8d3974b812899420bcd230, type: 3}
       propertyPath: m_SizeDelta.y
@@ -24855,7 +24855,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3504982696752477330, guid: 58809439cd8d3974b812899420bcd230, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -17.2
+      value: -16.282
       objectReference: {fileID: 0}
     - target: {fileID: 3504982696752477330, guid: 58809439cd8d3974b812899420bcd230, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -24876,7 +24876,11 @@ PrefabInstance:
     - target: {fileID: 5974569415323907857, guid: 58809439cd8d3974b812899420bcd230, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 5974569415323907857, guid: 58809439cd8d3974b812899420bcd230, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5974569415323907857, guid: 58809439cd8d3974b812899420bcd230, type: 3}
       propertyPath: m_fontSizeBase
       value: 60
@@ -24884,7 +24888,11 @@ PrefabInstance:
     - target: {fileID: 5974569415323907857, guid: 58809439cd8d3974b812899420bcd230, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 5974569415323907857, guid: 58809439cd8d3974b812899420bcd230, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5974569415323907857, guid: 58809439cd8d3974b812899420bcd230, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
@@ -24892,7 +24900,7 @@ PrefabInstance:
     - target: {fileID: 8802627996474499528, guid: 58809439cd8d3974b812899420bcd230, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25297,10 +25305,10 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.228803
+    x: 0.044140626
     y: 0
-    width: 0.5441951
-    height: 0.59987783
+    width: 0.91180557
+    height: 1.000381
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 34
