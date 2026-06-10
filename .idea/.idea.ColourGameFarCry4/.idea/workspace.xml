@@ -15,6 +15,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameOverScreen.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PopupTrigger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.animation@7396d8477ca9/IK/Runtime/IKChain2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.tilemap@2428aeee2f73/Editor/GridEditorUtility.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
@@ -111,6 +113,7 @@
       <workItem from="1776594307780" duration="9405000" />
       <workItem from="1776714233721" duration="1855000" />
       <workItem from="1779452844720" duration="1941000" />
+      <workItem from="1781105477842" duration="1872000" />
     </task>
     <servers />
   </component>
