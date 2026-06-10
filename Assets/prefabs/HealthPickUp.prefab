@@ -165,4 +165,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2530524dcd4305041bfa9f185eec9582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HealthPickupSound
-  healthPickupSound: {fileID: 8300000, guid: dcb8191e74fe482418c65211eddf340b, type: 3}
+  healthPickupSound: {fileID: 8300000, guid: 861412f1abffcb64d99e8e046ef0bab2, type: 3}

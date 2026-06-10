@@ -57,6 +57,14 @@ public class PlayerRangedAttack : MonoBehaviour
     [Tooltip("Optional CooldownText component used to display this weapon's cooldown. Assign a distinct CooldownText per weapon to avoid conflicts.")]
     [SerializeField] private CooldownText cooldownDisplay;
 
+    [Header("Audio")]
+    [Tooltip("Optional AudioSource to play the firing sound. If null, PlayClipAtPoint will be used.")]
+    [SerializeField] private AudioSource audioSource;
+    [Tooltip("Sound played when the laser fires")]
+    [SerializeField] private AudioClip fireClip;
+    [Range(0f, 1f)]
+    [SerializeField] private float fireVolume = 1f;
+
     private Camera mainCamera;
 
     private Coroutine windupCoroutine;
@@ -104,6 +112,12 @@ public class PlayerRangedAttack : MonoBehaviour
             var prefabL2 = beamLightPrefab.GetComponent<Light2D>();
             if (prefabL2 != null)
                 defaultBeamLightIntensity = prefabL2.intensity;
+        }
+
+        // try to auto-find AudioSource if one wasn't assigned
+        if (audioSource == null)
+        {
+            audioSource = GetComponent<AudioSource>();
         }
     }
 
@@ -166,6 +180,19 @@ public class PlayerRangedAttack : MonoBehaviour
             if (health != null)
             {
                 health.TakeDamage(damage);
+            }
+        }
+
+        // play firing sound
+        if (fireClip != null)
+        {
+            if (audioSource != null)
+            {
+                audioSource.PlayOneShot(fireClip, fireVolume);
+            }
+            else
+            {
+                AudioSource.PlayClipAtPoint(fireClip, origin, fireVolume);
             }
         }
 

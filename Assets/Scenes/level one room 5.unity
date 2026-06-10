@@ -309,6 +309,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1276249591}
     m_Modifications:
+    - target: {fileID: -1845187780224432848, guid: cf8ad9b2d7604d84ab03ac3cb7f2905b, type: 3}
+      propertyPath: healthPickupSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 0772a2851aa1db14dbbe7a1e1e217c10, type: 3}
     - target: {fileID: 876704264654477385, guid: cf8ad9b2d7604d84ab03ac3cb7f2905b, type: 3}
       propertyPath: m_Name
       value: HealthPickUp
@@ -34711,8 +34715,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4285493247
+  m_fontColor: {r: 1, g: 0.43529412, b: 0.43529412, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -34799,10 +34803,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 673774410}
-    - target: {fileID: 2725494585381190770, guid: 5e9a6020391df124b95c5dfd2e3257bf, type: 3}
-      propertyPath: orthographic size
-      value: 8
-      objectReference: {fileID: 0}
+    - target: {fileID: 1514142314315676455, guid: 5e9a6020391df124b95c5dfd2e3257bf, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 6ac69bbb98b7d2f45802efec2813c13d, type: 3}
     - target: {fileID: 4173847681180211760, guid: 5e9a6020391df124b95c5dfd2e3257bf, type: 3}
       propertyPath: m_Name
       value: Main Camera (1)
@@ -35420,6 +35424,11 @@ RectTransform:
 --- !u!4 &673774410 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2430335592598866220, guid: 537bf453e79710e4baaddb5e377e8b12, type: 3}
+  m_PrefabInstance: {fileID: 1669344669}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &673774413 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5130779209134798199, guid: 537bf453e79710e4baaddb5e377e8b12, type: 3}
   m_PrefabInstance: {fileID: 1669344669}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &675327018
@@ -37055,7 +37064,7 @@ MonoBehaviour:
   hitsToTrigger: 2
   preAttackDelay: 0.05
   postAttackDelay: 0.05
-  idleAttackChance: 0
+  idleAttackChance: 0.3
   clapPrefab: {fileID: 5253948760853750116, guid: faee252e009d59445bf87cfa6d3bc062, type: 3}
   clapLocalPosition: {x: -0.7, y: 0.7, z: 0}
   clapFadeInDuration: 0.7
@@ -38181,6 +38190,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3570186772134995107, guid: 537bf453e79710e4baaddb5e377e8b12, type: 3}
+      propertyPath: fireClip
+      value: 
+      objectReference: {fileID: 8300000, guid: a1aea7b9d5e5f8c4180f3056913de88d, type: 3}
+    - target: {fileID: 3570186772134995107, guid: 537bf453e79710e4baaddb5e377e8b12, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 673774413}
     - target: {fileID: 3954613080492620373, guid: 537bf453e79710e4baaddb5e377e8b12, type: 3}
       propertyPath: healthSlider
       value: 
