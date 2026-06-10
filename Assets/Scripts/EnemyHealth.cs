@@ -12,6 +12,9 @@ public class EnemyHealth : MonoBehaviour
     // Event invoked when this enemy takes damage. Parameter is damage amount.
     public event Action<int> OnDamaged;
 
+    // New event invoked when this enemy dies (no parameters)
+    public event Action OnDeath;
+
     void Start()
     {
         currentHealth = maxHealth;
@@ -31,6 +34,9 @@ public class EnemyHealth : MonoBehaviour
 
     private void Die()
     {
+        // Notify listeners before destroying
+        OnDeath?.Invoke();
+
         // Spawn death prefab at this position/rotation if assigned
         if (deathPrefab != null)
         {

@@ -112159,7 +112159,7 @@ PrefabInstance:
       objectReference: {fileID: 216280941}
     - target: {fileID: 1514142314315676455, guid: 5e9a6020391df124b95c5dfd2e3257bf, type: 3}
       propertyPath: m_Volume
-      value: 0.1
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: 1514142314315676455, guid: 5e9a6020391df124b95c5dfd2e3257bf, type: 3}
       propertyPath: m_Enabled
@@ -112168,7 +112168,7 @@ PrefabInstance:
     - target: {fileID: 1514142314315676455, guid: 5e9a6020391df124b95c5dfd2e3257bf, type: 3}
       propertyPath: m_Resource
       value: 
-      objectReference: {fileID: 8300000, guid: 6cfec1fd0e86bfe4b963c6d47cf74181, type: 3}
+      objectReference: {fileID: 8300000, guid: c385c4c5d8c76ff439fa9d1e8f5e3193, type: 3}
     - target: {fileID: 2725494585381190770, guid: 5e9a6020391df124b95c5dfd2e3257bf, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
       value: 0.046134666

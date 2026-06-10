@@ -13,6 +13,9 @@ public class healthbar : MonoBehaviour
     private EnemyHealth enemyHealth;
     private PlayerHealth playerHealth;
 
+    // whether victory message has been shown
+    private bool victoryShown = false;
+
     void Start()
     {
         if (healthText == null)
@@ -34,8 +37,22 @@ public class healthbar : MonoBehaviour
             Debug.LogWarning("healthbar: targetObject does not have EnemyHealth or PlayerHealth component.");
         }
 
+        // subscribe to death event if enemy
+        if (enemyHealth != null)
+        {
+            enemyHealth.OnDeath += OnEnemyDeath;
+        }
+
         // Initialize text immediately
         UpdateHealthText();
+    }
+
+    void OnDestroy()
+    {
+        if (enemyHealth != null)
+        {
+            enemyHealth.OnDeath -= OnEnemyDeath;
+        }
     }
 
     void Update()
@@ -43,9 +60,16 @@ public class healthbar : MonoBehaviour
         UpdateHealthText();
     }
 
-    private void UpdateHealthText()
+    private void OnEnemyDeath()
     {
         if (healthText == null) return;
+        healthText.text = "YOU WIN CONGRATULATIONS WINNER!";
+        victoryShown = true;
+    }
+
+    private void UpdateHealthText()
+    {
+        if (healthText == null || victoryShown) return;
 
         if (enemyHealth != null)
         {
