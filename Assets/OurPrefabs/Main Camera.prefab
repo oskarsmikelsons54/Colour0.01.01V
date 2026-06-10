@@ -150,15 +150,15 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.6404728
+    x: 0.044140626
     y: 0
-    width: 0.7046824
-    height: 0.6132329
+    width: 0.91180557
+    height: 1.000381
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 4.5
+  orthographic size: 7.2
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -254,7 +254,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.RenderPipelines.Universal.2D.Runtime::UnityEngine.Rendering.Universal.PixelPerfectCamera
   m_ComponentVersion: 1
-  m_AssetsPPU: 64
+  m_AssetsPPU: 40
   m_RefResolutionX: 1024
   m_RefResolutionY: 576
   m_CropFrame: 4
@@ -291,8 +291,8 @@ Transform:
   m_GameObject: {fileID: 7415899745401624324}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 10}
-  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
+  m_LocalPosition: {x: 1.1526, y: 0.6483, z: 10}
+  m_LocalScale: {x: 1.7604537, y: 1.7604537, z: 1.7604537}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 6160130131454479332}
