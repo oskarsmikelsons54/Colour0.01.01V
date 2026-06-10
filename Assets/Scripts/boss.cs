@@ -39,6 +39,16 @@ public class boss : MonoBehaviour
     [Tooltip("Time to fade out the clap visual when attack ends")]
     [SerializeField] private float clapFadeOutDuration = 0.25f;
 
+    [Header("Projectile settings")]
+    [Tooltip("Projectile prefab spawned by clap events")]
+    [SerializeField] private GameObject projectilePrefab;
+    [Tooltip("Maximum radius around boss to spawn the projectile (randomized)")]
+    [SerializeField] private float projectileSpawnRadius = 0.6f;
+
+    [Header("Teleport settings")]
+    [Tooltip("Possible teleport locations for the boss; designer-placed Transforms")]
+    [SerializeField] private Transform[] teleportPoints;
+
     private Rigidbody2D rb;
     private Animator animator;
     private bool movingRight = true;
@@ -57,6 +67,9 @@ public class boss : MonoBehaviour
     private GameObject spawnedClap;
     private Light spawnedClapLight;
     private float spawnedClapLightOriginalIntensity = 1f;
+
+    // track last teleport to avoid picking same spot twice
+    private int lastTeleportIndex = -1;
 
     void Start()
     {
@@ -274,7 +287,7 @@ public class boss : MonoBehaviour
     }
 
     // Minimal animation event callbacks: clap1 and clap2
-    // Clap1 spawns a prefab and fades it in. Clap2 is intentionally empty.
+    // Clap1 spawns a prefab and fades it in. Clap2 will now also spawn a projectile.
     public void Clap1()
     {
         if (clapPrefab == null) return;
@@ -302,9 +315,27 @@ public class boss : MonoBehaviour
         }
 
         StartCoroutine(FadeInClap(spawnedClap, clapFadeInDuration));
+
+        // spawn a projectile somewhere near the boss
+        SpawnProjectileRandom();
     }
 
-    public void Clap2() { }
+    public void Clap2()
+    {
+        // spawn a projectile somewhere near the boss
+        SpawnProjectileRandom();
+
+        TeleportToRandomPoint();
+    }
+
+    private void SpawnProjectileRandom()
+    {
+        if (projectilePrefab == null) return;
+
+        Vector2 offset = Random.insideUnitCircle * projectileSpawnRadius;
+        Vector3 spawnPos = transform.position + new Vector3(offset.x, offset.y, 0f);
+        Instantiate(projectilePrefab, spawnPos, Quaternion.identity);
+    }
 
     private IEnumerator FadeInClap(GameObject go, float duration)
     {
@@ -367,6 +398,61 @@ public class boss : MonoBehaviour
         }
 
         Destroy(go);
+    }
+
+    private void TeleportToRandomPoint()
+    {
+        if (teleportPoints == null || teleportPoints.Length == 0) return;
+
+        int index = -1;
+        int attempts = 0;
+
+        // On the very first teleport (lastTeleportIndex == -1) we must not pick index 0 if possible
+        bool excludeZeroOnFirst = (lastTeleportIndex == -1 && teleportPoints.Length > 1);
+
+        if (teleportPoints.Length == 1)
+        {
+            index = 0;
+        }
+        else
+        {
+            do
+            {
+                // pick from 0..length-1
+                index = Random.Range(0, teleportPoints.Length);
+                attempts++;
+
+                // if it's the first teleport and we picked 0, retry
+                if (excludeZeroOnFirst && index == 0) continue;
+
+                // stop if different from lastTeleportIndex
+                if (index != lastTeleportIndex) break;
+
+            } while (attempts < 20);
+
+            // if after retries we still picked lastTeleportIndex (rare), choose the next available index
+            if (index == lastTeleportIndex)
+            {
+                for (int i = 0; i < teleportPoints.Length; i++)
+                {
+                    if (i == lastTeleportIndex) continue;
+                    if (excludeZeroOnFirst && i == 0) continue;
+                    index = i;
+                    break;
+                }
+            }
+        }
+
+        lastTeleportIndex = index;
+
+        Transform teleportPoint = teleportPoints[index];
+
+        if (teleportPoint != null)
+        {
+            transform.position = teleportPoint.position;
+            transform.eulerAngles = new Vector3(0f, movingRight ? 0f : 180f, 0f);
+            if (rb != null) rb.linearVelocity = Vector2.zero;
+        }
     }
 
     void OnDrawGizmosSelected()
