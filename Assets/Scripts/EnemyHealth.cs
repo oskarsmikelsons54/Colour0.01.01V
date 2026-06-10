@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
@@ -8,6 +9,9 @@ public class EnemyHealth : MonoBehaviour
     // Optional prefab to spawn on death (e.g., death effect, loot, ragdoll)
     public GameObject deathPrefab;
 
+    // Event invoked when this enemy takes damage. Parameter is damage amount.
+    public event Action<int> OnDamaged;
+
     void Start()
     {
         currentHealth = maxHealth;
@@ -17,6 +21,10 @@ public class EnemyHealth : MonoBehaviour
     {
         currentHealth -= damage;
         Debug.Log("Enemy Hurt");
+
+        // Notify listeners that damage occurred
+        OnDamaged?.Invoke(damage);
+
         if (currentHealth <= 0)
             Die();
     }

@@ -1,0 +1,1419 @@
+fileFormatVersion: 2
+guid: bd4ea296ca1236648a2e6e34638c3c2e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1144065438694887901
+    second: bossanimationidle_export_Armature_002_mixamo_com_Layer0_0
+  - first:
+      213: 2809699257358477764
+    second: bossanimationidle_export_Armature_002_mixamo_com_Layer0_1
+  - first:
+      213: 2211669316467863190
+    second: bossanimationidle_export_Armature_002_mixamo_com_Layer0_2
+  - first:
+      213: -8910100865721428927
+    second: bossanimationidle_export_Armature_002_mixamo_com_Layer0_3
+  - first:
+      213: 8870964648537817547
+    second: bossanimationidle_export_Armature_002_mixamo_com_Layer0_4
+  - first:
+      213: 9181709009885950607
+    second: bossanimationidle_export_Armature_002_mixamo_com_Layer0_5
+  - first:
+      213: -6995903056713056056
+    second: bossanimationidle_export_Armature_002_mixamo_com_Layer0_6
+  - first:
+      213: 585012428961703946
+    second: bossanimationidle_export_Armature_002_mixamo_com_Layer0_7
+  - first:
+      213: 2136729263647705361
+    second: bossanimationidle_export_Armature_002_mixamo_com_Layer0_8
+  - first:
+      213: 539044430649507164
+    second: bossanimationidle_export_Armature_002_mixamo_com_Layer0_9
+  - first:
+      213: 3252531373137022752
+    second: bossanimationidle_export_Armature_002_mixamo_com_Layer0_10
+  - first:
+      213: -6748437233853069001
+    second: bossanimationidle_export_Armature_002_mixamo_com_Layer0_11
+  - first:
+      213: 7518453575972577764
+    second: bossanimationidle_export_Armature_002_mixamo_com_Layer0_12
+  - first:
+      213: -1194954726945017484
+    second: bossanimationidle_export_Armature_002_mixamo_com_Layer0_13
+  - first:
+      213: -8291937325012843339
+    second: bossanimationidle_export_Armature_002_mixamo_com_Layer0_14
+  - first:
+      213: -3315636127217136969
+    second: bossanimationidle_export_Armature_002_mixamo_com_Layer0_15
+  - first:
+      213: -6167609223732215672
+    second: bossanimationidle_export_Armature_002_mixamo_com_Layer0_16
+  - first:
+      213: 1692114022808435254
+    second: bossanimationidle_export_Armature_002_mixamo_com_Layer0_17
+  - first:
+      213: -2187484802650762092
+    second: bossanimationidle_export_Armature_002_mixamo_com_Layer0_18
+  - first:
+      213: 4101590493545685369
+    second: bossanimationidle_export_Armature_002_mixamo_com_Layer0_19
+  - first:
+      213: 3545511636374727831
+    second: bossanimationidle_export_Armature_002_mixamo_com_Layer0_20
+  - first:
+      213: -8375892748051189133
+    second: bossanimationidle_export_Armature_002_mixamo_com_Layer0_21
+  - first:
+      213: -3345415783279067701
+    second: bossanimationidle_export_Armature_002_mixamo_com_Layer0_22
+  - first:
+      213: 2719239974595639286
+    second: bossanimationidle_export_Armature_002_mixamo_com_Layer0_23
+  - first:
+      213: 1896344024169444929
+    second: bossanimationidle_export_Armature_002_mixamo_com_Layer0_24
+  - first:
+      213: -6093448059240621740
+    second: bossanimationidle_export_Armature_002_mixamo_com_Layer0_25
+  - first:
+      213: 2675206101280038285
+    second: bossanimationidle_export_Armature_002_mixamo_com_Layer0_26
+  - first:
+      213: 7549340254380714155
+    second: bossanimationidle_export_Armature_002_mixamo_com_Layer0_27
+  - first:
+      213: 2970072056415609256
+    second: bossanimationidle_export_Armature_002_mixamo_com_Layer0_28
+  - first:
+      213: -7200166914553266241
+    second: bossanimationidle_export_Armature_002_mixamo_com_Layer0_29
+  - first:
+      213: 1628654684561275170
+    second: bossanimationidle_export_Armature_002_mixamo_com_Layer0_30
+  - first:
+      213: 4162035584518997972
+    second: bossanimationidle_export_Armature_002_mixamo_com_Layer0_31
+  - first:
+      213: -831817609071215518
+    second: bossanimationidle_export_Armature_002_mixamo_com_Layer0_32
+  - first:
+      213: 8540086765198681853
+    second: bossanimationidle_export_Armature_002_mixamo_com_Layer0_33
+  - first:
+      213: -3091963069671624762
+    second: bossanimationidle_export_Armature_002_mixamo_com_Layer0_34
+  - first:
+      213: 118165102329815217
+    second: bossanimationidle_export_Armature_002_mixamo_com_Layer0_35
+  - first:
+      213: 2650958720156234261
+    second: bossanimationidle_export_Armature_002_mixamo_com_Layer0_36
+  - first:
+      213: -202319780603611062
+    second: bossanimationidle_export_Armature_002_mixamo_com_Layer0_37
+  - first:
+      213: -6591955953864868898
+    second: bossanimationidle_export_Armature_002_mixamo_com_Layer0_38
+  - first:
+      213: -9198069156949793110
+    second: bossanimationidle_export_Armature_002_mixamo_com_Layer0_39
+  - first:
+      213: 622054123189058233
+    second: bossanimationidle_export_Armature_002_mixamo_com_Layer0_40
+  - first:
+      213: -4210703591578148128
+    second: bossanimationidle_export_Armature_002_mixamo_com_Layer0_41
+  - first:
+      213: 58499351095274099
+    second: bossanimationidle_export_Armature_002_mixamo_com_Layer0_42
+  - first:
+      213: 2551870888017964145
+    second: bossanimationidle_export_Armature_002_mixamo_com_Layer0_43
+  - first:
+      213: 3967288893841135788
+    second: bossanimationidle_export_Armature_002_mixamo_com_Layer0_44
+  - first:
+      213: -5193569402016535702
+    second: bossanimationidle_export_Armature_002_mixamo_com_Layer0_45
+  - first:
+      213: 2207943378381969966
+    second: bossanimationidle_export_Armature_002_mixamo_com_Layer0_46
+  - first:
+      213: 8675774982735714885
+    second: bossanimationidle_export_Armature_002_mixamo_com_Layer0_47
+  - first:
+      213: -3379125621361241281
+    second: bossanimationidle_export_Armature_002_mixamo_com_Layer0_48
+  - first:
+      213: 5440781818259146680
+    second: bossanimationidle_export_Armature_002_mixamo_com_Layer0_49
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bossanimationidle_export_Armature_002_mixamo_com_Layer0_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 794
+        width: 59
+        height: 123
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32e2ac68b867f10f0800000000000000
+      internalID: -1144065438694887901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossanimationidle_export_Armature_002_mixamo_com_Layer0_1
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 794
+        width: 59
+        height: 123
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c9e780969e0ef620800000000000000
+      internalID: 2809699257358477764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossanimationidle_export_Armature_002_mixamo_com_Layer0_2
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 794
+        width: 59
+        height: 123
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69ea2b0868d61be10800000000000000
+      internalID: 2211669316467863190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossanimationidle_export_Armature_002_mixamo_com_Layer0_3
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 794
+        width: 59
+        height: 123
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14416c96876f85480800000000000000
+      internalID: -8910100865721428927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossanimationidle_export_Armature_002_mixamo_com_Layer0_4
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 794
+        width: 59
+        height: 123
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc10523f85ffb1b70800000000000000
+      internalID: 8870964648537817547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossanimationidle_export_Armature_002_mixamo_com_Layer0_5
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 794
+        width: 59
+        height: 123
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f82714d92bbfb6f70800000000000000
+      internalID: 9181709009885950607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossanimationidle_export_Armature_002_mixamo_com_Layer0_6
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 794
+        width: 58
+        height: 123
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c08c8d5c3f89ee90800000000000000
+      internalID: -6995903056713056056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossanimationidle_export_Armature_002_mixamo_com_Layer0_7
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 794
+        width: 58
+        height: 123
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a08637164b16e1800800000000000000
+      internalID: 585012428961703946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossanimationidle_export_Armature_002_mixamo_com_Layer0_8
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 663
+        width: 58
+        height: 123
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11947e4c1ff27ad10800000000000000
+      internalID: 2136729263647705361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossanimationidle_export_Armature_002_mixamo_com_Layer0_9
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 663
+        width: 58
+        height: 123
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5d340fbd021b7700800000000000000
+      internalID: 539044430649507164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossanimationidle_export_Armature_002_mixamo_com_Layer0_10
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 663
+        width: 58
+        height: 122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02f45ac1d00532d20800000000000000
+      internalID: 3252531373137022752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossanimationidle_export_Armature_002_mixamo_com_Layer0_11
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 663
+        width: 58
+        height: 122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7390b2f271cb852a0800000000000000
+      internalID: -6748437233853069001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossanimationidle_export_Armature_002_mixamo_com_Layer0_12
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 663
+        width: 58
+        height: 122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e16c1061b9e65860800000000000000
+      internalID: 7518453575972577764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossanimationidle_export_Armature_002_mixamo_com_Layer0_13
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 663
+        width: 58
+        height: 122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 471b4c9c10baa6fe0800000000000000
+      internalID: -1194954726945017484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossanimationidle_export_Armature_002_mixamo_com_Layer0_14
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 663
+        width: 58
+        height: 122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b48eca7fee1dec80800000000000000
+      internalID: -8291937325012843339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossanimationidle_export_Armature_002_mixamo_com_Layer0_15
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 663
+        width: 58
+        height: 122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ba45c0628e7cf1d0800000000000000
+      internalID: -3315636127217136969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossanimationidle_export_Armature_002_mixamo_com_Layer0_16
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 532
+        width: 58
+        height: 122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 880c402a610486aa0800000000000000
+      internalID: -6167609223732215672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossanimationidle_export_Armature_002_mixamo_com_Layer0_17
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 532
+        width: 58
+        height: 122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63a34f01db89b7710800000000000000
+      internalID: 1692114022808435254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossanimationidle_export_Armature_002_mixamo_com_Layer0_18
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 532
+        width: 58
+        height: 122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4949f6a692e74a1e0800000000000000
+      internalID: -2187484802650762092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossanimationidle_export_Armature_002_mixamo_com_Layer0_19
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 532
+        width: 58
+        height: 122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 971e8ed92d6cbe830800000000000000
+      internalID: 4101590493545685369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossanimationidle_export_Armature_002_mixamo_com_Layer0_20
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 532
+        width: 58
+        height: 122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79c21216c00343130800000000000000
+      internalID: 3545511636374727831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossanimationidle_export_Armature_002_mixamo_com_Layer0_21
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 532
+        width: 58
+        height: 122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37273ab4ce9d2cb80800000000000000
+      internalID: -8375892748051189133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossanimationidle_export_Armature_002_mixamo_com_Layer0_22
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 532
+        width: 58
+        height: 122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcd7aa3e112b291d0800000000000000
+      internalID: -3345415783279067701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossanimationidle_export_Armature_002_mixamo_com_Layer0_23
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 532
+        width: 58
+        height: 122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f7b0d8895eacb520800000000000000
+      internalID: 2719239974595639286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossanimationidle_export_Armature_002_mixamo_com_Layer0_24
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 401
+        width: 58
+        height: 122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 146fd8cb7da215a10800000000000000
+      internalID: 1896344024169444929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossanimationidle_export_Armature_002_mixamo_com_Layer0_25
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 401
+        width: 58
+        height: 122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4595bab4649bf6ba0800000000000000
+      internalID: -6093448059240621740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossanimationidle_export_Armature_002_mixamo_com_Layer0_26
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 401
+        width: 58
+        height: 122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8d11c776cd302520800000000000000
+      internalID: 2675206101280038285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossanimationidle_export_Armature_002_mixamo_com_Layer0_27
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 401
+        width: 58
+        height: 122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba86be696f4a4c860800000000000000
+      internalID: 7549340254380714155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossanimationidle_export_Armature_002_mixamo_com_Layer0_28
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 401
+        width: 58
+        height: 122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a167f79cc0d73920800000000000000
+      internalID: 2970072056415609256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossanimationidle_export_Armature_002_mixamo_com_Layer0_29
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 401
+        width: 58
+        height: 122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbf388ed65ed31c90800000000000000
+      internalID: -7200166914553266241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossanimationidle_export_Armature_002_mixamo_com_Layer0_30
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 401
+        width: 58
+        height: 122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 229fc0f7ec42a9610800000000000000
+      internalID: 1628654684561275170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossanimationidle_export_Armature_002_mixamo_com_Layer0_31
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 401
+        width: 58
+        height: 122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d74acd005582c930800000000000000
+      internalID: 4162035584518997972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossanimationidle_export_Armature_002_mixamo_com_Layer0_32
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 270
+        width: 58
+        height: 122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26c356daa4ac474f0800000000000000
+      internalID: -831817609071215518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossanimationidle_export_Armature_002_mixamo_com_Layer0_33
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 270
+        width: 58
+        height: 122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df6aea66aab748670800000000000000
+      internalID: 8540086765198681853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossanimationidle_export_Armature_002_mixamo_com_Layer0_34
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 270
+        width: 58
+        height: 122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cfa89558f32715d0800000000000000
+      internalID: -3091963069671624762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossanimationidle_export_Armature_002_mixamo_com_Layer0_35
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 270
+        width: 58
+        height: 122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b06735d88ec3a100800000000000000
+      internalID: 118165102329815217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossanimationidle_export_Armature_002_mixamo_com_Layer0_36
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 270
+        width: 58
+        height: 122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 512f22d19e81ac420800000000000000
+      internalID: 2650958720156234261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossanimationidle_export_Armature_002_mixamo_com_Layer0_37
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 270
+        width: 58
+        height: 122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4836124b37313df0800000000000000
+      internalID: -202319780603611062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossanimationidle_export_Armature_002_mixamo_com_Layer0_38
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 270
+        width: 58
+        height: 122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edbfcd25cfaa484a0800000000000000
+      internalID: -6591955953864868898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossanimationidle_export_Armature_002_mixamo_com_Layer0_39
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 270
+        width: 58
+        height: 122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa6e780d5d4e95080800000000000000
+      internalID: -9198069156949793110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossanimationidle_export_Armature_002_mixamo_com_Layer0_40
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 139
+        width: 58
+        height: 122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ba30c3edeaf1a800800000000000000
+      internalID: 622054123189058233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossanimationidle_export_Armature_002_mixamo_com_Layer0_41
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 139
+        width: 58
+        height: 123
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e2e58984639095c0800000000000000
+      internalID: -4210703591578148128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossanimationidle_export_Armature_002_mixamo_com_Layer0_42
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 139
+        width: 58
+        height: 123
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37aef9199d4dfc000800000000000000
+      internalID: 58499351095274099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossanimationidle_export_Armature_002_mixamo_com_Layer0_43
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 139
+        width: 58
+        height: 123
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17ca8f06d011a6320800000000000000
+      internalID: 2551870888017964145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossanimationidle_export_Armature_002_mixamo_com_Layer0_44
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 139
+        width: 58
+        height: 123
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca8d0c6ba34ae0730800000000000000
+      internalID: 3967288893841135788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossanimationidle_export_Armature_002_mixamo_com_Layer0_45
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 139
+        width: 59
+        height: 123
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6b6774452cbce7b0800000000000000
+      internalID: -5193569402016535702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossanimationidle_export_Armature_002_mixamo_com_Layer0_46
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 139
+        width: 59
+        height: 123
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2a12a0fdc034ae10800000000000000
+      internalID: 2207943378381969966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossanimationidle_export_Armature_002_mixamo_com_Layer0_47
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 139
+        width: 59
+        height: 123
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54ade2d616b866870800000000000000
+      internalID: 8675774982735714885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossanimationidle_export_Armature_002_mixamo_com_Layer0_48
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 8
+        width: 59
+        height: 123
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f339757962fea11d0800000000000000
+      internalID: -3379125621361241281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bossanimationidle_export_Armature_002_mixamo_com_Layer0_49
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 8
+        width: 59
+        height: 123
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b78db9bc3a818b40800000000000000
+      internalID: 5440781818259146680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 3cf6991cdf3fff34dbc6faff046a5ed0
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      bossanimationidle_export_Armature_002_mixamo_com_Layer0_0: -1144065438694887901
+      bossanimationidle_export_Armature_002_mixamo_com_Layer0_1: 2809699257358477764
+      bossanimationidle_export_Armature_002_mixamo_com_Layer0_10: 3252531373137022752
+      bossanimationidle_export_Armature_002_mixamo_com_Layer0_11: -6748437233853069001
+      bossanimationidle_export_Armature_002_mixamo_com_Layer0_12: 7518453575972577764
+      bossanimationidle_export_Armature_002_mixamo_com_Layer0_13: -1194954726945017484
+      bossanimationidle_export_Armature_002_mixamo_com_Layer0_14: -8291937325012843339
+      bossanimationidle_export_Armature_002_mixamo_com_Layer0_15: -3315636127217136969
+      bossanimationidle_export_Armature_002_mixamo_com_Layer0_16: -6167609223732215672
+      bossanimationidle_export_Armature_002_mixamo_com_Layer0_17: 1692114022808435254
+      bossanimationidle_export_Armature_002_mixamo_com_Layer0_18: -2187484802650762092
+      bossanimationidle_export_Armature_002_mixamo_com_Layer0_19: 4101590493545685369
+      bossanimationidle_export_Armature_002_mixamo_com_Layer0_2: 2211669316467863190
+      bossanimationidle_export_Armature_002_mixamo_com_Layer0_20: 3545511636374727831
+      bossanimationidle_export_Armature_002_mixamo_com_Layer0_21: -8375892748051189133
+      bossanimationidle_export_Armature_002_mixamo_com_Layer0_22: -3345415783279067701
+      bossanimationidle_export_Armature_002_mixamo_com_Layer0_23: 2719239974595639286
+      bossanimationidle_export_Armature_002_mixamo_com_Layer0_24: 1896344024169444929
+      bossanimationidle_export_Armature_002_mixamo_com_Layer0_25: -6093448059240621740
+      bossanimationidle_export_Armature_002_mixamo_com_Layer0_26: 2675206101280038285
+      bossanimationidle_export_Armature_002_mixamo_com_Layer0_27: 7549340254380714155
+      bossanimationidle_export_Armature_002_mixamo_com_Layer0_28: 2970072056415609256
+      bossanimationidle_export_Armature_002_mixamo_com_Layer0_29: -7200166914553266241
+      bossanimationidle_export_Armature_002_mixamo_com_Layer0_3: -8910100865721428927
+      bossanimationidle_export_Armature_002_mixamo_com_Layer0_30: 1628654684561275170
+      bossanimationidle_export_Armature_002_mixamo_com_Layer0_31: 4162035584518997972
+      bossanimationidle_export_Armature_002_mixamo_com_Layer0_32: -831817609071215518
+      bossanimationidle_export_Armature_002_mixamo_com_Layer0_33: 8540086765198681853
+      bossanimationidle_export_Armature_002_mixamo_com_Layer0_34: -3091963069671624762
+      bossanimationidle_export_Armature_002_mixamo_com_Layer0_35: 118165102329815217
+      bossanimationidle_export_Armature_002_mixamo_com_Layer0_36: 2650958720156234261
+      bossanimationidle_export_Armature_002_mixamo_com_Layer0_37: -202319780603611062
+      bossanimationidle_export_Armature_002_mixamo_com_Layer0_38: -6591955953864868898
+      bossanimationidle_export_Armature_002_mixamo_com_Layer0_39: -9198069156949793110
+      bossanimationidle_export_Armature_002_mixamo_com_Layer0_4: 8870964648537817547
+      bossanimationidle_export_Armature_002_mixamo_com_Layer0_40: 622054123189058233
+      bossanimationidle_export_Armature_002_mixamo_com_Layer0_41: -4210703591578148128
+      bossanimationidle_export_Armature_002_mixamo_com_Layer0_42: 58499351095274099
+      bossanimationidle_export_Armature_002_mixamo_com_Layer0_43: 2551870888017964145
+      bossanimationidle_export_Armature_002_mixamo_com_Layer0_44: 3967288893841135788
+      bossanimationidle_export_Armature_002_mixamo_com_Layer0_45: -5193569402016535702
+      bossanimationidle_export_Armature_002_mixamo_com_Layer0_46: 2207943378381969966
+      bossanimationidle_export_Armature_002_mixamo_com_Layer0_47: 8675774982735714885
+      bossanimationidle_export_Armature_002_mixamo_com_Layer0_48: -3379125621361241281
+      bossanimationidle_export_Armature_002_mixamo_com_Layer0_49: 5440781818259146680
+      bossanimationidle_export_Armature_002_mixamo_com_Layer0_5: 9181709009885950607
+      bossanimationidle_export_Armature_002_mixamo_com_Layer0_6: -6995903056713056056
+      bossanimationidle_export_Armature_002_mixamo_com_Layer0_7: 585012428961703946
+      bossanimationidle_export_Armature_002_mixamo_com_Layer0_8: 2136729263647705361
+      bossanimationidle_export_Armature_002_mixamo_com_Layer0_9: 539044430649507164
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
