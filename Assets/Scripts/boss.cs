@@ -29,6 +29,10 @@ public class boss : MonoBehaviour
     [Tooltip("Time to remain idle (seconds) after the Attack animation ends")]
     [SerializeField] private float postAttackDelay = 0.05f;
 
+    // Chance to randomly perform an attack when a walking/idle period ends
+    [Tooltip("Chance (0..1) to start the attack when a walk or idle period finishes")]
+    [SerializeField] [Range(0f, 1f)] private float idleAttackChance = 0f;
+
     // Clap visual prefab and fade settings
     [Tooltip("Prefab to spawn for clap1 (should contain a SpriteRenderer and optional Light)")]
     [SerializeField] private GameObject clapPrefab;
@@ -194,6 +198,22 @@ public class boss : MonoBehaviour
             // When walk timer ends, decide whether to turn or idle
             if (stateTimer <= 0f)
             {
+                // random chance to start an attack instead of turning/idling
+                if (Random.value < idleAttackChance)
+                {
+                    // start attack
+                    state = State.Attacking;
+                    attackTriggered = false;
+                    attackTimer = preAttackDelay;
+
+                    if (rb != null)
+                        rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+                    if (animator != null)
+                        animator.SetBool("isWalking", false);
+
+                    return;
+                }
+
                 if (Random.value < idleChance)
                 {
                     // Go idle
@@ -233,6 +253,21 @@ public class boss : MonoBehaviour
 
             if (stateTimer <= 0f)
             {
+                // random chance to start an attack instead of immediately resuming walking
+                if (Random.value < idleAttackChance)
+                {
+                    state = State.Attacking;
+                    attackTriggered = false;
+                    attackTimer = preAttackDelay;
+
+                    if (rb != null)
+                        rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+                    if (animator != null)
+                        animator.SetBool("isWalking", false);
+
+                    return;
+                }
+
                 // Resume walking after idle
                 state = State.Walking;
                 stateTimer = Random.Range(minWalkTime, maxWalkTime);
