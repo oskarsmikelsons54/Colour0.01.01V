@@ -197,8 +197,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: PRESS A OR D TO MOVE
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 45975e59cd5e06343befd08fca3c6a30, type: 2}
-  m_sharedMaterial: {fileID: -1592973183051743184, guid: 45975e59cd5e06343befd08fca3c6a30, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -295,7 +295,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -1592973183051743184, guid: 45975e59cd5e06343befd08fca3c6a30, type: 2}
+  - {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6364,7 +6364,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.13417482, y: 0.43606377}
+  m_Offset: {x: 0.74013615, y: 0.43606377}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -6374,7 +6374,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 11.230729, y: 4.991661}
+  m_Size: {x: 18.118006, y: 4.991661}
   m_EdgeRadius: 0
 --- !u!114 &1830238427
 MonoBehaviour:
@@ -11130,14 +11130,61 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3504982696752477330, guid: 58809439cd8d3974b812899420bcd230, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 87.136
+      objectReference: {fileID: 0}
+    - target: {fileID: 3504982696752477330, guid: 58809439cd8d3974b812899420bcd230, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 39.962
+      objectReference: {fileID: 0}
+    - target: {fileID: 3504982696752477330, guid: 58809439cd8d3974b812899420bcd230, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -17.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3504982696752477330, guid: 58809439cd8d3974b812899420bcd230, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 25.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3605758799263082672, guid: 58809439cd8d3974b812899420bcd230, type: 3}
       propertyPath: m_Name
       value: ZALAISCUVAKS1781104545
       objectReference: {fileID: 0}
+    - target: {fileID: 5867510144995275911, guid: 58809439cd8d3974b812899420bcd230, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5974569415323907857, guid: 58809439cd8d3974b812899420bcd230, type: 3}
+      propertyPath: m_fontSize
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 5974569415323907857, guid: 58809439cd8d3974b812899420bcd230, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+    - target: {fileID: 5974569415323907857, guid: 58809439cd8d3974b812899420bcd230, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 5974569415323907857, guid: 58809439cd8d3974b812899420bcd230, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+    - target: {fileID: 5974569415323907857, guid: 58809439cd8d3974b812899420bcd230, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802627996474499528, guid: 58809439cd8d3974b812899420bcd230, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5867510144995275911, guid: 58809439cd8d3974b812899420bcd230, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 58809439cd8d3974b812899420bcd230, type: 3}
 --- !u!4 &1480424849891572535
 Transform:
@@ -11535,10 +11582,10 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.228803
+    x: 0.044140626
     y: 0
-    width: 0.5441951
-    height: 0.59987783
+    width: 0.91180557
+    height: 1.000381
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 34
