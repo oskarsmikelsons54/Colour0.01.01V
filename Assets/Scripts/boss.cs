@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class boss : MonoBehaviour
@@ -28,6 +29,16 @@ public class boss : MonoBehaviour
     [Tooltip("Time to remain idle (seconds) after the Attack animation ends")]
     [SerializeField] private float postAttackDelay = 0.05f;
 
+    // Clap visual prefab and fade settings
+    [Tooltip("Prefab to spawn for clap1 (should contain a SpriteRenderer and optional Light)")]
+    [SerializeField] private GameObject clapPrefab;
+    [Tooltip("Local position of spawned clap relative to boss")]
+    [SerializeField] private Vector3 clapLocalPosition = new Vector3(0f, 0.5f, 0f);
+    [Tooltip("Time to fade in the clap visual")]
+    [SerializeField] private float clapFadeInDuration = 0.15f;
+    [Tooltip("Time to fade out the clap visual when attack ends")]
+    [SerializeField] private float clapFadeOutDuration = 0.25f;
+
     private Rigidbody2D rb;
     private Animator animator;
     private bool movingRight = true;
@@ -41,6 +52,11 @@ public class boss : MonoBehaviour
     // attack timing
     private float attackTimer = 0f;
     private bool attackTriggered = false; // true after animator trigger fired, waiting for animation event
+
+    // spawned clap instance
+    private GameObject spawnedClap;
+    private Light spawnedClapLight;
+    private float spawnedClapLightOriginalIntensity = 1f;
 
     void Start()
     {
@@ -246,7 +262,111 @@ public class boss : MonoBehaviour
         {
             state = State.Idle;
             stateTimer = postAttackDelay;
+
+            // If a clap visual exists, fade it out and destroy it
+            if (spawnedClap != null)
+            {
+                StartCoroutine(FadeOutAndDestroyClap(spawnedClap, clapFadeOutDuration));
+                spawnedClap = null; // allow future spawns
+                spawnedClapLight = null;
+            }
         }
+    }
+
+    // Minimal animation event callbacks: clap1 and clap2
+    // Clap1 spawns a prefab and fades it in. Clap2 is intentionally empty.
+    public void Clap1()
+    {
+        if (clapPrefab == null) return;
+        if (spawnedClap != null) return; // already spawned
+
+        // Parent the spawned clap to this boss and preserve local transform
+        spawnedClap = Instantiate(clapPrefab, transform, false);
+        spawnedClap.transform.localPosition = clapLocalPosition;
+
+        // initialize sprite alpha to 0
+        var srs = spawnedClap.GetComponentsInChildren<SpriteRenderer>();
+        foreach (var sr in srs)
+        {
+            var c = sr.color;
+            c.a = 0f;
+            sr.color = c;
+        }
+
+        // initialize light if present
+        spawnedClapLight = spawnedClap.GetComponentInChildren<Light>();
+        if (spawnedClapLight != null)
+        {
+            spawnedClapLightOriginalIntensity = spawnedClapLight.intensity;
+            spawnedClapLight.intensity = 0f;
+        }
+
+        StartCoroutine(FadeInClap(spawnedClap, clapFadeInDuration));
+    }
+
+    public void Clap2() { }
+
+    private IEnumerator FadeInClap(GameObject go, float duration)
+    {
+        if (go == null) yield break;
+        float t = 0f;
+        var srs = go.GetComponentsInChildren<SpriteRenderer>();
+        while (t < duration)
+        {
+            t += Time.deltaTime;
+            float a = Mathf.Clamp01(t / duration);
+            foreach (var sr in srs)
+            {
+                var c = sr.color;
+                c.a = a;
+                sr.color = c;
+            }
+
+            if (spawnedClapLight != null)
+            {
+                spawnedClapLight.intensity = spawnedClapLightOriginalIntensity * a;
+            }
+
+            yield return null;
+        }
+
+        // ensure fully visible
+        foreach (var sr in srs)
+        {
+            var c = sr.color; c.a = 1f; sr.color = c;
+        }
+        if (spawnedClapLight != null)
+        {
+            spawnedClapLight.intensity = spawnedClapLightOriginalIntensity;
+        }
+    }
+
+    private IEnumerator FadeOutAndDestroyClap(GameObject go, float duration)
+    {
+        if (go == null) yield break;
+        float t = 0f;
+        var srs = go.GetComponentsInChildren<SpriteRenderer>();
+        float startLightIntensity = spawnedClapLight != null ? spawnedClapLight.intensity : 0f;
+        while (t < duration)
+        {
+            t += Time.deltaTime;
+            float a = 1f - Mathf.Clamp01(t / duration);
+            foreach (var sr in srs)
+            {
+                var c = sr.color;
+                c.a = a;
+                sr.color = c;
+            }
+
+            if (spawnedClapLight != null)
+            {
+                spawnedClapLight.intensity = startLightIntensity * a;
+            }
+
+            yield return null;
+        }
+
+        Destroy(go);
     }
 
     void OnDrawGizmosSelected()

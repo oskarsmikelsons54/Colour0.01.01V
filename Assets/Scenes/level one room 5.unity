@@ -36941,6 +36941,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2301448014520961402, guid: d498deb225195eb408fd5430226bf395, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2301448014520961402, guid: d498deb225195eb408fd5430226bf395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 254.62022
       objectReference: {fileID: 0}
@@ -36979,6 +36983,10 @@ PrefabInstance:
     - target: {fileID: 2301448014520961402, guid: d498deb225195eb408fd5430226bf395, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2301448014520961402, guid: d498deb225195eb408fd5430226bf395, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2713373533156238260, guid: d498deb225195eb408fd5430226bf395, type: 3}
       propertyPath: m_Controller
@@ -37063,6 +37071,10 @@ MonoBehaviour:
   hitsToTrigger: 2
   preAttackDelay: 0.05
   postAttackDelay: 0.05
+  clapPrefab: {fileID: 5253948760853750116, guid: faee252e009d59445bf87cfa6d3bc062, type: 3}
+  clapLocalPosition: {x: -0.7, y: 0.7, z: 0}
+  clapFadeInDuration: 0.7
+  clapFadeOutDuration: 0.8
 --- !u!70 &1380219352
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
