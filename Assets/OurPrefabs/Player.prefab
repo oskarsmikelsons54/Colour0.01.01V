@@ -839,7 +839,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMeleeAttack
   attackRange: 0.5
-  attackDamage: 25
+  attackDamage: 1
   attackRate: 10
   attackPointRadius: 1.6
   radiusCenter: {fileID: 7861183110330539565}
